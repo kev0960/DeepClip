@@ -13,7 +13,6 @@ import torch.backends.cudnn as cudnn
 import torch.optim
 import torch.utils.data
 from torchvision import transforms as trn
-from torchsummary import summary
 import torchvision.datasets as datasets
 
 parser = argparse.ArgumentParser(description="Train the bumbumnet")
@@ -24,7 +23,7 @@ args = parser.parse_args()
 
 
 class VideoDataLoader:
-    def __init__(self, keywords, batch_size=5, num_frames=10, num_files=50):
+    def __init__(self, keywords, batch_size=5, num_frames=10, num_files=50, num_file_offset = 0):
         self.current_dir_index = 0
         self.current_file_index = 0
         self.current_epoch = 0
@@ -32,6 +31,7 @@ class VideoDataLoader:
         self.num_frames = num_frames
         self.keywords = keywords
         self.num_files = num_files
+        self.num_file_offset = num_file_offset
         self.tf = self.transform_frame()
 
         self.dirs_to_check = os.listdir('./training')
@@ -89,7 +89,7 @@ class VideoDataLoader:
                 file_names = os.listdir('./training/' + dir)
                 for file_index in range(len(file_names)):
                     if file_index == self.current_file_index:
-                        files = file_names[file_index:file_index + self.batch_size]
+                        files = file_names[file_index + self.num_file_offset:file_index + self.batch_size+ self.num_file_offset]
                         files = ['./training/' + dir + '/' + s for s in files]
                         batch = self.create_mini_batch(files)
 
@@ -108,7 +108,7 @@ class VideoDataLoader:
 
 
 class SimpleNetwork(nn.Module):
-    def __init__(self, num_class, num_frames, batch_size=5, hidden_lstm=100):
+    def __init__(self, num_class, num_frames, batch_size=5, hidden_lstm=512):
         super(SimpleNetwork, self).__init__()
         self.num_class = num_class
         self.batch_size = batch_size
@@ -143,7 +143,8 @@ class SimpleNetwork(nn.Module):
 
 
 def main():
-    video_data_loader = VideoDataLoader(["arresting", "ascending", "assembling", "attacking", "baking"])
+    #video_data_loader = VideoDataLoader(["arresting", "ascending", "assembling", "attacking", "baking"])
+    video_data_loader = VideoDataLoader([], num_files=100);
     # summary(model, (3, 224, 224))
 
     model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
@@ -166,18 +167,25 @@ def main():
         loss.backward()
         optimizer.step()
 
-        if total_batch_completed % 125 == 0:
+        if total_batch_completed % 500 == 0:
+            print('Current total iteration : {} {:.4f} '.format(total_batch_completed, loss.item()))
+
+        if total_batch_completed % 10000 == 0:
+            torch.save({'state_dict' : model.state_dict() }, 'checkpoint.pth.tar');
+
+        if total_batch_completed % (100 * 125) == 0:
             print('Epoch #{} :: [Iter : {} ] Loss : {:.4f}'.format(video_data_loader.current_epoch + 1,
                                                                    total_batch_completed, loss.item()))
 
-        if total_batch_completed % 250 == 0:
+        if total_batch_completed % (200 * 125) == 0:
             with torch.no_grad():
                 model.eval()
 
                 correct = 0
                 total = 0
 
-                eval_data_loader = VideoDataLoader(["arresting", "ascending", "assembling", "attacking", "baking"])
+                #eval_data_loader = VideoDataLoader(["arresting", "ascending", "assembling", "attacking", "baking"], num_file_offset=50)
+                eval_data_loader = VideoDataLoader([], num_files=25, num_file_offset=100);
                 while eval_data_loader.current_epoch < 1:
                     batch, labels = eval_data_loader.feed_mini_batch()
                     outputs = model(batch)
@@ -185,7 +193,7 @@ def main():
                     print(predicted, labels)
                     total += labels.size(0)
                     correct += (predicted == labels).sum().item()
-                print("{} / {}".format(correct, total))
+                print("Accuracy : {} / {} ({:.4f})".format(correct, total, correct / total))
 
                 model.train()
 
