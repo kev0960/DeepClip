@@ -14,16 +14,18 @@ import torch.optim
 import torch.utils.data
 from torchvision import transforms as trn
 import torchvision.datasets as datasets
+from tqdm import tqdm
 
 parser = argparse.ArgumentParser(description="Train the bumbumnet")
-group = parser.add_mutually_exclusive_group(required=False)
-group.add_argument('--total_epoch', type=int, default=10)
-
+parser.add_argument('--total_epoch', type=int, default=10)
+parser.add_argument('--num_class', type=int, default=10)
+parser.add_argument('--num_train_file', type=int, default=400)
+parser.add_argument('--batch_size', type=int, default=5)
+parser.add_argument('--num_val_file', type=int, default=50)
 args = parser.parse_args()
 
-
 class VideoDataLoader:
-    def __init__(self, keywords, batch_size=5, num_frames=10, num_files=50, num_file_offset = 0):
+    def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0):
         self.current_dir_index = 0
         self.current_file_index = 0
         self.current_epoch = 0
@@ -37,6 +39,8 @@ class VideoDataLoader:
         self.dirs_to_check = os.listdir('./training')
         if len(self.keywords) != 0:
             self.dirs_to_check = [dir for dir in self.dirs_to_check if dir in self.keywords]
+        elif num_keywords != -1:
+            self.dirs_to_check = self.dirs_to_check[:num_keywords]
 
         self.num_class = len(self.dirs_to_check)
 
@@ -89,7 +93,8 @@ class VideoDataLoader:
                 file_names = os.listdir('./training/' + dir)
                 for file_index in range(len(file_names)):
                     if file_index == self.current_file_index:
-                        files = file_names[file_index + self.num_file_offset:file_index + self.batch_size+ self.num_file_offset]
+                        files = file_names[
+                                file_index + self.num_file_offset:file_index + self.batch_size + self.num_file_offset]
                         files = ['./training/' + dir + '/' + s for s in files]
                         batch = self.create_mini_batch(files)
 
@@ -118,11 +123,12 @@ class SimpleNetwork(nn.Module):
         # Remove the final FC layer of the pretrained Resnet
         self.pretrained_resnet = models.resnet50(pretrained=True).cuda()
         self.resnet = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
-        for param in self.resnet.parameters():
-            param.required_grad = False
+        # for param in self.resnet.parameters():
+        #    param.required_grad = False
 
         self.lstm = nn.LSTM(input_size=2048, hidden_size=hidden_lstm, batch_first=True).cuda()
         self.fc = nn.Linear(hidden_lstm, num_class).cuda()
+        torch.nn.init.xavier_normal_(self.fc.weight)
 
     def forward(self, x):
         # x : (batch_size, num_frames, C, H, W)
@@ -143,21 +149,34 @@ class SimpleNetwork(nn.Module):
 
 
 def main():
-    #video_data_loader = VideoDataLoader(["arresting", "ascending", "assembling", "attacking", "baking"])
-    video_data_loader = VideoDataLoader([], num_files=100);
+    total_epoch = args.total_epoch
+    num_class = args.num_class
+    num_train_file = args.num_train_file
+    num_val_file = args.num_val_file
+    batch_size = args.batch_size
+
+    video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file)
     # summary(model, (3, 224, 224))
 
     model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
-                          batch_size=video_data_loader.batch_size).cuda()
+                          batch_size=batch_size).cuda()
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
-
-    total_epoch = args.total_epoch
+    optimizer = torch.optim.Adam(model.parameters(), lr=5e-5)
 
     total_batch_completed = 0
-    while video_data_loader.current_epoch < 20:
-        total_batch_completed += video_data_loader.batch_size
+    pbar = tqdm(total=num_class * num_train_file * total_epoch)
+
+    per_500_loss = []
+    per_epoch_loss = []
+
+    if os.path.isfile('checkpoint.pth.tar'):
+        checkpoint = torch.load('checkpoint.pth.tar')
+        model.load_state_dict(checkpoint['state_dict'])
+        optimizer.load_state_dict(checkpoint['optimizer'])
+
+    while video_data_loader.current_epoch < total_epoch:
+        total_batch_completed += batch_size
 
         batch, labels = video_data_loader.feed_mini_batch()
         outputs = model(batch)
@@ -167,35 +186,67 @@ def main():
         loss.backward()
         optimizer.step()
 
-        if total_batch_completed % 500 == 0:
-            print('Current total iteration : {} {:.4f} '.format(total_batch_completed, loss.item()))
+        per_500_loss.append(loss.item())
+        per_epoch_loss.append(loss.item())
 
-        if total_batch_completed % 10000 == 0:
-            torch.save({'state_dict' : model.state_dict() }, 'checkpoint.pth.tar');
+        if total_batch_completed % num_train_file == 0:
+            print('Current total iteration : {} {:.4f} '.format(total_batch_completed, np.mean(per_500_loss)))
+            per_500_loss = []
 
-        if total_batch_completed % (100 * 125) == 0:
+        # Save the checkpoint per epoch and check train and validation accuracy.
+        if total_batch_completed % (num_train_file * num_class) == 0:
+            torch.save({'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}, 'checkpoint.pth.tar')
             print('Epoch #{} :: [Iter : {} ] Loss : {:.4f}'.format(video_data_loader.current_epoch + 1,
-                                                                   total_batch_completed, loss.item()))
+                                                                   total_batch_completed, np.mean(per_epoch_loss)))
+            per_epoch_loss = []
 
-        if total_batch_completed % (200 * 125) == 0:
             with torch.no_grad():
                 model.eval()
 
                 correct = 0
+                correct_k = 0
                 total = 0
 
-                #eval_data_loader = VideoDataLoader(["arresting", "ascending", "assembling", "attacking", "baking"], num_file_offset=50)
-                eval_data_loader = VideoDataLoader([], num_files=25, num_file_offset=100);
+                pbar_train_acc = tqdm(total=50 * 50)
+                train_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file // 5, num_file_offset=0)
+                while train_data_loader.current_epoch < 1:
+                    batch, labels = train_data_loader.feed_mini_batch()
+                    outputs = model(batch)
+                    _, predicted = torch.max(outputs.data, 1)
+                    _, predicted_k = torch.topk(outputs.data, 5)
+
+                    total += labels.size(0)
+                    correct += (predicted == labels).sum().item()
+                    correct_k += predicted_k.eq(labels.view(1, -1).expand_as(predicted_k)).sum().item()
+
+                    pbar_train_acc.update(train_data_loader.batch_size)
+                    pbar_train_acc.set_description("Train Acc : (%d %d %.4f) (%d %d %.4f)" % (
+                    correct, total, correct / total, correct_k, total, correct_k / total))
+                pbar_train_acc.close()
+                print("Train Accuracy : {} / {} ({:.4f})".format(correct, total, correct / total))
+
+                correct, total, correct_k = 0, 0, 0
+                eval_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_val_file, num_file_offset=num_train_file)
                 while eval_data_loader.current_epoch < 1:
                     batch, labels = eval_data_loader.feed_mini_batch()
                     outputs = model(batch)
                     _, predicted = torch.max(outputs.data, 1)
-                    print(predicted, labels)
+                    _, predicted_k = torch.topk(outputs.data, 5)
+
+                    print(predicted_k, labels)
                     total += labels.size(0)
                     correct += (predicted == labels).sum().item()
-                print("Accuracy : {} / {} ({:.4f})".format(correct, total, correct / total))
+                    correct_k += predicted_k.eq(labels.view(1, -1).expand_as(predicted_k)).sum().item()
+
+                print(
+                    "Val Accuracy : {} / {} ({:.4f} ; Top 5 : {} / {} ({:.4f})".format(correct, total, correct / total,
+                                                                                       correct_k, total,
+                                                                                       correct_k / total))
 
                 model.train()
+        pbar.update(batch_size)
+        pbar.set_description("Loss : %.4f" % loss.item())
+    pbar.close()
 
 
 if __name__ == "__main__":
