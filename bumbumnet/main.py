@@ -15,6 +15,7 @@ import torch.utils.data
 from torchvision import transforms as trn
 import torchvision.datasets as datasets
 from tqdm import tqdm
+from random import shuffle
 
 parser = argparse.ArgumentParser(description="Train the bumbumnet")
 parser.add_argument('--total_epoch', type=int, default=10)
@@ -25,15 +26,16 @@ parser.add_argument('--num_val_file', type=int, default=50)
 args = parser.parse_args()
 
 class VideoDataLoader:
-    def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0):
-        self.current_dir_index = 0
-        self.current_file_index = 0
+    def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0, is_training=False):
         self.current_epoch = 0
+        self.current_iter = 0
+
         self.batch_size = batch_size
         self.num_frames = num_frames
         self.keywords = keywords
         self.num_files = num_files
         self.num_file_offset = num_file_offset
+        self.is_training = is_training
         self.tf = self.transform_frame()
 
         self.dirs_to_check = os.listdir('./training')
@@ -43,6 +45,21 @@ class VideoDataLoader:
             self.dirs_to_check = self.dirs_to_check[:num_keywords]
 
         self.num_class = len(self.dirs_to_check)
+
+        self.entire_file_list = []
+
+        dir_index = 0
+        for dir in self.dirs_to_check:
+            file_names = os.listdir('./training/' + dir)
+            for file_name in file_names[self.num_file_offset:self.num_file_offset + self.num_files]:
+                self.entire_file_list.append(('./training/' + dir + '/' + file_name, dir_index))
+            dir_index += 1
+
+        if self.is_training:
+            shuffle(self.entire_file_list)
+
+        print(self.dirs_to_check)
+
 
     def extract_frames(self, video_file):
         cap = cv2.VideoCapture(video_file)
@@ -87,29 +104,16 @@ class VideoDataLoader:
 
     # Create the mini batch from the current directory.
     def feed_mini_batch(self):
-        dir_index = 0
-        for dir in self.dirs_to_check:
-            if dir_index == self.current_dir_index:
-                file_names = os.listdir('./training/' + dir)
-                for file_index in range(len(file_names)):
-                    if file_index == self.current_file_index:
-                        files = file_names[
-                                file_index + self.num_file_offset:file_index + self.batch_size + self.num_file_offset]
-                        files = ['./training/' + dir + '/' + s for s in files]
-                        batch = self.create_mini_batch(files)
+        files = [f for (f, index) in self.entire_file_list[self.current_iter : self.current_iter + self.batch_size]]
+        batch = self.create_mini_batch(files)
+        res = batch, self.make_batch_labels([index for (f, index) in self.entire_file_list[self.current_iter : self.current_iter + self.batch_size]])
+        self.current_iter += self.batch_size
 
-                        self.current_dir_index += 1
-                        if self.current_dir_index == len(self.dirs_to_check):
-                            self.current_file_index += self.batch_size
-                            self.current_dir_index = 0
+        if self.current_iter >= len(self.entire_file_list):
+            self.current_iter = 0
+            self.current_epoch += 1
 
-                            if self.current_file_index == len(file_names) or self.current_file_index == self.num_files:
-                                self.current_file_index = 0
-                                self.current_dir_index = 0
-                                self.current_epoch += 1
-
-                        return batch, self.make_batch_labels([dir_index] * self.batch_size)
-            dir_index += 1
+        return res
 
 
 class SimpleNetwork(nn.Module):
@@ -140,9 +144,11 @@ class SimpleNetwork(nn.Module):
         x = x.view(self.batch_size, self.num_frames, 2048)
         x, _ = self.lstm(x)
 
-        # Take the last output
+        # Take the mean of every output vectors
         # x : (batch_size, 2048)
-        x = x[:, -1, :].view(self.batch_size, self.hidden_size)
+        x = torch.mean(x, dim = 1, keepdim = True)
+
+        x = x.view(self.batch_size, self.hidden_size)
 
         out = self.fc(x)
         return out
@@ -155,7 +161,7 @@ def main():
     num_val_file = args.num_val_file
     batch_size = args.batch_size
 
-    video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file)
+    video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file, is_training=True)
     # summary(model, (3, 224, 224))
 
     model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
@@ -245,7 +251,7 @@ def main():
 
                 model.train()
         pbar.update(batch_size)
-        pbar.set_description("Loss : %.4f" % loss.item())
+        pbar.set_description("Loss : %f" % loss.item())
     pbar.close()
 
 
