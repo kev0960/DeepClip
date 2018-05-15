@@ -177,8 +177,8 @@ def main():
     per_500_loss = []
     per_epoch_loss = []
 
-    if os.path.isfile('checkpoint.pth.tar'):
-        checkpoint = torch.load('checkpoint.pth.tar')
+    if os.path.isfile('checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size)):
+        checkpoint = torch.load('checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size))
         model.load_state_dict(checkpoint['state_dict'])
         optimizer.load_state_dict(checkpoint['optimizer'])
 
