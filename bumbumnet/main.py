@@ -24,6 +24,7 @@ parser.add_argument('--batch_size', type=int, default=5)
 parser.add_argument('--num_val_file', type=int, default=50)
 args = parser.parse_args()
 
+
 class VideoDataLoader:
     def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0):
         self.current_dir_index = 0
@@ -207,8 +208,9 @@ def main():
                 correct_k = 0
                 total = 0
 
-                pbar_train_acc = tqdm(total=50 * 50)
-                train_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file // 5, num_file_offset=0)
+                pbar_train_acc = tqdm(total=num_class * (num_train_file // 5))
+                train_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class,
+                                                    num_files=num_train_file // 5, num_file_offset=0)
                 while train_data_loader.current_epoch < 1:
                     batch, labels = train_data_loader.feed_mini_batch()
                     outputs = model(batch)
@@ -221,12 +223,13 @@ def main():
 
                     pbar_train_acc.update(train_data_loader.batch_size)
                     pbar_train_acc.set_description("Train Acc : (%d %d %.4f) (%d %d %.4f)" % (
-                    correct, total, correct / total, correct_k, total, correct_k / total))
+                        correct, total, correct / total, correct_k, total, correct_k / total))
                 pbar_train_acc.close()
                 print("Train Accuracy : {} / {} ({:.4f})".format(correct, total, correct / total))
 
                 correct, total, correct_k = 0, 0, 0
-                eval_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_val_file, num_file_offset=num_train_file)
+                eval_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class,
+                                                   num_files=num_val_file, num_file_offset=num_train_file)
                 while eval_data_loader.current_epoch < 1:
                     batch, labels = eval_data_loader.feed_mini_batch()
                     outputs = model(batch)
