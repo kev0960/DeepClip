@@ -202,7 +202,7 @@ def main():
 
         # Save the checkpoint per epoch and check train and validation accuracy.
         if total_batch_completed % (num_train_file * num_class) == 0:
-            torch.save({'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()}, 'checkpoint.pth.tar')
+            torch.save({'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()},'checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size))
             print('Epoch #{} :: [Iter : {} ] Loss : {:.4f}'.format(video_data_loader.current_epoch + 1,
                                                                    total_batch_completed, np.mean(per_epoch_loss)))
             per_epoch_loss = []
