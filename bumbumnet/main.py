@@ -4,6 +4,7 @@ import argparse
 import numpy as np
 import cv2
 from PIL import Image
+import multiprocessing
 
 import torchvision.models as models
 import torch
@@ -25,14 +26,17 @@ parser.add_argument('--batch_size', type=int, default=5)
 parser.add_argument('--num_val_file', type=int, default=50)
 parser.add_argument('--is_test', type=bool, default=False)
 parser.add_argument('--test_video_name', type=str, default="")
+parser.add_argument('--multi_thread', type=bool, default=False)
 args = parser.parse_args()
 
+is_multithread = args.multi_thread
 
 class VideoDataLoader:
     def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0,
                  is_training=False, is_test=False, test_file_name=""):
         self.current_epoch = 0
         self.current_iter = 0
+        self.prepared_batch_iter = 0
 
         self.batch_size = batch_size
         self.num_frames = num_frames
@@ -67,6 +71,17 @@ class VideoDataLoader:
             self.entire_file_list.append(test_file_name)
 
         print(self.dirs_to_check)
+
+        if is_multithread :
+            self.cond = multiprocessing.Condition()
+            self.worker = multiprocessing.Process(target=self.prepare_mini_batch)
+
+            # batches that are ready to be served :)
+            # Prepare up to 20 batches.
+            self.batch_queue = multiprocessing.Queue(maxsize=20)
+
+            # Start the batch processing queue!
+            self.worker.start()
 
     def extract_frames(self, video_file):
         cap = cv2.VideoCapture(video_file)
@@ -121,17 +136,61 @@ class VideoDataLoader:
 
     # Create the mini batch from the current directory.
     def feed_mini_batch(self):
-        files = [f for (f, index) in self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]]
-        batch = self.create_mini_batch(files)
-        res = batch, self.make_batch_labels(
-            [index for (f, index) in self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]])
-        self.current_iter += self.batch_size
+        if is_multithread:
+            # Wake up the batch preparing process if the queue is not full
+            # (If the process were running already, then it does not matter)
+            if not self.batch_queue.full():
+                self.cond.acquire()
+                self.cond.notify()
+                self.cond.release()
 
-        if self.current_iter >= len(self.entire_file_list):
-            self.current_iter = 0
-            self.current_epoch += 1
+            res = self.batch_queue.get()
+            self.current_iter += self.batch_size
 
-        return res
+            if self.current_iter >= len(self.entire_file_list):
+                self.current_iter = 0
+                self.current_epoch += 1
+
+            return res
+        else :
+            files = [f for (f, index) in
+                     self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]]
+            batch = self.create_mini_batch(files)
+            labels = self.make_batch_labels(
+                [index for (f, index) in
+                 self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]])
+
+            self.current_iter += self.batch_size
+
+            if self.current_iter >= len(self.entire_file_list):
+                self.current_iter = 0
+                self.current_epoch += 1
+
+            return (batch, labels)
+
+    def prepare_mini_batch(self):
+        while True:
+            while not self.batch_queue.full():
+                files = [f for (f, index) in
+                         self.entire_file_list[self.prepared_batch_iter: self.prepared_batch_iter + self.batch_size]]
+                batch = self.create_mini_batch(files)
+                labels = self.make_batch_labels(
+                    [index for (f, index) in
+                     self.entire_file_list[self.prepared_batch_iter: self.prepared_batch_iter + self.batch_size]])
+
+                # Add prepared batch to the queue.
+                self.batch_queue.put((batch, labels))
+
+                self.prepared_batch_iter += self.batch_size
+
+                if self.prepared_batch_iter >= len(self.entire_file_list):
+                    self.prepared_batch_iter = 0
+                    # note that epoch is only increased when actual batch has feeded.
+
+            # When the queue is full, sleep the thread and wait until it is consumed.
+            self.cond.acquire()
+            self.cond.wait()
+            self.cond.release()
 
 
 class SimpleNetwork(nn.Module):

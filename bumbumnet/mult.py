@@ -45,9 +45,10 @@ class Loader:
 
 loader = Loader()
 for i in range(100):
+    start_time = time.time()
     print(loader.consume())
 
     # training time
-    time.sleep(0.8)
-
-    print("5 job has consumed")
+    time.sleep(1.2)
+    elapsed_time = time.time() - start_time
+    print("5 job has consumed :: ", elapsed_time)
