@@ -27,9 +27,13 @@ parser.add_argument('--num_val_file', type=int, default=50)
 parser.add_argument('--is_test', type=bool, default=False)
 parser.add_argument('--test_video_name', type=str, default="")
 parser.add_argument('--multi_thread', type=bool, default=False)
+parser.add_argument('--cache', type=int, default=1000)
 args = parser.parse_args()
 
 is_multithread = args.multi_thread
+cache_size = args.cache
+
+global_video_tensor_cache = {}
 
 class VideoDataLoader:
     def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0,
@@ -72,13 +76,15 @@ class VideoDataLoader:
 
         print(self.dirs_to_check)
 
+        self.done = False
+
         if is_multithread :
             self.cond = multiprocessing.Condition()
             self.worker = multiprocessing.Process(target=self.prepare_mini_batch)
 
             # batches that are ready to be served :)
             # Prepare up to 20 batches.
-            self.batch_queue = multiprocessing.Queue(maxsize=20)
+            self.batch_queue = multiprocessing.Queue(maxsize=5)
 
             # Start the batch processing queue!
             self.worker.start()
@@ -153,12 +159,29 @@ class VideoDataLoader:
 
             return res
         else :
+             # Note that NEVER update global table for validation case. Only for training
+            if self.current_iter < cache_size and self.num_file_offset == 0:
+                if self.current_iter in global_video_tensor_cache:
+                    (cpu_batch, cpu_labels) = global_video_tensor_cache[self.current_iter]
+                    self.current_iter += self.batch_size
+
+                    if self.current_iter >= len(self.entire_file_list):
+                        self.current_iter = 0
+                        self.current_epoch += 1
+
+                    return (cpu_batch.to(torch.device('cuda')), cpu_labels.to(torch.device('cuda')))
+
             files = [f for (f, index) in
                      self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]]
             batch = self.create_mini_batch(files)
             labels = self.make_batch_labels(
                 [index for (f, index) in
                  self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]])
+
+            if self.current_iter < cache_size and self.num_file_offset == 0:
+                cpu_batch = batch.to(torch.device('cpu'))
+                cpu_labels = labels.to(torch.device('cpu'))
+                global_video_tensor_cache[self.current_iter] = (cpu_batch, cpu_labels)
 
             self.current_iter += self.batch_size
 
@@ -183,8 +206,12 @@ class VideoDataLoader:
 
                 self.prepared_batch_iter += self.batch_size
 
+                if self.done :
+                    return
+
                 if self.prepared_batch_iter >= len(self.entire_file_list):
                     self.prepared_batch_iter = 0
+
                     # note that epoch is only increased when actual batch has feeded.
 
             # When the queue is full, sleep the thread and wait until it is consumed.
@@ -340,6 +367,10 @@ def main():
                     pbar_train_acc.set_description("Train Acc : (%d %d %.4f) (%d %d %.4f)" % (
                         correct, total, correct / total, correct_k, total, correct_k / total))
                 pbar_train_acc.close()
+
+                # Quit the worker process.
+                train_data_loader.done = True
+
                 print("Train Accuracy : {} / {} ({:.4f})".format(correct, total, correct / total))
 
                 correct, total, correct_k = 0, 0, 0
@@ -360,6 +391,7 @@ def main():
                     "Val Accuracy : {} / {} ({:.4f} ; Top 5 : {} / {} ({:.4f})".format(correct, total, correct / total,
                                                                                        correct_k, total,
                                                                                        correct_k / total))
+                eval_data_loader.done = True
 
                 model.train()
         pbar.update(batch_size)
