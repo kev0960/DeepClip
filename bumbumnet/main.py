@@ -23,11 +23,14 @@ parser.add_argument('--num_class', type=int, default=10)
 parser.add_argument('--num_train_file', type=int, default=400)
 parser.add_argument('--batch_size', type=int, default=5)
 parser.add_argument('--num_val_file', type=int, default=50)
+parser.add_argument('--is_test', type=bool, default=False)
+parser.add_argument('--test_video_name', type=str, default="")
 args = parser.parse_args()
 
 
 class VideoDataLoader:
-    def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0, is_training=False):
+    def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0,
+                 is_training=False, is_test=False, test_file_name=""):
         self.current_epoch = 0
         self.current_iter = 0
 
@@ -38,6 +41,7 @@ class VideoDataLoader:
         self.num_file_offset = num_file_offset
         self.is_training = is_training
         self.tf = self.transform_frame()
+        self.is_test = is_test
 
         self.dirs_to_check = os.listdir('./training')
         if len(self.keywords) != 0:
@@ -49,18 +53,20 @@ class VideoDataLoader:
 
         self.entire_file_list = []
 
-        dir_index = 0
-        for dir in self.dirs_to_check:
-            file_names = os.listdir('./training/' + dir)
-            for file_name in file_names[self.num_file_offset:self.num_file_offset + self.num_files]:
-                self.entire_file_list.append(('./training/' + dir + '/' + file_name, dir_index))
-            dir_index += 1
+        if not self.is_test:
+            dir_index = 0
+            for dir in self.dirs_to_check:
+                file_names = os.listdir('./training/' + dir)
+                for file_name in file_names[self.num_file_offset:self.num_file_offset + self.num_files]:
+                    self.entire_file_list.append(('./training/' + dir + '/' + file_name, dir_index))
+                dir_index += 1
 
-        if self.is_training:
-            shuffle(self.entire_file_list)
+            if self.is_training:
+                shuffle(self.entire_file_list)
+        else:
+            self.entire_file_list.append(test_file_name)
 
         print(self.dirs_to_check)
-
 
     def extract_frames(self, video_file):
         cap = cv2.VideoCapture(video_file)
@@ -103,11 +109,22 @@ class VideoDataLoader:
         labels = torch.cuda.LongTensor(labels).view(self.batch_size)
         return labels
 
+    # Returns the test batch and labels of entire keywords
+    def feed_test_batch(self):
+        print(self.entire_file_list)
+        batch = [self.extract_frames(f) for f in self.entire_file_list]
+        batch = torch.stack(batch).cuda()
+
+        labels = self.dirs_to_check
+
+        return batch, labels
+
     # Create the mini batch from the current directory.
     def feed_mini_batch(self):
-        files = [f for (f, index) in self.entire_file_list[self.current_iter : self.current_iter + self.batch_size]]
+        files = [f for (f, index) in self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]]
         batch = self.create_mini_batch(files)
-        res = batch, self.make_batch_labels([index for (f, index) in self.entire_file_list[self.current_iter : self.current_iter + self.batch_size]])
+        res = batch, self.make_batch_labels(
+            [index for (f, index) in self.entire_file_list[self.current_iter: self.current_iter + self.batch_size]])
         self.current_iter += self.batch_size
 
         if self.current_iter >= len(self.entire_file_list):
@@ -147,7 +164,7 @@ class SimpleNetwork(nn.Module):
 
         # Take the mean of every output vectors
         # x : (batch_size, 2048)
-        x = torch.mean(x, dim = 1, keepdim = True)
+        x = torch.mean(x, dim=1, keepdim=True)
 
         x = x.view(self.batch_size, self.hidden_size)
 
@@ -161,8 +178,40 @@ def main():
     num_train_file = args.num_train_file
     num_val_file = args.num_val_file
     batch_size = args.batch_size
+    is_test = args.is_test
+    test_video_name = args.test_video_name
 
-    video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file, is_training=True)
+    if is_test:
+        video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file,
+                                            is_training=False, is_test=True, test_file_name=test_video_name)
+
+        model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
+                              batch_size=1).cuda()
+        if os.path.isfile('checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size)):
+            checkpoint = torch.load('checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size))
+            model.load_state_dict(checkpoint['state_dict'])
+        else:
+            print("Train file does not exist!")
+            return
+
+        with torch.no_grad():
+            model.eval()
+            batch, labels = video_data_loader.feed_test_batch()
+            outputs = model(batch)
+
+            _, predicted = torch.max(outputs.data, 1)
+            _, predicted_k = torch.topk(outputs.data, 5)
+
+            predicted = predicted.item()
+            predicted_k = np.reshape(predicted_k.cpu().numpy(), (5))
+            print(predicted_k)
+            print("Top-1 Keyword :: ", labels[predicted])
+            print("Top-5 Keyword :: ", [labels[predicted_k[i]] for i in range(5)])
+
+        return
+
+    video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file,
+                                        is_training=True)
     # summary(model, (3, 224, 224))
 
     model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
@@ -202,7 +251,8 @@ def main():
 
         # Save the checkpoint per epoch and check train and validation accuracy.
         if total_batch_completed % (num_train_file * num_class) == 0:
-            torch.save({'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()},'checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size))
+            torch.save({'state_dict': model.state_dict(), 'optimizer': optimizer.state_dict()},
+                       'checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size))
             print('Epoch #{} :: [Iter : {} ] Loss : {:.4f}'.format(video_data_loader.current_epoch + 1,
                                                                    total_batch_completed, np.mean(per_epoch_loss)))
             per_epoch_loss = []
