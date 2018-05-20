@@ -4,7 +4,8 @@ import argparse
 import numpy as np
 import cv2
 from PIL import Image
-import multiprocessing
+
+import torch.multiprocessing as mp
 
 import torchvision.models as models
 import torch
@@ -28,19 +29,23 @@ parser.add_argument('--is_test', type=bool, default=False)
 parser.add_argument('--test_video_name', type=str, default="")
 parser.add_argument('--multi_thread', type=bool, default=False)
 parser.add_argument('--cache', type=int, default=1000)
+parser.add_argument('--allow_test_multiprocess', type=bool, default=False)
 args = parser.parse_args()
 
-is_multithread = args.multi_thread
 cache_size = args.cache
 
 global_video_tensor_cache = {}
 
+
 class VideoDataLoader:
     def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0,
-                 is_training=False, is_test=False, test_file_name=""):
+                 is_training=False, is_test=False, test_file_name="", total_epoch=10,
+                 is_multithread=False):
         self.current_epoch = 0
         self.current_iter = 0
         self.prepared_batch_iter = 0
+        self.total_epoch = total_epoch
+        self.is_multithread = is_multithread
 
         self.batch_size = batch_size
         self.num_frames = num_frames
@@ -76,15 +81,13 @@ class VideoDataLoader:
 
         print(self.dirs_to_check)
 
-        self.done = False
-
-        if is_multithread :
-            self.cond = multiprocessing.Condition()
-            self.worker = multiprocessing.Process(target=self.prepare_mini_batch)
+        if is_multithread:
+            self.cond = mp.Condition()
+            self.worker = mp.Process(target=self.prepare_mini_batch)
 
             # batches that are ready to be served :)
             # Prepare up to 20 batches.
-            self.batch_queue = multiprocessing.Queue(maxsize=5)
+            self.batch_queue = mp.Queue(maxsize=5)
 
             # Start the batch processing queue!
             self.worker.start()
@@ -142,7 +145,7 @@ class VideoDataLoader:
 
     # Create the mini batch from the current directory.
     def feed_mini_batch(self):
-        if is_multithread:
+        if self.is_multithread:
             # Wake up the batch preparing process if the queue is not full
             # (If the process were running already, then it does not matter)
             if not self.batch_queue.full():
@@ -158,8 +161,8 @@ class VideoDataLoader:
                 self.current_epoch += 1
 
             return res
-        else :
-             # Note that NEVER update global table for validation case. Only for training
+        else:
+            # Note that NEVER update global table for validation case. Only for training
             if self.current_iter < cache_size and self.num_file_offset == 0:
                 if self.current_iter in global_video_tensor_cache:
                     (cpu_batch, cpu_labels) = global_video_tensor_cache[self.current_iter]
@@ -194,6 +197,22 @@ class VideoDataLoader:
     def prepare_mini_batch(self):
         while True:
             while not self.batch_queue.full():
+                if self.prepared_batch_iter < cache_size and self.num_file_offset == 0:
+                    if self.prepared_batch_iter in global_video_tensor_cache:
+                        (cpu_batch, cpu_labels) = global_video_tensor_cache[self.prepared_batch_iter]
+                        self.prepared_batch_iter += self.batch_size
+
+                        self.batch_queue.put(
+                            (cpu_batch.to(torch.device('cuda')), cpu_labels.to(torch.device('cuda')))
+                        )
+
+                        if self.prepared_batch_iter >= len(self.entire_file_list):
+                            self.prepared_batch_iter = 0
+                            if self.current_epoch + 1 >= self.total_epoch:
+                                return
+
+                        continue
+
                 files = [f for (f, index) in
                          self.entire_file_list[self.prepared_batch_iter: self.prepared_batch_iter + self.batch_size]]
                 batch = self.create_mini_batch(files)
@@ -204,13 +223,18 @@ class VideoDataLoader:
                 # Add prepared batch to the queue.
                 self.batch_queue.put((batch, labels))
 
-                self.prepared_batch_iter += self.batch_size
+                if self.prepared_batch_iter < cache_size and self.num_file_offset == 0:
+                    cpu_batch = batch.to(torch.device('cpu'))
+                    cpu_labels = labels.to(torch.device('cpu'))
+                    global_video_tensor_cache[self.prepared_batch_iter] = (cpu_batch, cpu_labels)
 
-                if self.done :
-                    return
+                self.prepared_batch_iter += self.batch_size
 
                 if self.prepared_batch_iter >= len(self.entire_file_list):
                     self.prepared_batch_iter = 0
+
+                    if self.current_epoch + 1 >= self.total_epoch:
+                        return
 
                     # note that epoch is only increased when actual batch has feeded.
 
@@ -266,6 +290,8 @@ def main():
     batch_size = args.batch_size
     is_test = args.is_test
     test_video_name = args.test_video_name
+    is_multithread = args.multi_thread
+    allow_test_multiprocess = args.allow_test_multiprocess
 
     if is_test:
         video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file,
@@ -297,7 +323,7 @@ def main():
         return
 
     video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file,
-                                        is_training=True)
+                                        is_training=True, total_epoch=total_epoch, is_multithread=is_multithread)
     # summary(model, (3, 224, 224))
 
     model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
@@ -349,10 +375,10 @@ def main():
                 correct = 0
                 correct_k = 0
                 total = 0
-
                 pbar_train_acc = tqdm(total=num_class * (num_train_file // 5))
                 train_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class,
-                                                    num_files=num_train_file // 5, num_file_offset=0)
+                                                    num_files=num_train_file // 5, num_file_offset=0,
+                                                    total_epoch=1, is_multithread=allow_test_multiprocess)
                 while train_data_loader.current_epoch < 1:
                     batch, labels = train_data_loader.feed_mini_batch()
                     outputs = model(batch)
@@ -368,14 +394,12 @@ def main():
                         correct, total, correct / total, correct_k, total, correct_k / total))
                 pbar_train_acc.close()
 
-                # Quit the worker process.
-                train_data_loader.done = True
-
                 print("Train Accuracy : {} / {} ({:.4f})".format(correct, total, correct / total))
 
                 correct, total, correct_k = 0, 0, 0
                 eval_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class,
-                                                   num_files=num_val_file, num_file_offset=num_train_file)
+                                                   num_files=num_val_file, num_file_offset=num_train_file,
+                                                   total_epoch=1, is_multithread=allow_test_multiprocess)
                 while eval_data_loader.current_epoch < 1:
                     batch, labels = eval_data_loader.feed_mini_batch()
                     outputs = model(batch)
@@ -391,8 +415,6 @@ def main():
                     "Val Accuracy : {} / {} ({:.4f} ; Top 5 : {} / {} ({:.4f})".format(correct, total, correct / total,
                                                                                        correct_k, total,
                                                                                        correct_k / total))
-                eval_data_loader.done = True
-
                 model.train()
         pbar.update(batch_size)
         pbar.set_description("Loss : %f" % loss.item())
@@ -400,4 +422,5 @@ def main():
 
 
 if __name__ == "__main__":
+    mp.set_start_method('spawn', force=True)
     main()
