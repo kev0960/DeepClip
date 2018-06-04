@@ -101,20 +101,12 @@ class VideoDataLoader:
         total_frame = (int)(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         frame_stride = total_frame // self.num_frames
 
-        """
-        gpuF = gpufilter.PyramidalFlowFilter(256, 256, 2)
-        gpuF.gamma = [1, 1]  # gains for each level
-        gpuF.maxflow = 1.0  # maximum optical flow value
-        gpuF.smoothIterations = [2, 2]  # smooth iterations per level
-        """
-
         frames = []
         for i in range(0, total_frame, frame_stride)[:self.num_frames]:
             cap.set(cv2.CAP_PROP_POS_FRAMES, i)
             _, frame = cap.read()
             frame_gray = cv2.resize(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), (224, 224))
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            #gpuF.loadImage(frame_gray)
 
             if i < total_frame :
                 cap.set(cv2.CAP_PROP_POS_FRAMES, i + 1)
@@ -127,15 +119,12 @@ class VideoDataLoader:
                 _, frame_gray = cap.read()
                 frame_gray = cv2.resize(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), (224, 224))
 
-            #gpuF.loadImage(next_frame)
-            #gpuF.compute()
 
             flow = cv2.calcOpticalFlowFarneback(frame_gray, next_frame, None,
                                                 pyr_scale=0.5, levels=2,
                                                 winsize=15, iterations=1,
                                                 poly_n=5, poly_sigma=1.2, flags=0)
 
-            #flow = gpuF.getFlow()
             mag, ang = cv2.cartToPolar(flow[..., 0], flow[..., 1])
             hsv = np.zeros((224, 224, 3), dtype=frame.dtype)
             hsv[..., 1] = 255
@@ -146,7 +135,7 @@ class VideoDataLoader:
             frame = self.tf(Image.fromarray(frame))
 
             # [flow, frame] : (2, 3, H, W)
-            frames.append(torch.stack([flow, frame]))
+            frames.append(torch.stack([frame, flow]))
 
         # (N, 2, 3, H, W)
         return torch.stack(frames)
@@ -313,9 +302,13 @@ class SimpleNetwork(nn.Module):
         x = image_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
         x = self.resnet(x)
 
+        print(x.shape)
+
         y = motion_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
         y = self.plain_resnet(y)
-        
+
+        x = torch.mul(x, y)
+
         # Convert (batch_size, num_frames, 2048, 1, 1) to
         # (batch_size, num_frames, 2048)
         x = x.view(self.batch_size, self.num_frames, 2048)
