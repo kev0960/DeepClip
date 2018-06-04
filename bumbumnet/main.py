@@ -101,14 +101,54 @@ class VideoDataLoader:
         total_frame = (int)(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         frame_stride = total_frame // self.num_frames
 
-        frames = []
+        """
+        gpuF = gpufilter.PyramidalFlowFilter(256, 256, 2)
+        gpuF.gamma = [1, 1]  # gains for each level
+        gpuF.maxflow = 1.0  # maximum optical flow value
+        gpuF.smoothIterations = [2, 2]  # smooth iterations per level
+        """
 
+        frames = []
         for i in range(0, total_frame, frame_stride)[:self.num_frames]:
             cap.set(cv2.CAP_PROP_POS_FRAMES, i)
-            ret, frame = cap.read()
-            frame = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-            frames.append(self.tf(frame))
+            _, frame = cap.read()
+            frame_gray = cv2.resize(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), (224, 224))
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            #gpuF.loadImage(frame_gray)
 
+            if i < total_frame :
+                cap.set(cv2.CAP_PROP_POS_FRAMES, i + 1)
+                _, next_frame = cap.read()
+                next_frame = cv2.resize(cv2.cvtColor(next_frame, cv2.COLOR_BGR2GRAY), (224, 224))
+
+            else :
+                cap.set(cv2.CAP_PROP_POS_FRAMES, i - 1)
+                next_frame = frame_gray
+                _, frame_gray = cap.read()
+                frame_gray = cv2.resize(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), (224, 224))
+
+            #gpuF.loadImage(next_frame)
+            #gpuF.compute()
+
+            flow = cv2.calcOpticalFlowFarneback(frame_gray, next_frame, None,
+                                                pyr_scale=0.5, levels=2,
+                                                winsize=15, iterations=1,
+                                                poly_n=5, poly_sigma=1.2, flags=0)
+
+            #flow = gpuF.getFlow()
+            mag, ang = cv2.cartToPolar(flow[..., 0], flow[..., 1])
+            hsv = np.zeros((224, 224, 3), dtype=frame.dtype)
+            hsv[..., 1] = 255
+            hsv[..., 0] = ang * 180 / np.pi / 2
+            hsv[..., 2] = cv2.normalize(mag, None, 0, 255, cv2.NORM_MINMAX)
+
+            flow = trn.Compose([trn.ToTensor()])(cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR))
+            frame = self.tf(Image.fromarray(frame))
+
+            # [flow, frame] : (2, 3, H, W)
+            frames.append(torch.stack([flow, frame]))
+
+        # (N, 2, 3, H, W)
         return torch.stack(frames)
 
     def transform_frame(self):
@@ -255,18 +295,27 @@ class SimpleNetwork(nn.Module):
         # Remove the final FC layer of the pretrained Resnet
         self.pretrained_resnet = models.resnet50(pretrained=True).cuda()
         self.resnet = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
-        # for param in self.resnet.parameters():
-        #    param.required_grad = False
+        for param in self.resnet.parameters():
+            param.required_grad = False
+
+        self.plain_resnet = models.resnet50().cuda()
+        self.temporal = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
 
         self.lstm = nn.LSTM(input_size=2048, hidden_size=hidden_lstm, batch_first=True).cuda()
         self.fc = nn.Linear(hidden_lstm, num_class).cuda()
         torch.nn.init.xavier_normal_(self.fc.weight)
 
     def forward(self, x):
-        # x : (batch_size, num_frames, C, H, W)
-        x = x.view(self.batch_size * self.num_frames, 3, 224, 224)
+        # x : (batch_size, num_frames, 2, C, H, W)
+        image_flow = x[:,:,0,:,:,:]
+        motion_flow = x[:,:,1,:,:,:]
+
+        x = image_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
         x = self.resnet(x)
 
+        y = motion_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
+        y = self.plain_resnet(y)
+        
         # Convert (batch_size, num_frames, 2048, 1, 1) to
         # (batch_size, num_frames, 2048)
         x = x.view(self.batch_size, self.num_frames, 2048)
@@ -291,6 +340,7 @@ def main():
     is_test = args.is_test
     test_video_name = args.test_video_name
     is_multithread = args.multi_thread
+    print("Multithread : ", is_multithread, args.multi_thread )
     allow_test_multiprocess = args.allow_test_multiprocess
 
     if is_test:
