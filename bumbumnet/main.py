@@ -280,17 +280,18 @@ class SimpleNetwork(nn.Module):
         self.batch_size = batch_size
         self.num_frames = num_frames
         self.hidden_size = hidden_lstm
+        self.resnet_output = 512 # resnet18, 34 : 512, resnet50 : 2048
 
         # Remove the final FC layer of the pretrained Resnet
-        self.pretrained_resnet = models.resnet50(pretrained=True).cuda()
+        self.pretrained_resnet = models.resnet34(pretrained=True).cuda()
         self.resnet = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
         for param in self.resnet.parameters():
             param.required_grad = False
 
-        self.plain_resnet = models.resnet50().cuda()
+        self.plain_resnet = models.resnet34().cuda()
         self.temporal = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
 
-        self.lstm = nn.LSTM(input_size=2048, hidden_size=hidden_lstm, batch_first=True).cuda()
+        self.lstm = nn.LSTM(input_size=self.resnet_output, hidden_size=hidden_lstm, batch_first=True).cuda()
         self.fc = nn.Linear(hidden_lstm, num_class).cuda()
         torch.nn.init.xavier_normal_(self.fc.weight)
 
@@ -301,17 +302,16 @@ class SimpleNetwork(nn.Module):
 
         x = image_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
         x = self.resnet(x)
-
-        print(x.shape)
+        x = x.view(self.batch_size, self.num_frames, self.resnet_output)
 
         y = motion_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
-        y = self.plain_resnet(y)
+        y = self.temporal(y)
+        y = y.view(self.batch_size, self.num_frames, self.resnet_output)
 
         x = torch.mul(x, y)
 
         # Convert (batch_size, num_frames, 2048, 1, 1) to
         # (batch_size, num_frames, 2048)
-        x = x.view(self.batch_size, self.num_frames, 2048)
         x, _ = self.lstm(x)
 
         # Take the mean of every output vectors
