@@ -273,9 +273,9 @@ class VideoDataLoader:
             self.cond.release()
 
 
-class SimpleNetwork(nn.Module):
+class TwoStreamNetwork(nn.Module):
     def __init__(self, num_class, num_frames, batch_size=5, hidden_lstm=512):
-        super(SimpleNetwork, self).__init__()
+        super(TwoStreamNetwork, self).__init__()
         self.num_class = num_class
         self.batch_size = batch_size
         self.num_frames = num_frames
@@ -284,39 +284,52 @@ class SimpleNetwork(nn.Module):
 
         # Remove the final FC layer of the pretrained Resnet
         self.pretrained_resnet = models.resnet34(pretrained=True).cuda()
-        self.resnet = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
-        for param in self.resnet.parameters():
+        self.spatial = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
+        for param in self.spatial.parameters():
             param.required_grad = False
 
         self.plain_resnet = models.resnet34().cuda()
-        self.temporal = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
+        self.temporal = nn.Sequential(*list(self.plain_resnet.children())[:-1]).cuda()
 
         self.lstm = nn.LSTM(input_size=self.resnet_output, hidden_size=hidden_lstm, batch_first=True).cuda()
         self.fc = nn.Linear(hidden_lstm, num_class).cuda()
+
         torch.nn.init.xavier_normal_(self.fc.weight)
+        #torch.nn.init.normal_(self.temporal.weight)
 
     def forward(self, x):
         # x : (batch_size, num_frames, 2, C, H, W)
         image_flow = x[:,:,0,:,:,:]
         motion_flow = x[:,:,1,:,:,:]
 
-        x = image_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
-        x = self.resnet(x)
-        x = x.view(self.batch_size, self.num_frames, self.resnet_output)
+        spatial_stream = image_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
+        temporal_stream = motion_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
 
-        y = motion_flow.view(self.batch_size * self.num_frames, 3, 224, 224)
-        y = self.temporal(y)
-        y = y.view(self.batch_size, self.num_frames, self.resnet_output)
+        # First, let it pass the 4 layers.
+        for i in range(4) :
+            spatial_stream = self.spatial[i](spatial_stream)
+            temporal_stream = self.temporal[i](temporal_stream)
 
-        x = torch.mul(x, y)
+        # Before entering the first BottleNeck block,
+        # Add output from the motion stream to the spatial stream
+        spatial_stream = spatial_stream + temporal_stream
+
+        for i in range(4, 8):
+            spatial_stream = self.spatial[i](spatial_stream)
+            temporal_stream = self.temporal[i](temporal_stream)
+
+            spatial_stream = spatial_stream + temporal_stream
+
+        spatial_stream = self.spatial[8](spatial_stream)
+        spatial_stream = spatial_stream.view(self.batch_size, self.num_frames, self.resnet_output)
 
         # Convert (batch_size, num_frames, 2048, 1, 1) to
         # (batch_size, num_frames, 2048)
-        x, _ = self.lstm(x)
+        spatial_stream, _ = self.lstm(spatial_stream)
 
         # Take the mean of every output vectors
         # x : (batch_size, 2048)
-        x = torch.mean(x, dim=1, keepdim=True)
+        x = torch.mean(spatial_stream, dim=1, keepdim=True)
 
         x = x.view(self.batch_size, self.hidden_size)
 
@@ -340,7 +353,7 @@ def main():
         video_data_loader = VideoDataLoader([], batch_size=batch_size, num_keywords=num_class, num_files=num_train_file,
                                             is_training=False, is_test=True, test_file_name=test_video_name)
 
-        model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
+        model = TwoStreamNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
                               batch_size=1).cuda()
         if os.path.isfile('checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size)):
             checkpoint = torch.load('checkpoint_{}_{}_{}.pth.tar'.format(num_class, num_train_file, batch_size))
@@ -369,7 +382,7 @@ def main():
                                         is_training=True, total_epoch=total_epoch, is_multithread=is_multithread)
     # summary(model, (3, 224, 224))
 
-    model = SimpleNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
+    model = TwoStreamNetwork(video_data_loader.num_class, num_frames=video_data_loader.num_frames,
                           batch_size=batch_size).cuda()
 
     criterion = nn.CrossEntropyLoss()
