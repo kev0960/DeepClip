@@ -90,10 +90,11 @@ class BasicBlock(nn.Module):
         self.downsample = downsample
         self.stride = stride
 
-    def forward(self, x):
+    def forward(self, x, temporal_stream):
         residual = x
 
-        out = self.conv1(x)
+        z = x * F.relu(temporal_stream)
+        out = self.conv1(z)
         out = self.bn1(out)
         out = self.relu(out)
 
@@ -146,8 +147,6 @@ class Bottleneck(nn.Module):
         out = self.relu(out)
 
         return out
-
-
 class ResNet(nn.Module):
 
     def __init__(self, block, layers, num_classes=1000):
@@ -270,12 +269,12 @@ class SimpleNetwork(nn.Module):
         self.resnet_output = 512 # resnet18, 34 : 512, resnet50 : 2048
 
         # Remove the final FC layer of the pretrained Resnet
-        self.pretrained_resnet = models.resnet18(pretrained=True).cuda()
+        self.pretrained_resnet = resnet34(pretrained=True).cuda()
         self.spatial = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
         for param in self.spatial.parameters():
             param.required_grad = False
 
-        self.plain_resnet = models.resnet18().cuda()
+        self.plain_resnet = models.resnet34().cuda()
         self.temporal = nn.Sequential(*list(self.plain_resnet.children())[:-1]).cuda()
 
         self.lstm = nn.LSTM(input_size=self.resnet_output, hidden_size=hidden_lstm, batch_first=True).cuda()
@@ -299,13 +298,12 @@ class SimpleNetwork(nn.Module):
 
         # Before entering the first BottleNeck block,
         # Add output from the motion stream to the spatial stream
-        spatial_stream = spatial_stream + temporal_stream
 
         for i in range(4, 8):
-            spatial_stream = self.spatial[i](spatial_stream)
-            temporal_stream = self.temporal[i](temporal_stream)
-
-            spatial_stream = spatial_stream + temporal_stream
+            for j in range(len(self.spatial[i])):
+                print(self.spatial[i][j])
+                spatial_stream = self.spatial[i][j](spatial_stream, temporal_stream)
+                temporal_stream = self.temporal[i][j](temporal_stream)
 
         spatial_stream = self.spatial[8](spatial_stream)
         spatial_stream = spatial_stream.view(self.batch_size, self.num_frames, self.resnet_output)
