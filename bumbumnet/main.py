@@ -1,4 +1,3 @@
-import re
 import os
 import argparse
 import numpy as np
@@ -11,11 +10,10 @@ import torchvision.models as models
 import torch
 import torch.nn as nn
 import torch.nn.parallel
-import torch.backends.cudnn as cudnn
+import torch.nn.functional as F
 import torch.optim
 import torch.utils.data
 from torchvision import transforms as trn
-import torchvision.datasets as datasets
 from tqdm import tqdm
 from random import shuffle
 
@@ -317,7 +315,7 @@ class TwoStreamNetwork(nn.Module):
             spatial_stream = self.spatial[i](spatial_stream)
             temporal_stream = self.temporal[i](temporal_stream)
 
-            spatial_stream = spatial_stream * nn.ReLU(temporal_stream)
+            spatial_stream = spatial_stream * F.relu(temporal_stream)
 
         spatial_stream = self.spatial[8](spatial_stream)
         spatial_stream = spatial_stream.view(self.batch_size, self.num_frames, self.resnet_output)
