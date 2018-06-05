@@ -2,3 +2,4 @@ bumbumnet/training
 ./bumbumnet/checkpoint.pth.tar
 bumbumnet/log*
 bumbumnet/checkpoint*.pth.tar
+.idea/

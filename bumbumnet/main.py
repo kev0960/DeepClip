@@ -288,14 +288,13 @@ class TwoStreamNetwork(nn.Module):
         for param in self.spatial.parameters():
             param.required_grad = False
 
-        self.plain_resnet = models.resnet34().cuda()
+        self.plain_resnet = models.resnet34(pretrained=True).cuda()
         self.temporal = nn.Sequential(*list(self.plain_resnet.children())[:-1]).cuda()
 
         self.lstm = nn.LSTM(input_size=self.resnet_output, hidden_size=hidden_lstm, batch_first=True).cuda()
         self.fc = nn.Linear(hidden_lstm, num_class).cuda()
 
         torch.nn.init.xavier_normal_(self.fc.weight)
-        #torch.nn.init.normal_(self.temporal.weight)
 
     def forward(self, x):
         # x : (batch_size, num_frames, 2, C, H, W)
@@ -312,13 +311,13 @@ class TwoStreamNetwork(nn.Module):
 
         # Before entering the first BottleNeck block,
         # Add output from the motion stream to the spatial stream
-        spatial_stream = spatial_stream + temporal_stream
+        spatial_stream = spatial_stream * nn.ReLU(temporal_stream)
 
         for i in range(4, 8):
             spatial_stream = self.spatial[i](spatial_stream)
             temporal_stream = self.temporal[i](temporal_stream)
 
-            spatial_stream = spatial_stream + temporal_stream
+            spatial_stream = spatial_stream * nn.ReLU(temporal_stream)
 
         spatial_stream = self.spatial[8](spatial_stream)
         spatial_stream = spatial_stream.view(self.batch_size, self.num_frames, self.resnet_output)
