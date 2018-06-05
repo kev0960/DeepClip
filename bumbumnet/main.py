@@ -309,7 +309,7 @@ class TwoStreamNetwork(nn.Module):
 
         # Before entering the first BottleNeck block,
         # Add output from the motion stream to the spatial stream
-        spatial_stream = spatial_stream * nn.ReLU(temporal_stream)
+        spatial_stream = spatial_stream * F.relu(temporal_stream)
 
         for i in range(4, 8):
             spatial_stream = self.spatial[i](spatial_stream)
