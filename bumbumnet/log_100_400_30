@@ -1,0 +1,3041 @@
+Multithread :  True True
+['bubbling', 'frying', 'playing+sports', 'typing', 'hanging', 'camping', 'bulldozing', 'turning', 'laughing', 'dining', 'cheering', 'mopping', 'boxing', 'unloading', 'flying', 'grilling', 'waxing', 'playing+music', 'assembling', 'hiking', 'sprinting', 'pitching', 'wrapping', 'hammering', 'bending', 'drenching', 'boating', 'biting', 'competing', 'scratching', 'drumming', 'spreading', 'washing', 'tying', 'shaking', 'sniffing', 'baking', 'stacking', 'opening', 'parading', 'clapping', 'speaking', 'splashing', 'dancing', 'crashing', 'pushing', 'slapping', 'welding', 'whistling', 'grooming', 'vacuuming', 'knitting', 'drinking', 'stitching', 'resting', 'taping', 'drilling', 'clinging', 'picking', 'crafting', 'handwriting', 'reading', 'bouncing', 'yawning', 'dripping', 'sleeping', 'lifting', 'kicking', 'colliding', 'planting', 'carving', 'cracking', 'entering', 'stretching', 'rowing', 'feeding', 'descending', 'gardening', 'shoveling', 'stirring', 'covering', 'floating', 'snowing', 'peeling', 'smashing', 'crushing', 'barking', 'shopping', 'racing', 'riding', 'performing', 'shredding', 'walking', 'closing', 'erupting', 'watering', 'photographing', 'folding', 'protesting', 'tattooing']
+Current total iteration : 400 4.6270 
+Current total iteration : 800 4.6192 
+Current total iteration : 1200 4.6165 
+Current total iteration : 1600 4.6173 
+Current total iteration : 2000 4.6060 
+Current total iteration : 2400 4.6231 
+Current total iteration : 2800 4.6176 
+Current total iteration : 3200 4.5954 
+Current total iteration : 3600 4.6109 
+Current total iteration : 4000 4.6066 
+Current total iteration : 4400 4.6148 
+Current total iteration : 4800 4.6011 
+Current total iteration : 5200 4.5869 
+Current total iteration : 5600 4.6146 
+Current total iteration : 6000 4.5970 
+Current total iteration : 6400 4.5919 
+Current total iteration : 6800 4.5875 
+Current total iteration : 7200 4.5686 
+Current total iteration : 7600 4.5549 
+Current total iteration : 8000 4.5580 
+Current total iteration : 8400 4.5375 
+Current total iteration : 8800 4.5147 
+Current total iteration : 9200 4.5271 
+Current total iteration : 9600 4.4937 
+Current total iteration : 10000 4.5162 
+Current total iteration : 10400 4.5037 
+Current total iteration : 10800 4.4552 
+Current total iteration : 11200 4.4679 
+Current total iteration : 11600 4.4537 
+Current total iteration : 12000 4.4705 
+Current total iteration : 12400 4.4167 
+Current total iteration : 12800 4.4100 
+Current total iteration : 13200 4.3547 
+Current total iteration : 13600 4.4277 
+Current total iteration : 14000 4.4388 
+Current total iteration : 14400 4.3827 
+Current total iteration : 14800 4.3627 
+Current total iteration : 15200 4.3986 
+Current total iteration : 15600 4.3387 
+Current total iteration : 16000 4.3280 
+Current total iteration : 16400 4.3589 
+Current total iteration : 16800 4.2955 
+Current total iteration : 17200 4.3216 
+Current total iteration : 17600 4.3688 
+Current total iteration : 18000 4.3107 
+Current total iteration : 18400 4.2602 
+Current total iteration : 18800 4.2713 
+Current total iteration : 19200 4.2617 
+Current total iteration : 19600 4.3012 
+Current total iteration : 20000 4.2134 
+Current total iteration : 20400 4.2569 
+Current total iteration : 20800 4.2167 
+Current total iteration : 21200 4.2282 
+Current total iteration : 21600 4.1650 
+Current total iteration : 22000 4.2604 
+Current total iteration : 22400 4.2341 
+Current total iteration : 22800 4.2170 
+Current total iteration : 23200 4.1290 
+Current total iteration : 23600 4.0503 
+Current total iteration : 24000 4.1562 
+Current total iteration : 24400 4.1060 
+Current total iteration : 24800 4.1431 
+Current total iteration : 25200 4.1554 
+Current total iteration : 25600 4.2104 
+Current total iteration : 26000 4.0965 
+Current total iteration : 26400 4.1455 
+Current total iteration : 26800 4.1168 
+Current total iteration : 27200 4.0311 
+Current total iteration : 27600 4.0124 
+Current total iteration : 28000 3.9949 
+Current total iteration : 28400 4.0615 
+Current total iteration : 28800 4.1003 
+Current total iteration : 29200 4.0998 
+Current total iteration : 29600 4.0802 
+Current total iteration : 30000 4.0952 
+Current total iteration : 30400 4.0668 
+Current total iteration : 30800 3.9770 
+Current total iteration : 31200 4.0303 
+Current total iteration : 31600 4.0229 
+Current total iteration : 32000 4.0161 
+Current total iteration : 32400 4.0543 
+Current total iteration : 32800 3.9118 
+Current total iteration : 33200 3.9275 
+Current total iteration : 33600 3.9938 
+Current total iteration : 34000 4.0041 
+Current total iteration : 34400 3.8740 
+Current total iteration : 34800 3.9496 
+Current total iteration : 35200 3.9322 
+Current total iteration : 35600 3.8885 
+Current total iteration : 36000 3.9008 
+Current total iteration : 36400 3.9276 
+Current total iteration : 36800 3.9558 
+Current total iteration : 37200 4.0546 
+Current total iteration : 37600 3.9211 
+Current total iteration : 38000 3.9162 
+Current total iteration : 38400 3.8939 
+Current total iteration : 38800 3.9377 
+Current total iteration : 39200 3.9203 
+Current total iteration : 39600 3.8029 
+Current total iteration : 40000 3.8205 
+Epoch #2 :: [Iter : 40000 ] Loss : 4.2584
+['bubbling', 'frying', 'playing+sports', 'typing', 'hanging', 'camping', 'bulldozing', 'turning', 'laughing', 'dining', 'cheering', 'mopping', 'boxing', 'unloading', 'flying', 'grilling', 'waxing', 'playing+music', 'assembling', 'hiking', 'sprinting', 'pitching', 'wrapping', 'hammering', 'bending', 'drenching', 'boating', 'biting', 'competing', 'scratching', 'drumming', 'spreading', 'washing', 'tying', 'shaking', 'sniffing', 'baking', 'stacking', 'opening', 'parading', 'clapping', 'speaking', 'splashing', 'dancing', 'crashing', 'pushing', 'slapping', 'welding', 'whistling', 'grooming', 'vacuuming', 'knitting', 'drinking', 'stitching', 'resting', 'taping', 'drilling', 'clinging', 'picking', 'crafting', 'handwriting', 'reading', 'bouncing', 'yawning', 'dripping', 'sleeping', 'lifting', 'kicking', 'colliding', 'planting', 'carving', 'cracking', 'entering', 'stretching', 'rowing', 'feeding', 'descending', 'gardening', 'shoveling', 'stirring', 'covering', 'floating', 'snowing', 'peeling', 'smashing', 'crushing', 'barking', 'shopping', 'racing', 'riding', 'performing', 'shredding', 'walking', 'closing', 'erupting', 'watering', 'photographing', 'folding', 'protesting', 'tattooing']
+Train Accuracy : 1037 / 8000 (0.1296)
+['bubbling', 'frying', 'playing+sports', 'typing', 'hanging', 'camping', 'bulldozing', 'turning', 'laughing', 'dining', 'cheering', 'mopping', 'boxing', 'unloading', 'flying', 'grilling', 'waxing', 'playing+music', 'assembling', 'hiking', 'sprinting', 'pitching', 'wrapping', 'hammering', 'bending', 'drenching', 'boating', 'biting', 'competing', 'scratching', 'drumming', 'spreading', 'washing', 'tying', 'shaking', 'sniffing', 'baking', 'stacking', 'opening', 'parading', 'clapping', 'speaking', 'splashing', 'dancing', 'crashing', 'pushing', 'slapping', 'welding', 'whistling', 'grooming', 'vacuuming', 'knitting', 'drinking', 'stitching', 'resting', 'taping', 'drilling', 'clinging', 'picking', 'crafting', 'handwriting', 'reading', 'bouncing', 'yawning', 'dripping', 'sleeping', 'lifting', 'kicking', 'colliding', 'planting', 'carving', 'cracking', 'entering', 'stretching', 'rowing', 'feeding', 'descending', 'gardening', 'shoveling', 'stirring', 'covering', 'floating', 'snowing', 'peeling', 'smashing', 'crushing', 'barking', 'shopping', 'racing', 'riding', 'performing', 'shredding', 'walking', 'closing', 'erupting', 'watering', 'photographing', 'folding', 'protesting', 'tattooing']
+tensor([[ 30,  17,  40,  12,  99],
+        [ 98,  10,  87,  39,  40],
+        [ 57,  77,   5,  75,  58],
+        [ 64,   0,  81,  47,  14],
+        [ 15,   1,  13,  94,   0]], device='cuda:0') tensor([ 0,  0,  0,  0,  0], device='cuda:0')
+tensor([[ 77,  69,  19,  95,  58],
+        [ 55,  16,  97,  83,  51],
+        [ 61,  30,  66,  91,  17],
+        [ 48,  46,  16,   8,  55],
+        [ 99,  46,  55,  48,  16]], device='cuda:0') tensor([ 0,  0,  0,  0,  0], device='cuda:0')
+tensor([[  5,  44,  19,  40,  87],
+        [ 90,  12,  43,  47,  10],
+        [ 15,   1,  13,  47,   9],
+        [ 68,  44,  78,  84,  71],
+        [  0,  81,  64,  42,  80]], device='cuda:0') tensor([ 0,  0,  0,  0,  0], device='cuda:0')
+tensor([[ 17,  66,  61,  30,  47],
+        [  0,  47,  81,  42,  64],
+        [  0,  57,  64,   5,  95],
+        [ 80,   0,  94,  81,  64],
+        [ 82,  78,  80,  60,  76]], device='cuda:0') tensor([ 0,  0,  0,  0,  0], device='cuda:0')
+tensor([[ 60,  82,  78,  59,  11],
+        [ 14,  81,  94,  44,  80],
+        [ 72,  39,  98,  92,  68],
+        [ 60,  54,  59,  71,  97],
+        [ 60,  97,  11,  59,  32]], device='cuda:0') tensor([ 0,  0,  0,  0,  0], device='cuda:0')
+tensor([[ 94,   0,  81,  80,  64],
+        [ 57,   0,  75,   5,  25],
+        [ 14,  80,  94,  81,  74],
+        [ 90,  12,  47,  43,  10],
+        [  0,  81,  64,  80,  42]], device='cuda:0') tensor([ 0,  0,  0,  0,  0], device='cuda:0')
+tensor([[ 87,  12,  10,  98,  72],
+        [ 15,   1,  13,   9,   0],
+        [  1,   3,  36,  79,  53],
+        [ 80,  47,  94,  56,  91],
+        [ 60,  50,  86,  71,  99]], device='cuda:0') tensor([ 1,  1,  1,  1,  1], device='cuda:0')
+tensor([[  1,  94,  15,   0,  31],
+        [ 77,  15,   1,  75,  79],
+        [  1,  15,  79,  36,  30],
+        [ 78,  71,  69,  80,  31],
+        [  0,  94,  80,  76,  15]], device='cuda:0') tensor([ 1,  1,  1,  1,  1], device='cuda:0')
+tensor([[ 59,  55,  97,  60,  51],
+        [ 15,   1,   6,   9,  54],
+        [ 36,  94,  71,   1,  15],
+        [ 15,  59,  47,  53,   3],
+        [  9,  87,  40,  41,  30]], device='cuda:0') tensor([ 1,  1,  1,  1,  1], device='cuda:0')
+tensor([[ 94,  15,   0,  81,  80],
+        [ 15,   1,   9,  79,  36],
+        [ 15,   1,  47,  36,  79],
+        [ 47,  15,   0,  94,  17],
+        [ 15,  13,   6,  98,  39]], device='cuda:0') tensor([ 1,  1,  1,  1,  1], device='cuda:0')
+tensor([[ 15,   1,  94,  36,  59],
+        [ 15,   1,  30,  36,  61],
+        [ 65,  54,  53,  36,  59],
+        [ 49,   3,  55,  53,  56],
+        [  3,  99,  47,  15,  30]], device='cuda:0') tensor([ 1,  1,  1,  1,  1], device='cuda:0')
+tensor([[  1,  79,  30,  15,   9],
+        [ 47,  15,   0,  80,  94],
+        [ 15,  78,  71,  84,  52],
+        [ 15,   1,  54,  31,  36],
+        [  1,  79,  15,  36,   9]], device='cuda:0') tensor([ 1,  1,  1,  1,  1], device='cuda:0')
+tensor([[ 86,  99,  63,  49,  50],
+        [ 67,  20,   2,  21,  28],
+        [ 88,  44,  68,  71,  61],
+        [ 67,  20,  21,   2,  28],
+        [ 82,  44,  14,  80,  68]], device='cuda:0') tensor([ 2,  2,  2,  2,  2], device='cuda:0')
+tensor([[ 10,  12,  98,  87,  40],
+        [ 60,  61,  11,  59,  73],
+        [ 67,  28,  20,   2,  88],
+        [ 20,  21,  67,  88,   2],
+        [ 67,   2,  20,  28,  21]], device='cuda:0') tensor([ 2,  2,  2,  2,  2], device='cuda:0')
+tensor([[ 87,  98,  40,   9,  10],
+        [ 10,  12,  98,  39,  28],
+        [ 88,  67,  20,  21,  28],
+        [ 59,  60,  71,  11,  26],
+        [ 67,  20,   2,  21,  88]], device='cuda:0') tensor([ 2,  2,  2,  2,  2], device='cuda:0')
+tensor([[ 67,  81,  74,  20,  88],
+        [ 68,  72,  47,  82,  44],
+        [ 20,  67,  21,  88,   2],
+        [ 87,  40,  98,  10,  12],
+        [ 94,  64,  80,   3,  56]], device='cuda:0') tensor([ 2,  2,  2,  2,  2], device='cuda:0')
+tensor([[ 12,  90,  17,  46,  40],
+        [ 74,  81,  88,  42,   0],
+        [ 10,  28,  21,  20,  39],
+        [ 21,  10,  20,  28,  88],
+        [ 44,  82,  68,  14,  80]], device='cuda:0') tensor([ 2,  2,  2,  2,  2], device='cuda:0')
+tensor([[ 88,  44,  68,  81,  64],
+        [ 67,  20,  21,  28,   2],
+        [ 82,  68,  44,  80,  64],
+        [ 43,  90,  46,  12,  48],
+        [ 82,  14,  44,  68,  88]], device='cuda:0') tensor([ 2,  2,  2,  2,  2], device='cuda:0')
+tensor([[ 61,  66,  72,  37,  44],
+        [ 61,  59,  37,  60,  22],
+        [ 41,  72,  87,  40,   9],
+        [ 47,  17,  30,  72,  91],
+        [ 49,  60,  59,  53,  33]], device='cuda:0') tensor([ 3,  3,  3,  3,  3], device='cuda:0')
+tensor([[ 55,  97,  51,  16,  59],
+        [ 78,  87,  91,  61,  41],
+        [ 49,  59,  65,  61,   3],
+        [ 49,  59,  60,  41,  32],
+        [ 94,  80,  82,  78,  60]], device='cuda:0') tensor([ 3,  3,  3,  3,  3], device='cuda:0')
+tensor([[ 62,  72,  67,  92,  60],
+        [ 46,  48,  41,  55,  99],
+        [ 80,  78,  82,  94,  56],
+        [ 78,   6,  69,  94,  80],
+        [ 49,  32,  59,  60,  22]], device='cuda:0') tensor([ 3,  3,  3,  3,  3], device='cuda:0')
+tensor([[ 47,  99,  30,  17,   3],
+        [ 59,  97,  51,  60,  55],
+        [ 37,  61,  48,  11,  55],
+        [  3,   1,  30,  15,  79],
+        [ 14,  60,  64,  82,  78]], device='cuda:0') tensor([ 3,  3,  3,  3,  3], device='cuda:0')
+tensor([[ 30,  99,  17,  15,  79],
+        [ 55,   3,  65,  60,  61],
+        [ 30,  99,  15,  17,  47],
+        [ 30,  99,  17,   3,  15],
+        [ 49,  56,  91,  41,   3]], device='cuda:0') tensor([ 3,  3,  3,  3,  3], device='cuda:0')
+tensor([[ 59,  49,  53,  65,  61],
+        [ 55,  59,  51,  97,  16],
+        [ 55,  99,   3,  53,  49],
+        [ 55,  99,   3,  49,  53],
+        [ 55,  99,   3,  47,  97]], device='cuda:0') tensor([ 3,  3,  3,  3,  3], device='cuda:0')
+tensor([[  0,  76,  80,  25,  57],
+        [ 10,  98,  87,  12,  39],
+        [ 80,  94,  42,  81,  76],
+        [ 77,  95,  57,  58,  69],
+        [ 57,  98,  87,  39,   4]], device='cuda:0') tensor([ 4,  4,  4,  4,  4], device='cuda:0')
+tensor([[ 47,  17,  90,  12,  30],
+        [ 72,  78,  66,  68,  92],
+        [ 77,  19,  95,  58,  69],
+        [ 60,  11,  50,  97,  71],
+        [ 57,  77,  58,  95,   4]], device='cuda:0') tensor([ 4,  4,  4,  4,  4], device='cuda:0')
+tensor([[ 77,  57,  58,  69,  95],
+        [ 64,  80,  14,  82,  94],
+        [ 77,  19,  95,  58,  69],
+        [ 72,  41,  92,  66,  68],
+        [ 14,  64,  81,  82,  44]], device='cuda:0') tensor([ 4,  4,  4,  4,  4], device='cuda:0')
+tensor([[ 77,  28,  21,  87,  20],
+        [ 15,  47,  94,   1,  36],
+        [ 80,  42,   0,  81,  94],
+        [ 40,  41,  12,  10,  46],
+        [ 87,  72,  98,  41,  40]], device='cuda:0') tensor([ 4,  4,  4,  4,  4], device='cuda:0')
+tensor([[ 19,  78,   6,  69,  77],
+        [ 87,  61,  41,   9,   4],
+        [ 14,  42,  74,  26,  44],
+        [ 19,  77,  95,  58,  57],
+        [ 19,  89,  92,  78,  88]], device='cuda:0') tensor([ 4,  4,  4,  4,  4], device='cuda:0')
+tensor([[ 10,  88,  20,  12,  74],
+        [ 72,  87,  41,  92,  66],
+        [ 80,  78,  94,  57,   5],
+        [ 40,  99,   9,  46,  41],
+        [ 77,  57,  95,  58,   0]], device='cuda:0') tensor([ 4,  4,  4,  4,  4], device='cuda:0')
+tensor([[  6,  19,  69,  71,  78],
+        [ 94,  80,  71,   6,  76],
+        [ 86,  71,  44,  19,  50],
+        [ 78,   6,  80,  19,  69],
+        [ 77,  57,  69,  58,  75]], device='cuda:0') tensor([ 5,  5,  5,  5,  5], device='cuda:0')
+tensor([[ 99,  46,  16,  55,  48],
+        [ 78,  94,  80,  82,  71],
+        [ 94,  80,  76,  81,   0],
+        [ 17,  30,  47,  12,  90],
+        [ 15,   9,  87,   1,  77]], device='cuda:0') tensor([ 5,  5,  5,  5,  5], device='cuda:0')
+tensor([[ 47,  17,  30,  90,  12],
+        [ 19,  74,   6,  42,  76],
+        [ 49,  78,  56,  80,  65],
+        [ 46,  90,  12,  55,  48],
+        [ 77,  57,  58,  95,  69]], device='cuda:0') tensor([ 5,  5,  5,  5,  5], device='cuda:0')
+tensor([[ 80,  94,  81,   0,  42],
+        [ 46,  90,  48,  99,  30],
+        [ 47,   0,  42,  81,  40],
+        [ 78,  69,   6,  19,  77],
+        [ 91,  15,  78,  57,   9]], device='cuda:0') tensor([ 5,  5,  5,  5,  5], device='cuda:0')
+tensor([[ 78,  82,  80,  56,  64],
+        [ 19,  78,  82,  89,  92],
+        [  6,  94,  71,  80,  19],
+        [ 61,  22,  83,  65,  59],
+        [ 17,  30,  47,  12,  99]], device='cuda:0') tensor([ 5,  5,  5,  5,  5], device='cuda:0')
+tensor([[ 15,   9,   1,  87,  75],
+        [ 80,  94,  82,  64,  78],
+        [ 41,   9,  87,  52,  91],
+        [ 94,  80,   6,  76,  71],
+        [ 19,  86,   6,  69,  78]], device='cuda:0') tensor([ 5,  5,  5,  5,  5], device='cuda:0')
+tensor([[  6,  94,  80,  78,  69],
+        [ 78,  80,   6,  94,  82],
+        [ 19,   6,  69,  77,  78],
+        [  6,  69,   5,  19,  77],
+        [  6,  19,  78,  69,  76]], device='cuda:0') tensor([ 6,  6,  6,  6,  6], device='cuda:0')
+tensor([[  6,  19,  71,  74,  76],
+        [ 11,  60,  67,  45,  50],
+        [ 15,  69,   1,  54,   6],
+        [ 69,   6,  71,  31,  19],
+        [  6,  76,  19,  80,  94]], device='cuda:0') tensor([ 6,  6,  6,  6,  6], device='cuda:0')
+tensor([[  5,  19,  54,  87,  36],
+        [ 19,  78,   6,  76,  57],
+        [ 88,  28,  67,  10,  21],
+        [ 87,   9,  15,  13,  91],
+        [  6,  69,  78,  19,  71]], device='cuda:0') tensor([ 6,  6,  6,  6,  6], device='cuda:0')
+tensor([[ 82,  80,  78,  94,  76],
+        [ 69,   6,  71,  19,  77],
+        [  6,  69,  15,  71,   5],
+        [  6,  19,  69,  71,  78],
+        [  6,  69,  78,  71,  19]], device='cuda:0') tensor([ 6,  6,  6,  6,  6], device='cuda:0')
+tensor([[ 78,  82,  80,  19,  76],
+        [ 82,  19,  78,  76,  80],
+        [ 87,   9,   6,  15,  13],
+        [ 80,  94,  78,  82,  76],
+        [ 44,  82,  94,  80,  78]], device='cuda:0') tensor([ 6,  6,  6,  6,  6], device='cuda:0')
+tensor([[ 69,  71,   6,  94,  80],
+        [ 78,   6,  80,  76,  82],
+        [  6,  78,  19,  76,  82],
+        [ 80,  94,  78,  82,  76],
+        [ 15,   1,  69,   9,  54]], device='cuda:0') tensor([ 6,  6,  6,  6,  6], device='cuda:0')
+tensor([[ 41,  49,  99,  22,  65],
+        [ 46,  99,  41,  48,  40],
+        [ 82,  78,  60,  64,  80],
+        [ 20,  88,  68,  67,  28],
+        [ 82,  80,  14,  94,  64]], device='cuda:0') tensor([ 7,  7,  7,  7,  7], device='cuda:0')
+tensor([[ 19,  88,  21,  28,   2],
+        [ 19,  42,  76,  68,   0],
+        [ 60,  59,  97,  65,  71],
+        [ 60,  72,  11,  93,  61],
+        [ 78,  72,  62,  60,  92]], device='cuda:0') tensor([ 7,  7,  7,  7,  7], device='cuda:0')
+tensor([[ 60,  71,  59,  65,  97],
+        [ 87,  98,  72,  39,  10],
+        [ 46,  99,  48,  40,  43],
+        [ 88,  98,  10,  13,  39],
+        [ 82,  80,  78,  76,  25]], device='cuda:0') tensor([ 7,  7,  7,  7,  7], device='cuda:0')
+tensor([[ 94,   0,  15,   1,  31],
+        [ 67,   2,  20,  28,  68],
+        [ 20,  88,   6,  69,  74],
+        [ 11,  60,  44,  68,  67],
+        [ 71,  50,  36,  11,  31]], device='cuda:0') tensor([ 7,  7,  7,  7,  7], device='cuda:0')
+tensor([[ 60,  55,  97,  51,  99],
+        [ 48,  46,  90,  55,   8],
+        [ 60,  82,  59,  41,   3],
+        [ 46,  99,  48,  16,  40],
+        [ 72,  61,  43,  37,  62]], device='cuda:0') tensor([ 7,  7,  7,  7,  7], device='cuda:0')
+tensor([[  3,  91,  47,  61,  18],
+        [ 87,  98,  39,  10,   9],
+        [ 20,  68,  88,  44,   2],
+        [ 68,  67,  11,  50,  89],
+        [ 55,  97,  16,  60,  48]], device='cuda:0') tensor([ 7,  7,  7,  7,  7], device='cuda:0')
+tensor([[ 60,  64,  14,  97,  82],
+        [ 55,  61,  48,  46,  99],
+        [  9,  87,  40,  30,  41],
+        [ 16,  55,  49,  50,  86],
+        [ 68,  92,  89,  45,  44]], device='cuda:0') tensor([ 8,  8,  8,  8,  8], device='cuda:0')
+tensor([[ 92,  84,  68,  71,  89],
+        [ 16,  54,  65,  75,  36],
+        [ 55,  60,  97,  48,  50],
+        [ 55,  99,  16,  30,  46],
+        [ 55,  99,  16,  46,  48]], device='cuda:0') tensor([ 8,  8,  8,  8,  8], device='cuda:0')
+tensor([[ 94,  64,  47,   0,  61],
+        [ 99,  16,  46,  55,  48],
+        [ 86,  46,  16,  63,  50],
+        [ 55,  16,  99,  97,  83],
+        [ 48,  46,  16,   8,  67]], device='cuda:0') tensor([ 8,  8,  8,  8,  8], device='cuda:0')
+tensor([[ 99,  40,  51,  46,  86],
+        [ 16,  46,  48,  99,  55],
+        [ 49,  59,  60,  83,  55],
+        [ 46,  48,  99,  16,  43],
+        [ 41,  46,  40,  99,  48]], device='cuda:0') tensor([ 8,  8,  8,  8,  8], device='cuda:0')
+tensor([[ 60,  97,  59,  55,  49],
+        [ 48,  46,  41,  61,  40],
+        [ 60,  56,  65,  97,  82],
+        [ 46,  41,  48,  99,  55],
+        [ 90,  30,  55,  47,  48]], device='cuda:0') tensor([ 8,  8,  8,  8,  8], device='cuda:0')
+tensor([[ 61,  41,  72,  37,  66],
+        [ 46,  48,   8,  99,  41],
+        [ 67,  43,  11,  48,  50],
+        [ 87,   9,  30,  98,  12],
+        [ 99,  16,  46,  86,  51]], device='cuda:0') tensor([ 8,  8,  8,  8,  8], device='cuda:0')
+tensor([[  9,  15,  87,   1,  61],
+        [ 71,  50,  62,  59,  11],
+        [ 15,   1,  30,  36,  17],
+        [ 12,  90,  43,  40,  46],
+        [ 69,  78,   6,  15,  19]], device='cuda:0') tensor([ 9,  9,  9,  9,  9], device='cuda:0')
+tensor([[ 47,  15,  30,  17,  91],
+        [ 71,  59,  36,  31,  65],
+        [  9,  61,  41,  49,  79],
+        [ 30,  99,  46,  17,  40],
+        [ 40,   9,  87,  17,  30]], device='cuda:0') tensor([ 9,  9,  9,  9,  9], device='cuda:0')
+tensor([[ 99,  30,  17,  47,   3],
+        [ 91,  78,  47,  66,  72],
+        [  1,  36,  15,  54,  49],
+        [ 17,  72,  12,  40,  30],
+        [ 49,  99,  53,  75,  79]], device='cuda:0') tensor([ 9,  9,  9,  9,  9], device='cuda:0')
+tensor([[ 72,  92,  12,  41,  66],
+        [ 60,  59,  49,  51,  65],
+        [ 53,  49,  99,  59,   3],
+        [ 15,   9,   1,  61,  36],
+        [ 12,  90,  47,  55,  30]], device='cuda:0') tensor([ 9,  9,  9,  9,  9], device='cuda:0')
+tensor([[ 15,   9,  87,  30,   1],
+        [ 15,   1,  54,  79,  36],
+        [  9,  15,  75,  87,  69],
+        [ 77,  57,  69,  58,   9],
+        [ 30,  17,   9,  15,  47]], device='cuda:0') tensor([ 9,  9,  9,  9,  9], device='cuda:0')
+tensor([[  9,  87,  61,  13,  91],
+        [ 60,  86,  99,  59,  49],
+        [  1,  75,   9,  15,  77],
+        [ 61,  72,  41,  66,  92],
+        [ 60,  49,  80,  94,  59]], device='cuda:0') tensor([ 9,  9,  9,  9,  9], device='cuda:0')
+tensor([[ 55,  16,  46,  48,  99],
+        [ 72,  87,  98,  39,  66],
+        [ 30,  40,  98,   9,  10],
+        [ 40,  10,  98,  12,  87],
+        [ 90,  43,  12,  47,  17]], device='cuda:0') tensor([ 10,  10,  10,  10,  10], device='cuda:0')
+tensor([[ 40,  12,  10,  43,  98],
+        [ 90,  12,  17,  47,  30],
+        [ 87,  10,  98,  39,  12],
+        [ 94,  81,  64,   0,  80],
+        [ 90,  12,  43,  47,  10]], device='cuda:0') tensor([ 10,  10,  10,  10,  10], device='cuda:0')
+tensor([[ 98,  39,  87,  10,  12],
+        [  5,   6,  77,  69,  21],
+        [ 99,  46,  40,  48,  12],
+        [ 10,  98,  39,  28,  12],
+        [ 98,  39,  10,  87,  40]], device='cuda:0') tensor([ 10,  10,  10,  10,  10], device='cuda:0')
+tensor([[ 87,  12,  10,  30,  61],
+        [ 90,  43,  12,  47,   7],
+        [ 98,  87,  39,  19,  10],
+        [ 98,  87,  39,  10,  40],
+        [ 43,  90,  12,  67,  10]], device='cuda:0') tensor([ 10,  10,  10,  10,  10], device='cuda:0')
+tensor([[ 15,   9,  10,  87,  30],
+        [ 21,  20,  88,  28,  10],
+        [ 55,  48,  46,  12,  16],
+        [ 61,  37,  66,  72,  11],
+        [ 10,  87,  21,  39,  13]], device='cuda:0') tensor([ 10,  10,  10,  10,  10], device='cuda:0')
+tensor([[ 40,  67,  10,  12,  20],
+        [ 30,  17,  40,  12,  99],
+        [ 61,  37,  72,  66,  87],
+        [ 98,  39,  10,  87,  13],
+        [ 88,  74,  20,  21,  44]], device='cuda:0') tensor([ 10,  10,  10,  10,  10], device='cuda:0')
+tensor([[ 16,  55,  48,  50,  97],
+        [ 16,  55,  83,  97,  48],
+        [ 11,  72,  50,  67,  45],
+        [ 72,  11,  50,  41,  24],
+        [ 59,  94,  60,  11,  97]], device='cuda:0') tensor([ 11,  11,  11,  11,  11], device='cuda:0')
+tensor([[ 87,  61,   9,  37,  30],
+        [ 72,  66,  87,  92,  73],
+        [ 44,  68,  60,  14,  82],
+        [ 59,  11,  55,  83,  60],
+        [ 43,  90,  46,  48,  12]], device='cuda:0') tensor([ 11,  11,  11,  11,  11], device='cuda:0')
+tensor([[ 59,  60,  11,  32,  22],
+        [ 60,  97,  11,  55,  59],
+        [ 14,  88,  44,  74,  20],
+        [ 48,  16,  50,  46,  86],
+        [ 60,  59,  11,  97,  55]], device='cuda:0') tensor([ 11,  11,  11,  11,  11], device='cuda:0')
+tensor([[ 60,  11,  97,  59,  45],
+        [ 43,  48,  46,  90,  12],
+        [ 60,  59,  11,  61,  41],
+        [ 48,  55,  46,  97,   8],
+        [ 59,  55,  97,  60,  51]], device='cuda:0') tensor([ 11,  11,  11,  11,  11], device='cuda:0')
+tensor([[ 11,  48,  50,  72,  46],
+        [ 55,  37,   3,  61,  46],
+        [ 72,  41,  11,  66,  24],
+        [ 12,  40,  72,  43,  87],
+        [ 60,  97,  55,  59,  11]], device='cuda:0') tensor([ 11,  11,  11,  11,  11], device='cuda:0')
+tensor([[ 61,  17,  30,  37,  66],
+        [ 16,  99,  46,  55,  48],
+        [ 78,  82,  60,  72,  73],
+        [ 16,  48,  46,  50,   8],
+        [ 11,  50,  67,  93,  62]], device='cuda:0') tensor([ 11,  11,  11,  11,  11], device='cuda:0')
+tensor([[ 98,  12,  10,  87,  39],
+        [ 12,  17,  30,  46,  40],
+        [ 12,  10,  98,  90,  30],
+        [ 91,  56,  85,  78,  82],
+        [ 99,  40,  46,  41,  48]], device='cuda:0') tensor([ 12,  12,  12,  12,  12], device='cuda:0')
+tensor([[ 87,  72,  41,  40,  92],
+        [ 82,  80,  78,  64,  68],
+        [ 12,  17,  30,  90,  43],
+        [ 16,  46,  48,  99,   8],
+        [ 98,  10,  39,  40,  12]], device='cuda:0') tensor([ 12,  12,  12,  12,  12], device='cuda:0')
+tensor([[ 12,  40,  17,  43,  30],
+        [ 12,  90,  47,  17,  30],
+        [ 90,  12,  43,  40,  10],
+        [ 12,  61,  30,  43,  10],
+        [ 12,  10,  40,  90,  43]], device='cuda:0') tensor([ 12,  12,  12,  12,  12], device='cuda:0')
+tensor([[ 90,  47,  12,  43,  40],
+        [ 12,  10,  90,  43,  40],
+        [ 12,  46,  17,  99,  48],
+        [ 41,  99,  46,  17,  40],
+        [ 46,  48,  41,  99,  40]], device='cuda:0') tensor([ 12,  12,  12,  12,  12], device='cuda:0')
+tensor([[ 99,  46,  55,  41,  48],
+        [ 46,  12,  40,  90,  17],
+        [ 35,   4,  41,  57,  45],
+        [ 12,  66,  30,  98,  10],
+        [ 12,  17,  30,  61,  66]], device='cuda:0') tensor([ 12,  12,  12,  12,  12], device='cuda:0')
+tensor([[ 72,  68,  66,  92,  17],
+        [ 12,  10,  90,  43,  30],
+        [ 11,  48,  55,  97,  93],
+        [ 12,  87,  30,  66,  10],
+        [ 47,  12,  17,  68,  90]], device='cuda:0') tensor([ 12,  12,  12,  12,  12], device='cuda:0')
+tensor([[ 80,  81,  82,  94,  74],
+        [ 80,  94,  81,  76,  64],
+        [ 13,  21,  88,  10,  87],
+        [ 82,  13,  76,  80,  88],
+        [ 13,  76,  80,  82,  88]], device='cuda:0') tensor([ 13,  13,  13,  13,  13], device='cuda:0')
+tensor([[  6,  94,  80,  78,  71],
+        [ 13,  15,   6,  80,  94],
+        [ 87,  72,  98,  40,  41],
+        [ 80,   5,  13,  76,  57],
+        [ 19,  35,  69,  77,  78]], device='cuda:0') tensor([ 13,  13,  13,  13,  13], device='cuda:0')
+tensor([[ 98,  10,  12,  39,  13],
+        [ 15,   6,   1,  13,   9],
+        [ 68,  78,  72,  60,  82],
+        [ 72,  50,  84,  68,  11],
+        [ 12,  87,  10,  40,  92]], device='cuda:0') tensor([ 13,  13,  13,  13,  13], device='cuda:0')
+tensor([[ 61,  13,  87,  37,  66],
+        [ 13,  81,  15,  74,  94],
+        [ 47,  30,  98,  17,  13],
+        [ 13,  61,  47,  91,   5],
+        [ 12,  60,  47,  59,   3]], device='cuda:0') tensor([ 13,  13,  13,  13,  13], device='cuda:0')
+tensor([[ 72,  87,  41,  92,  62],
+        [ 72,  66,  61,  91,  68],
+        [ 12,  10,  43,  90,  92],
+        [ 82,  80,  94,  78,  76],
+        [ 13,   6,  87,  15,   5]], device='cuda:0') tensor([ 13,  13,  13,  13,  13], device='cuda:0')
+tensor([[ 13,  72,  87,  66,  91],
+        [ 77,  95,   5,  57,  69],
+        [  0,  94,  81,  47,  64],
+        [ 82,  78,  44,  68,  85],
+        [ 15,  13,  87,   9,   1]], device='cuda:0') tensor([ 13,  13,  13,  13,  13], device='cuda:0')
+tensor([[ 14,  80,  81,  64,  82],
+        [ 80,  82,  14,  94,  64],
+        [ 14,  26,  81,  88,  44],
+        [ 82,  78,  80,  68,  76],
+        [ 61,   1,  36,  47,  71]], device='cuda:0') tensor([ 14,  14,  14,  14,  14], device='cuda:0')
+tensor([[ 77,  95,  58,  69,  57],
+        [ 14,  82,  64,  80,  94],
+        [ 14,  64,  81,  80,  94],
+        [ 14,  94,  80,  64,  82],
+        [ 77,  57,  58,  95,  75]], device='cuda:0') tensor([ 14,  14,  14,  14,  14], device='cuda:0')
+tensor([[ 88,  44,  74,  14,  68],
+        [ 14,  81,  80,  74,  94],
+        [ 82,  80,  64,  94,  14],
+        [ 74,  81,  88,  20,  67],
+        [ 80,  14,  94,  82,  64]], device='cuda:0') tensor([ 14,  14,  14,  14,  14], device='cuda:0')
+tensor([[ 14,  64,  81,  80,  82],
+        [ 14,  81,  82,  64,  26],
+        [ 80,  94,  82,  71,  76],
+        [ 80,  94,  82,  64,  14],
+        [ 94,   6,  78,  71,  80]], device='cuda:0') tensor([ 14,  14,  14,  14,  14], device='cuda:0')
+tensor([[ 68,   0,  64,  90,  47],
+        [ 60,  68,  11,  64,  14],
+        [ 59,  60,  11,  97,  64],
+        [ 82,  78,  64,  80,  14],
+        [ 90,  12,  17,  47,  46]], device='cuda:0') tensor([ 14,  14,  14,  14,  14], device='cuda:0')
+tensor([[ 14,  64,  81,  44,  26],
+        [ 80,  82,  94,  14,  64],
+        [ 81,  74,  14,  80,  42],
+        [  0,  81,  67,   2,  74],
+        [ 14,  64,  81,  80,  82]], device='cuda:0') tensor([ 14,  14,  14,  14,  14], device='cuda:0')
+tensor([[ 15,   9,  87,   6,  13],
+        [ 15,  77,   1,   5,  69],
+        [ 15,   9,   1,  30,  79],
+        [ 15,  80,   6,  94,  78],
+        [ 80,  94,   0,  76,  82]], device='cuda:0') tensor([ 15,  15,  15,  15,  15], device='cuda:0')
+tensor([[ 15,   1,   9,  79,  36],
+        [ 91,  99,  30,  65,  56],
+        [ 15,   9,   6,  87,  98],
+        [ 15,   9,   1,  30,  79],
+        [ 87,   9,  40,  98,  41]], device='cuda:0') tensor([ 15,  15,  15,  15,  15], device='cuda:0')
+tensor([[ 77,  57,  58,  69,  95],
+        [ 15,   1,   9,  30,  79],
+        [ 50,  49,  86,  11,  71],
+        [ 15,  94,   1,  31,  80],
+        [ 15,  94,  80,   1,  47]], device='cuda:0') tensor([ 15,  15,  15,  15,  15], device='cuda:0')
+tensor([[ 15,   1,   9,  36,  30],
+        [ 15,   1,   9,  36,  13],
+        [ 77,  57,   9,   5,  75],
+        [ 15,   1,  79,  99,  53],
+        [ 47,  15,  17,  30,  94]], device='cuda:0') tensor([ 15,  15,  15,  15,  15], device='cuda:0')
+tensor([[ 17,  30,  47,  12,  90],
+        [ 47,  15,  94,  80,  30],
+        [  6,  69,  78,  19,  71],
+        [ 80,  15,  94,  47,  76],
+        [ 15,   1,  47,   9,   0]], device='cuda:0') tensor([ 15,  15,  15,  15,  15], device='cuda:0')
+tensor([[ 87,  40,  10,  19,  98],
+        [ 15,   1,   9,  30,  47],
+        [ 65,  59,  83,  71,  16],
+        [ 15,   1,   9,  79,  36],
+        [ 15,   1,  54,  49,  36]], device='cuda:0') tensor([ 15,  15,  15,  15,  15], device='cuda:0')
+tensor([[ 94,  71,  60,  97,  59],
+        [ 16,  99,  55,  46,  48],
+        [ 60,  97,  55,  65,  50],
+        [ 16,  83,  51,  55,  59],
+        [ 55,  99,  16,  46,  97]], device='cuda:0') tensor([ 16,  16,  16,  16,  16], device='cuda:0')
+tensor([[ 99,  53,  49,   3,  15],
+        [ 16,  55,  99,  48,  46],
+        [ 16,  99,  55,  46,  48],
+        [ 16,  86,  46,  48,  83],
+        [ 46,  99,  16,  48,  55]], device='cuda:0') tensor([ 16,  16,  16,  16,  16], device='cuda:0')
+tensor([[ 41,  48,  46,  86,  35],
+        [ 46,  16,  48,  99,   8],
+        [ 48,  46,  16,  55,  43],
+        [ 48,  46,  16,   8,  99],
+        [ 55,  99,  48,  16,  46]], device='cuda:0') tensor([ 16,  16,  16,  16,  16], device='cuda:0')
+tensor([[ 46,  99,  16,  48,  30],
+        [ 55,  16,  99,  46,  48],
+        [ 99,  55,  16,  83,  46],
+        [ 16,  48,  50,  46,  86],
+        [ 16,  48,  46,  55,  99]], device='cuda:0') tensor([ 16,  16,  16,  16,  16], device='cuda:0')
+tensor([[ 49,  59,  60,  53,  56],
+        [ 55,  16,  97,  51,  99],
+        [ 16,  55,  97,  83,  48],
+        [ 60,  97,  11,  55,  51],
+        [ 48,  46,  16,  99,  55]], device='cuda:0') tensor([ 16,  16,  16,  16,  16], device='cuda:0')
+tensor([[ 60,  97,  55,  59,  65],
+        [ 60,  97,  59,  49,  32],
+        [ 17,  30,  37,  61,  55],
+        [ 99,  49,  16,  55,  83],
+        [ 60,  59,  97,  51,  55]], device='cuda:0') tensor([ 16,  16,  16,  16,  16], device='cuda:0')
+tensor([[ 55,  97,  51,  59,   3],
+        [ 60,  49,  50,  55,  22],
+        [ 72,  41,  78,  82,  24],
+        [ 30,  17,  12,   9,  90],
+        [  9,  30,  61,  99,  16]], device='cuda:0') tensor([ 17,  17,  17,  17,  17], device='cuda:0')
+tensor([[  3,  59,  60,  49,  55],
+        [ 61,  22,  59,  55,  37],
+        [ 99,  55,  16,  30,  46],
+        [ 61,  87,   9,  37,  13],
+        [ 99,  30,  17,  40,  46]], device='cuda:0') tensor([ 17,  17,  17,  17,  17], device='cuda:0')
+tensor([[ 17,  30,  99,  46,  41],
+        [ 16,  55,  83,  48,  61],
+        [ 87,  98,  92,  19,  40],
+        [ 99,  17,  30,  55,  46],
+        [ 90,  12,  47,  68,  17]], device='cuda:0') tensor([ 17,  17,  17,  17,  17], device='cuda:0')
+tensor([[ 41,  46,  99,  48,   8],
+        [ 30,  17,  99,  41,  46],
+        [ 16,  99,  46,  48,  55],
+        [  9,  87,  30,  61,  40],
+        [ 17,  12,  30,  90,  47]], device='cuda:0') tensor([ 17,  17,  17,  17,  17], device='cuda:0')
+tensor([[ 12,  17,  30,  90,  40],
+        [ 12,  10,  90,  43,  98],
+        [ 41,  46,  48,  12,  17],
+        [  5,  36,  19,   2,  28],
+        [ 30,  40,  41,  61,  87]], device='cuda:0') tensor([ 17,  17,  17,  17,  17], device='cuda:0')
+tensor([[ 47,  72,  91,  17,  66],
+        [ 55,  90,  46,  48,  16],
+        [ 55,  30,  99,  41,  46],
+        [ 61,  87,  91,  66,  30],
+        [ 49,  59,  56,  36,  65]], device='cuda:0') tensor([ 17,  17,  17,  17,  17], device='cuda:0')
+tensor([[ 47,   3,  99,  55,  91],
+        [ 41,  72,  78,  91,  49],
+        [ 87,  98,  10,  39,  13],
+        [ 72,  87,  98,  39,  91],
+        [ 30,  37,  22,  61,  18]], device='cuda:0') tensor([ 18,  18,  18,  18,  18], device='cuda:0')
+tensor([[ 72,  87,  66,  98,  47],
+        [ 82,  78,  60,  80,  64],
+        [ 61,  41,  59,  22,  60],
+        [ 49,  60,  59,  55,   3],
+        [ 47,  64,  55,   3,  94]], device='cuda:0') tensor([ 18,  18,  18,  18,  18], device='cuda:0')
+tensor([[  6,  19,  71,  78,  15],
+        [ 67,  20,  21,  88,   2],
+        [ 30,  91,  47,  17,  87],
+        [ 37,  61,  18,  66,   3],
+        [ 16,  55,  48,  83,  50]], device='cuda:0') tensor([ 18,  18,  18,  18,  18], device='cuda:0')
+tensor([[ 17,  30,  99,  55,  47],
+        [ 12,  72,  84,  46,  92],
+        [ 55,  59,  97,  51,  60],
+        [ 17,  30,  47,  37,  61],
+        [ 49,  83,  59,  79,  53]], device='cuda:0') tensor([ 18,  18,  18,  18,  18], device='cuda:0')
+tensor([[ 60,  59,  51,  55,  97],
+        [ 15,  30,  99,   9,   1],
+        [ 17,  30,  12,  47,  40],
+        [ 91,  47,  66,  17,  30],
+        [ 46,  84,  99,   8,  48]], device='cuda:0') tensor([ 18,  18,  18,  18,  18], device='cuda:0')
+tensor([[ 60,  59,  97,  49,  94],
+        [ 59,  61,  93,  38,  97],
+        [ 87,  61,  13,  72,  98],
+        [ 48,  46,  41,  86,  34],
+        [ 94,  80,  60,  71,  59]], device='cuda:0') tensor([ 18,  18,  18,  18,  18], device='cuda:0')
+tensor([[ 19,   6,  69,  39,  77],
+        [ 71,  88,  89,  44,  68],
+        [ 19,   6,  42,   5,  74],
+        [  6,  19,  69,  78,  80],
+        [ 44,  88,  68,  82,  76]], device='cuda:0') tensor([ 19,  19,  19,  19,  19], device='cuda:0')
+tensor([[ 61,  11,  50,  37,  66],
+        [ 19,   6,  69,   5,  78],
+        [ 19,  69,  95,  77,   6],
+        [ 19,  77,  58,  95,   5],
+        [ 19,   5,  95,  77,  69]], device='cuda:0') tensor([ 19,  19,  19,  19,  19], device='cuda:0')
+tensor([[ 82,  80,  19,  78,  42],
+        [ 94,  80,  19,   6,  76],
+        [ 19,  77,  95,  69,  58],
+        [ 77,  58,  95,  19,  69],
+        [ 19,   6,  78,  44,  98]], device='cuda:0') tensor([ 19,  19,  19,  19,  19], device='cuda:0')
+tensor([[ 78,  19,  82,  86,  80],
+        [ 19,   6,  69,  77,  95],
+        [ 19,  58,   5,  77,  35],
+        [ 19,  95,   0,  42,  25],
+        [ 19,  77,  69,  58,  95]], device='cuda:0') tensor([ 19,  19,  19,  19,  19], device='cuda:0')
+tensor([[  6,  69,  19,  71,  78],
+        [ 19,  95,  78,  89,  69],
+        [ 19,  77,  58,  87,  67],
+        [ 80,  82,  94,  14,  64],
+        [ 98,  39,  19,   6,  10]], device='cuda:0') tensor([ 19,  19,  19,  19,  19], device='cuda:0')
+tensor([[ 82,  78,  19,  80,  76],
+        [ 44,  94,  71,   6,  76],
+        [ 82,  80,  76,  94,  78],
+        [ 19,  98,  58,  87,  35],
+        [ 19,  71,  80,  42,  94]], device='cuda:0') tensor([ 19,  19,  19,  19,  19], device='cuda:0')
+tensor([[ 20,  21,  67,   2,  88],
+        [ 20,  88,  21,  28,  10],
+        [ 14,  88,  82,  44,  68],
+        [ 21,  20,  67,   2,  88],
+        [ 20,  21,  67,  88,   2]], device='cuda:0') tensor([ 20,  20,  20,  20,  20], device='cuda:0')
+tensor([[ 16,  55,  48,   8,  46],
+        [ 90,  12,  43,  10,  40],
+        [ 69,   6,  71,  19,  89],
+        [ 19,  74,  88,   6,  42],
+        [ 20,  10,  28,  21,  88]], device='cuda:0') tensor([ 20,  20,  20,  20,  20], device='cuda:0')
+tensor([[ 48,  55,  16,  46,  99],
+        [ 67,  20,   2,  14,  88],
+        [ 20,  43,  90,  67,  10],
+        [ 74,  14,  26,  81,  88],
+        [ 39,  98,  82,  68,  72]], device='cuda:0') tensor([ 20,  20,  20,  20,  20], device='cuda:0')
+tensor([[ 19,  39,  98,  92,   6],
+        [ 98,  39,  10,  87,  19],
+        [ 20,  88,  67,  28,  21],
+        [ 20,  67,   2,  88,  14],
+        [ 88,  67,  20,  10,  28]], device='cuda:0') tensor([ 20,  20,  20,  20,  20], device='cuda:0')
+tensor([[ 15,   9,  61,  37,  87],
+        [ 20,  21,  67,  88,  28],
+        [ 20,  88,  21,  28,  67],
+        [ 47,  17,  30,  12,  84],
+        [ 47,  80,  76,  42,   0]], device='cuda:0') tensor([ 20,  20,  20,  20,  20], device='cuda:0')
+tensor([[ 10,  98,  39,  28,  87],
+        [ 20,  21,  67,  88,  28],
+        [ 67,  20,  88,  28,  21],
+        [ 21,  20,  88,  28,  10],
+        [ 68,  44,  14,  82,  64]], device='cuda:0') tensor([ 20,  20,  20,  20,  20], device='cuda:0')
+tensor([[ 19,  69,   6,  71,  54],
+        [ 21,  20,  67,  28,  88],
+        [ 67,  21,  20,  28,   2],
+        [ 71,  20,  31,  11,  50],
+        [  5,   2,  19,  28,  44]], device='cuda:0') tensor([ 21,  21,  21,  21,  21], device='cuda:0')
+tensor([[ 21,  20,  67,  28,  88],
+        [ 21,  20,  28,  10,  88],
+        [ 12,  87,  66,  88,   2],
+        [ 21,  20,  67,  88,  28],
+        [ 37,  21,  66,  30,  61]], device='cuda:0') tensor([ 21,  21,  21,  21,  21], device='cuda:0')
+tensor([[ 69,  77,   5,   6,  19],
+        [ 68,  44,  89,  67,  45],
+        [ 68,  84,  72,  92,  67],
+        [ 21,  20,  28,  67,  10],
+        [ 20,  21,  88,  67,   2]], device='cuda:0') tensor([ 21,  21,  21,  21,  21], device='cuda:0')
+tensor([[ 21,  20,  67,  28,  88],
+        [ 21,  20,  67,  88,   2],
+        [ 67,  21,  88,  20,  28],
+        [ 21,  20,  28,  88,  67],
+        [ 82,  78,  44,  68,  76]], device='cuda:0') tensor([ 21,  21,  21,  21,  21], device='cuda:0')
+tensor([[ 21,  20,  67,  88,  28],
+        [ 21,  20,  67,  28,   2],
+        [ 88,  44,  68,  19,  89],
+        [ 67,  20,  21,   2,  28],
+        [ 82,  80,  44,  14,  64]], device='cuda:0') tensor([ 21,  21,  21,  21,  21], device='cuda:0')
+tensor([[ 20,  67,  21,  88,  74],
+        [ 20,  21,  67,  88,   2],
+        [ 21,  20,  88,  28,  67],
+        [ 20,  21,  88,  67,   2],
+        [ 21,  20,  67,   2,  88]], device='cuda:0') tensor([ 21,  21,  21,  21,  21], device='cuda:0')
+tensor([[ 55,  99,   3,  47,  22],
+        [ 30,   1,   3,  79,  15],
+        [ 55,  83,  16,  59,  49],
+        [ 77,  57,  95,  58,  75],
+        [ 16,  55,  83,  97,  99]], device='cuda:0') tensor([ 22,  22,  22,  22,  22], device='cuda:0')
+tensor([[ 41,  60,  78,  52,  32],
+        [ 59,  60,  97,  11,  71],
+        [ 87,   9,  40,  98,  30],
+        [ 49,  75,  23,   9,  79],
+        [ 60,  59,  97,  55,  49]], device='cuda:0') tensor([ 22,  22,  22,  22,  22], device='cuda:0')
+tensor([[ 51,  59,  53,  49,  55],
+        [ 72,  61,  37,  66,  41],
+        [  6,  15,   9,  98,  87],
+        [  9,  87,  15,  30,  40],
+        [ 51,  55,  97,  59,  60]], device='cuda:0') tensor([ 22,  22,  22,  22,  22], device='cuda:0')
+tensor([[ 15,  61,  79,   1,   9],
+        [ 91,  72,  17,  47,  41],
+        [ 41,  61,  72,  66,  22],
+        [ 55,  99,   3,  97,  46],
+        [ 55,  49,  97,  60,  59]], device='cuda:0') tensor([ 22,  22,  22,  22,  22], device='cuda:0')
+tensor([[ 72,  87,  61,  66,  41],
+        [ 12,  17,  40,  30,  90],
+        [ 55,  47,  90,  12,  46],
+        [ 55,  16,  97,  51,  99],
+        [ 15,   1,   9,  79,  36]], device='cuda:0') tensor([ 22,  22,  22,  22,  22], device='cuda:0')
+tensor([[ 15,   1,  77,  79,   9],
+        [ 60,  59,  57,  27,  75],
+        [ 60,  49,  59,  97,  53],
+        [ 59,  60,  97,  32,  83],
+        [ 49,  60,  59,  53,  33]], device='cuda:0') tensor([ 22,  22,  22,  22,  22], device='cuda:0')
+tensor([[ 54,  31,  78,  49,  71],
+        [ 91,  47,   3,  30,  56],
+        [  0,  57,  64,   5,  81],
+        [  9,  87,  41,  61,  40],
+        [ 72,  41,  66,  17,  91]], device='cuda:0') tensor([ 23,  23,  23,  23,  23], device='cuda:0')
+tensor([[  9,  30,  15,  99,  40],
+        [ 49,  60,  59,  53,  65],
+        [ 16,  55,  48,  46,  83],
+        [ 55,  16,  30,  99,  46],
+        [ 15,   1,  79,  36,   9]], device='cuda:0') tensor([ 23,  23,  23,  23,  23], device='cuda:0')
+tensor([[ 37,  41,  61,  72,  48],
+        [ 60,  59,  49,  71,  94],
+        [ 60,  97,  71,  11,  94],
+        [ 82,  78,  80,  64,  94],
+        [ 72,  46,  41,  48,  99]], device='cuda:0') tensor([ 23,  23,  23,  23,  23], device='cuda:0')
+tensor([[ 99,  55,  16,  46,  41],
+        [ 87,  98,  30,  12,  40],
+        [ 19,  42,  76,  78,  71],
+        [ 78,   6,  57,  69,   5],
+        [ 78,  91,  82,  85,  72]], device='cuda:0') tensor([ 23,  23,  23,  23,  23], device='cuda:0')
+tensor([[ 57,  77,   9,  75,  23],
+        [ 78,  91,  82,  44,  87],
+        [ 17,  41,  99,  91,  30],
+        [ 15,   1,  79,  36,  59],
+        [ 98,  39,  72,  47,  12]], device='cuda:0') tensor([ 23,  23,  23,  23,  23], device='cuda:0')
+tensor([[ 41,  91,  49,  23,   9],
+        [ 15,  94,  36,   1,  31],
+        [ 80,  78,  94,  49,  71],
+        [  1,  15,  54,  36,  69],
+        [ 15,   9,   1,   6,  69]], device='cuda:0') tensor([ 23,  23,  23,  23,  23], device='cuda:0')
+tensor([[ 49,  75,  99,  86,  63],
+        [ 19,  95,   5,  69,  57],
+        [ 41,  61,  72,  59,  37],
+        [ 49,  60,  86,  65,  99],
+        [ 43,  12,  46,   2,  40]], device='cuda:0') tensor([ 24,  24,  24,  24,  24], device='cuda:0')
+tensor([[ 48,  90,  43,  46,  55],
+        [ 15,   1,   9,  65,  99],
+        [ 67,   0,  48,  38,  40],
+        [ 78,  82,  60,  49,  80],
+        [ 78,  60,  72,  82,  41]], device='cuda:0') tensor([ 24,  24,  24,  24,  24], device='cuda:0')
+tensor([[ 55,  53,  99,  49,  16],
+        [ 59,  56,  49,  94,  80],
+        [ 67,  20,  21,  88,  28],
+        [ 60,  97,  59,  55,  51],
+        [ 41,  78,   4,  61,  57]], device='cuda:0') tensor([ 24,  24,  24,  24,  24], device='cuda:0')
+tensor([[ 37,  72,  38,  11,  48],
+        [ 72,  78,  68,  82,  11],
+        [ 60,  71,  49,  65,  50],
+        [ 66,  30,  72,  91,  87],
+        [ 78,  94,  49,  80,  31]], device='cuda:0') tensor([ 24,  24,  24,  24,  24], device='cuda:0')
+tensor([[ 40,  12,  10,  17,  98],
+        [ 78,  80,   5,  71,  76],
+        [ 68,  47,  64,  93,   7],
+        [ 77,  19,   5,  57,  54],
+        [ 46,  48,  99,  43,   8]], device='cuda:0') tensor([ 24,  24,  24,  24,  24], device='cuda:0')
+tensor([[ 80,  94,  78,  82,  76],
+        [ 64,  14,  94,  81,  80],
+        [ 48,  46,  41,  50,  72],
+        [ 87,  10,  40,   5,  98],
+        [ 69,  15,  77,  78,   1]], device='cuda:0') tensor([ 24,  24,  24,  24,  24], device='cuda:0')
+tensor([[ 87,  10,  98,  39,  15],
+        [ 14,  82,  80,  64,  78],
+        [ 57,  77,  95,   5,   0],
+        [ 77,  57,  95,  58,   5],
+        [ 87,  30,  98,  72,   9]], device='cuda:0') tensor([ 25,  25,  25,  25,  25], device='cuda:0')
+tensor([[ 72,  87,  78,  92,  41],
+        [ 82,  80,  78,  76,  94],
+        [ 80,  94,   0,  82,  25],
+        [ 19,  78,  82,   6,  76],
+        [ 47,  80,  91,  25,  94]], device='cuda:0') tensor([ 25,  25,  25,  25,  25], device='cuda:0')
+tensor([[ 19,  74,   6,  42,  80],
+        [ 64,  80,  60,  82,  94],
+        [ 80,  94,  14,  64,  82],
+        [ 44,  82,  42,  19,  14],
+        [ 80,  94,  81,  14,  82]], device='cuda:0') tensor([ 25,  25,  25,  25,  25], device='cuda:0')
+tensor([[ 81,  74,   0,  42,  80],
+        [ 95,  77,  19,  57,   5],
+        [ 47,  17,  84,  30,  12],
+        [ 80,  94,  78,  82,  49],
+        [ 17,  47,  30,  72,  66]], device='cuda:0') tensor([ 25,  25,  25,  25,  25], device='cuda:0')
+tensor([[  5,  87,  19,  36,   2],
+        [ 80,  94,  76,  82,   0],
+        [ 80,  94,  14,  82,  64],
+        [  0,  81,  42,  74,  26],
+        [ 90,  47,  12,  43,  17]], device='cuda:0') tensor([ 25,  25,  25,  25,  25], device='cuda:0')
+tensor([[ 88,  67,  68,  20,  44],
+        [ 80,  94,  14,  82,  81],
+        [ 69,   6,  95,  71,  19],
+        [ 94,  80,  47,   0,  25],
+        [  0,  80,  42,  25,  81]], device='cuda:0') tensor([ 25,  25,  25,  25,  25], device='cuda:0')
+tensor([[ 81,   0,  80,  42,  74],
+        [ 80,  14,  81,  94,  64],
+        [ 14,  82,  80,  81,  44],
+        [ 60,  97,  11,  50,  45],
+        [  0,  80,  42,  82,  81]], device='cuda:0') tensor([ 26,  26,  26,  26,  26], device='cuda:0')
+tensor([[ 81,  74,  42,  26,  14],
+        [ 74,  88,  20,  26,  21],
+        [ 80,  94,  82,  64,  78],
+        [ 19,  76,   6,  42,  13],
+        [ 61,  87,  12,  66,   2]], device='cuda:0') tensor([ 26,  26,  26,  26,  26], device='cuda:0')
+tensor([[ 94,  80,  82,  64,  78],
+        [ 48,  11,  46,  45,  67],
+        [ 80,  82,  94,  14,  81],
+        [ 81,  74,  80,  42,   0],
+        [ 19,   6,  69,  95,  88]], device='cuda:0') tensor([ 26,  26,  26,  26,  26], device='cuda:0')
+tensor([[ 74,  80,  42,  81,  14],
+        [ 10,  88,  12,  98,  39],
+        [ 80,  94,  82,  64,  14],
+        [ 80,  94,  82,  76,  78],
+        [ 74,  81,  88,  26,  42]], device='cuda:0') tensor([ 26,  26,  26,  26,  26], device='cuda:0')
+tensor([[  3,  61,  47,  37,  17],
+        [ 88,  74,  20,  26,  13],
+        [ 47,  90,  12,  40,  17],
+        [ 80,  82,  14,  94,  81],
+        [ 84,  26,  92,  68,  19]], device='cuda:0') tensor([ 26,  26,  26,  26,  26], device='cuda:0')
+tensor([[ 72,  13,  39,  66,  82],
+        [ 74,  81,  42,  26,  14],
+        [ 80,  94,  82,  14,  64],
+        [ 72,  48,  46,  41,  61],
+        [ 30,  12,  17,  40,   9]], device='cuda:0') tensor([ 26,  26,  26,  26,  26], device='cuda:0')
+tensor([[ 49,  60,  55,  59,  33],
+        [ 19,  69,   6,  77,  78],
+        [ 88,   6,  71,  74,  44],
+        [  5,  59,  54,  36,  22],
+        [ 95,  57,   0,  64,  77]], device='cuda:0') tensor([ 27,  27,  27,  27,  27], device='cuda:0')
+tensor([[ 60,  97,  59,  55,  51],
+        [ 43,  12,  40,  46,  48],
+        [ 55,  16,  51,  99,  97],
+        [ 99,  16,  55,  46,  30],
+        [ 59,  60,  97,  55,  51]], device='cuda:0') tensor([ 27,  27,  27,  27,  27], device='cuda:0')
+tensor([[ 11,  61,  67,  44,  62],
+        [ 46,  99,  48,  40,  16],
+        [ 95,  77,  57,  58,  19],
+        [ 50,  86,  92,  72,  84],
+        [ 46,  72,  48,  41,  50]], device='cuda:0') tensor([ 27,  27,  27,  27,  27], device='cuda:0')
+tensor([[ 71,  94,  44,  80,  78],
+        [ 15,   1,   9,  30,  36],
+        [ 40,  46,  99,  90,  12],
+        [ 99,  55,  16,  46,  49],
+        [ 71,  54,   6,  94,  69]], device='cuda:0') tensor([ 27,  27,  27,  27,  27], device='cuda:0')
+tensor([[ 99,  46,  63,  86,  41],
+        [ 77,  69,  57,   6,  78],
+        [ 55,  16,  99,  65,  71],
+        [ 69,  19,   6,  29,  78],
+        [  1,  36,  59,  15,  94]], device='cuda:0') tensor([ 27,  27,  27,  27,  27], device='cuda:0')
+tensor([[ 15,   1,  49,  75,   9],
+        [ 46,  71,  99,  44,   0],
+        [ 87,  40,  98,   9,  10],
+        [ 77,  69,  95,  57,  58],
+        [ 72,  41,  66,  17,  61]], device='cuda:0') tensor([ 27,  27,  27,  27,  27], device='cuda:0')
+tensor([[ 21,  67,  20,  88,  28],
+        [ 67,  28,  20,  10,  21],
+        [ 15,   9,  87,  30,   1],
+        [ 28,  21,  20,   2,  67],
+        [ 61,  41,  72,  37,  87]], device='cuda:0') tensor([ 28,  28,  28,  28,  28], device='cuda:0')
+tensor([[ 67,  20,  21,  28,  88],
+        [ 67,  20,  21,   2,  28],
+        [  9,  87,  15,  40,  30],
+        [ 60,  49,  59,  78,  32],
+        [ 12,  98,  10,  40,  92]], device='cuda:0') tensor([ 28,  28,  28,  28,  28], device='cuda:0')
+tensor([[ 21,  20,  88,  28,  10],
+        [ 78,  80,  82,  76,  71],
+        [ 21,  20,  88,  67,  28],
+        [  9,  87,  15,   1,  61],
+        [ 21,   2,  28,  95,  67]], device='cuda:0') tensor([ 28,  28,  28,  28,  28], device='cuda:0')
+tensor([[ 20,  67,  88,  28,  21],
+        [ 60,  71,  59,  99,  84],
+        [ 77,  58,  57,  69,  95],
+        [ 21,  20,  67,  88,  28],
+        [ 10,  21,  20,  88,  39]], device='cuda:0') tensor([ 28,  28,  28,  28,  28], device='cuda:0')
+tensor([[ 21,  20,  28,  88,  10],
+        [ 12,  90,  10,  67,  43],
+        [ 19,   6,  76,  69,   5],
+        [ 47,  68,  72,  12,  90],
+        [ 90,  12,  43,  68,  47]], device='cuda:0') tensor([ 28,  28,  28,  28,  28], device='cuda:0')
+tensor([[ 67,  88,  68,   2,  20],
+        [ 67,  21,  20,  28,  88],
+        [ 68,  44,  82,  88,  76],
+        [ 39,  98,  19,   6,  87],
+        [ 67,  95,   2,  28,  21]], device='cuda:0') tensor([ 28,  28,  28,  28,  28], device='cuda:0')
+tensor([[ 60,  59,  41,  49,  55],
+        [ 80,  78,  94,  82,  76],
+        [ 77,  57,  95,  58,  69],
+        [  9,  30,  15,  40,  17],
+        [ 86,  40,  35,  46,  92]], device='cuda:0') tensor([ 29,  29,  29,  29,  29], device='cuda:0')
+tensor([[ 41,  40,  30,  99,   9],
+        [ 59,  60,  51,  97,  55],
+        [ 16,  86,  63,  46,  50],
+        [ 86,   9,  35,  29,  75],
+        [  6,  69,  15,  78,  77]], device='cuda:0') tensor([ 29,  29,  29,  29,  29], device='cuda:0')
+tensor([[ 80,  82,  78,  94,  64],
+        [ 35,  58,  19,  77,  57],
+        [  6,  69,  78,  77,  54],
+        [ 77,  57,  58,  69,  95],
+        [ 48,  16,  46,  55,  99]], device='cuda:0') tensor([ 29,  29,  29,  29,  29], device='cuda:0')
+tensor([[ 94,  80,  71,  60,  56],
+        [ 82,  78,  80,  19,  44],
+        [ 51,  59,  55,  60,  83],
+        [ 71,  80,  94,  54,   6],
+        [ 77,  57,  95,   5,  58]], device='cuda:0') tensor([ 29,  29,  29,  29,  29], device='cuda:0')
+tensor([[ 80,  94,  82,  76,  42],
+        [ 77,  35,  75,  27,  58],
+        [ 16,  55,  99,  46,  48],
+        [ 59,  49,  60,  53,  33],
+        [ 49,  99,  41,  59,  55]], device='cuda:0') tensor([ 29,  29,  29,  29,  29], device='cuda:0')
+tensor([[ 16,  99,  49,  86,  55],
+        [ 49,  75,  41,  35,  99],
+        [ 31,  54,  71,  36,  49],
+        [ 46,  48,  16,  99,  55],
+        [ 60,  45,  72,  41,  73]], device='cuda:0') tensor([ 29,  29,  29,  29,  29], device='cuda:0')
+tensor([[ 44,  82,  68,  64,  14],
+        [ 87,  98,  39,  10,   9],
+        [ 72,  67,  92,  66,  93],
+        [ 87,   9,  15,  98,  30],
+        [ 30,  87,   9,  98,  10]], device='cuda:0') tensor([ 30,  30,  30,  30,  30], device='cuda:0')
+tensor([[ 30,  17,   3,  18,  91],
+        [ 90,  40,  12,  43,  47],
+        [ 98,  40,  72,  10,  87],
+        [ 98,  39,  87,  10,  40],
+        [ 17,  30,  55,  47,  90]], device='cuda:0') tensor([ 30,  30,  30,  30,  30], device='cuda:0')
+tensor([[ 30,  37,  17,  48,  46],
+        [  5,  57,  95,  77,  69],
+        [ 49,  59,  41,  60,  61],
+        [ 15,  47,  30,  17,  13],
+        [  3,  30,  17,  18,  91]], device='cuda:0') tensor([ 30,  30,  30,  30,  30], device='cuda:0')
+tensor([[ 98,  87,  40,  10,   9],
+        [ 90,  12,  61,  37,  47],
+        [ 30,  17,  46,  16,  99],
+        [ 90,  12,  40,  47,  30],
+        [ 91,  87,  30,  66,  72]], device='cuda:0') tensor([ 30,  30,  30,  30,  30], device='cuda:0')
+tensor([[ 39,  98,  10,  19,  13],
+        [ 30,  17,  66,  91,  47],
+        [ 90,  47,  12,  40,  43],
+        [ 15,  94,  49,  23,   1],
+        [ 46,  99,  48,  16,  17]], device='cuda:0') tensor([ 30,  30,  30,  30,  30], device='cuda:0')
+tensor([[  3,  60,  65,  59,  22],
+        [ 30,   9,  15,  17,  61],
+        [ 99,  51,  59,  52,  41],
+        [ 87,  98,  10,  19,  92],
+        [ 98,  87,  39,  40,  10]], device='cuda:0') tensor([ 30,  30,  30,  30,  30], device='cuda:0')
+tensor([[  1,  36,  59,  79,  15],
+        [ 59,  49,  53,  36,   3],
+        [  9,   1,  91,  61,  15],
+        [ 44,  89,   5,   2,  22],
+        [ 19,  88,  74,   6,  42]], device='cuda:0') tensor([ 31,  31,  31,  31,  31], device='cuda:0')
+tensor([[ 95,   5,  57,  19,  76],
+        [ 59,  94,  71,  60,  56],
+        [ 72,  11,  60,  41,  61],
+        [ 15,   1,  94,  31,   5],
+        [ 60,  97,  59,  11,  32]], device='cuda:0') tensor([ 31,  31,  31,  31,  31], device='cuda:0')
+tensor([[ 77,  95,  58,  57,  69],
+        [  6,  19,  80,  78,  94],
+        [ 90,  12,  47,  10,  17],
+        [  5,  36,  87,   2,  28],
+        [ 91,  49,  23,  56,  41]], device='cuda:0') tensor([ 31,  31,  31,  31,  31], device='cuda:0')
+tensor([[ 77,  69,  58,  35,  95],
+        [ 94,  80,  82,   0,  78],
+        [ 80,  94,  82,  78,  76],
+        [ 80,  82,  94,  14,  64],
+        [ 49,  41,  22,  75,  32]], device='cuda:0') tensor([ 31,  31,  31,  31,  31], device='cuda:0')
+tensor([[ 49,  53,  99,  75,  65],
+        [ 60,  94,  80,  49,  56],
+        [ 68,  47,   0,  12,  64],
+        [ 98,  39,  13,  10,  47],
+        [ 94,  60,  80,  14,  64]], device='cuda:0') tensor([ 31,  31,  31,  31,  31], device='cuda:0')
+tensor([[  1,  15,  36,  54,  79],
+        [ 82,  78,  60,  64,  14],
+        [  6,  74,  19,  71,  88],
+        [ 59,  51,  27,  75,  60],
+        [ 78,  19,  69,   9,   6]], device='cuda:0') tensor([ 31,  31,  31,  31,  31], device='cuda:0')
+tensor([[ 55,  16,  48,  46,  99],
+        [ 15,   1,  99,   3,   9],
+        [ 15,   9,   1,  87,  61],
+        [ 40,  99,  30,  17,  41],
+        [  0,  42,  19,  76,  80]], device='cuda:0') tensor([ 32,  32,  32,  32,  32], device='cuda:0')
+tensor([[ 57,  77,   5,  95,  75],
+        [ 49,  91,  41,  23,  56],
+        [ 99,  15,  30,   3,  47],
+        [ 78,  91,  80,  82,  56],
+        [ 80,  42,  82,  76,   0]], device='cuda:0') tensor([ 32,  32,  32,  32,  32], device='cuda:0')
+tensor([[ 59,  60,  97,  51,  55],
+        [ 51,  59,  97,  55,  60],
+        [ 47,  17,  30,  90,  12],
+        [ 55,   8,  46,  48,  61],
+        [ 60,  49,  97,  59,  55]], device='cuda:0') tensor([ 32,  32,  32,  32,  32], device='cuda:0')
+tensor([[  9,  41,  91,  87,  61],
+        [ 97,  55,  60,  16,  51],
+        [ 59,  41,  61,  52,  96],
+        [ 55,  97,  49,  60,  59],
+        [ 59,   3,  61,  37,  60]], device='cuda:0') tensor([ 32,  32,  32,  32,  32], device='cuda:0')
+tensor([[ 60,  55,  97,  65,  59],
+        [ 15,   1,  77,  69,   9],
+        [ 99,  16,  46,  48,   8],
+        [ 72,  41,  87,  92,   4],
+        [ 51,  60,  55,  59,  97]], device='cuda:0') tensor([ 32,  32,  32,  32,  32], device='cuda:0')
+tensor([[ 46,  72,  48,  43,  11],
+        [ 49,  59,  60,  53,  83],
+        [ 46,  55,  48,  99,  16],
+        [ 49,  59,  32,  60,  41],
+        [ 41,  49,   9,  87,  52]], device='cuda:0') tensor([ 32,  32,  32,  32,  32], device='cuda:0')
+tensor([[ 60,  82,  97,  11,  78],
+        [ 60,  50,  11,  59,  49],
+        [ 60,  97,  11,  55,  50],
+        [ 94,  81,  64,   0,  80],
+        [ 16,  99,  55,  46,  48]], device='cuda:0') tensor([ 33,  33,  33,  33,  33], device='cuda:0')
+tensor([[ 58,  19,  35,  77,  75],
+        [ 55,   3,  59,  60,  99],
+        [ 80,  94,   3,  47,  91],
+        [ 55,  60,  97,  16,  59],
+        [ 41,  46,  48,  99,  55]], device='cuda:0') tensor([ 33,  33,  33,  33,  33], device='cuda:0')
+tensor([[ 60,  59,  51,  55,  97],
+        [ 99,  30,  16,  83,  55],
+        [ 55,  99,  41,  16,  46],
+        [ 41,  72,  78,  24,  49],
+        [  9,  87,  41,  61,   4]], device='cuda:0') tensor([ 33,  33,  33,  33,  33], device='cuda:0')
+tensor([[ 49,  22,  55,  32,  59],
+        [ 72,  41,  24,  91,  66],
+        [ 47,  68,  44,  64,   0],
+        [ 99,  55,  16,  46,  41],
+        [ 55,  16,  99,  48,  46]], device='cuda:0') tensor([ 33,  33,  33,  33,  33], device='cuda:0')
+tensor([[ 49,  99,  53,  60,  65],
+        [ 60,  97,  59,  55,  51],
+        [ 72,  41,  61,  87,  22],
+        [ 30,  61,  87,  37,   9],
+        [ 11,  60,  97,  50,  48]], device='cuda:0') tensor([ 33,  33,  33,  33,  33], device='cuda:0')
+tensor([[ 60,  59,  97,  55,  65],
+        [ 60,  97,  59,  55,  49],
+        [ 59,  55,  49,  53,  99],
+        [ 81,  74,  94,  88,  14],
+        [ 55,  97,  51,  59,  60]], device='cuda:0') tensor([ 33,  33,  33,  33,  33], device='cuda:0')
+tensor([[ 77,  58,  35,  75,   4],
+        [ 46,  48,  16,  99,   8],
+        [ 98,  39,  13,  87,  10],
+        [ 51,  55,  60,  59,  97],
+        [ 49,  55,  59,  53,  33]], device='cuda:0') tensor([ 34,  34,  34,  34,  34], device='cuda:0')
+tensor([[ 61,  59,  11,  60,  55],
+        [ 68,  88,  44,  72,  82],
+        [ 77,  57,  58,  95,   4],
+        [ 90,  12,  47,  43,  37],
+        [ 19,   5,  95,  77,  58]], device='cuda:0') tensor([ 34,  34,  34,  34,  34], device='cuda:0')
+tensor([[ 60,  59,  51,  55,  49],
+        [ 11,  48,  50,  16,  83],
+        [ 17,  12,  47,  84,  99],
+        [ 67,   2,  68,  95,  28],
+        [ 12,  10,  28,  43,  40]], device='cuda:0') tensor([ 34,  34,  34,  34,  34], device='cuda:0')
+tensor([[ 16,  55,  51,  83,  97],
+        [ 72,  87,  66,  43,  12],
+        [ 55,  59,  16,  83,  60],
+        [  0,  57,  25,  42,  80],
+        [ 72,  87,  41,  66,  40]], device='cuda:0') tensor([ 34,  34,  34,  34,  34], device='cuda:0')
+tensor([[ 46,  41,  48,  99,  72],
+        [ 71,  86,  68,  80,  84],
+        [ 59,  99,  65,  86,  22],
+        [ 59,  49,  60,  54,  65],
+        [ 61,  55,  37,  11,   3]], device='cuda:0') tensor([ 34,  34,  34,  34,  34], device='cuda:0')
+tensor([[ 71,  19,  84,  44,  78],
+        [ 55,  60,  46,  97,  48],
+        [ 77,   5,  95,  57,   0],
+        [ 69,  77,   6,  78,  54],
+        [ 16,  55,  83,  99,  51]], device='cuda:0') tensor([ 34,  34,  34,  34,  34], device='cuda:0')
+tensor([[ 95,  19,  57,  77,  58],
+        [ 19,  58,  57,  35,  75],
+        [ 99,  16,  46,  30,  55],
+        [ 19,   6,  69,  39,  77],
+        [ 41,  61,  87,  72,  37]], device='cuda:0') tensor([ 35,  35,  35,  35,  35], device='cuda:0')
+tensor([[ 72,  92,  12,  84,  17],
+        [ 55,  46,  48,  16,  99],
+        [ 46,  43,  12,  62,  50],
+        [ 69,   6,  78,  94,  54],
+        [ 77,  19,  58,  95,  87]], device='cuda:0') tensor([ 35,  35,  35,  35,  35], device='cuda:0')
+tensor([[ 46,  16,  48,  99,  55],
+        [ 60,  51,  59,  27,  65],
+        [ 75,  40,  99,  29,  35],
+        [ 40,  41,  75,   9,   4],
+        [ 77,  58,  57,  95,  75]], device='cuda:0') tensor([ 35,  35,  35,  35,  35], device='cuda:0')
+tensor([[ 60,  82,  64,   3,  59],
+        [ 46,  48,  40,  99,  12],
+        [ 57,  95,  77,   5,   0],
+        [ 59,  60,  49,  65,  32],
+        [  5,  19,   2,  87,  28]], device='cuda:0') tensor([ 35,  35,  35,  35,  35], device='cuda:0')
+tensor([[ 46,  40,  99,  41,  48],
+        [ 60,  49,  59,  51,  97],
+        [ 75,  49,  57,  52,  59],
+        [ 77,   9,  15,  69,  75],
+        [ 86,  44,  71,  89,  35]], device='cuda:0') tensor([ 35,  35,  35,  35,  35], device='cuda:0')
+tensor([[ 86,   9,  40,  46,  92],
+        [ 69,  19,   6,  77,  95],
+        [ 59,  49,  55,  53,  83],
+        [ 57,  77,  95,  69,  75],
+        [ 30,  17,  12,  40,  99]], device='cuda:0') tensor([ 35,  35,  35,  35,  35], device='cuda:0')
+tensor([[ 99,  55,   3,  71,  53],
+        [ 55,  99,   3,  53,  97],
+        [  1,  94,  36,  31,  54],
+        [ 30,  17,  99,   3,  15],
+        [  0,  94,  15,  31,  81]], device='cuda:0') tensor([ 36,  36,  36,  36,  36], device='cuda:0')
+tensor([[ 15,  30,   1,  47,  17],
+        [ 11,  60,  50,  68,  44],
+        [ 49,  32,  75,  86,  27],
+        [ 47,  94,  80,  56,  91],
+        [ 60,  59,  49,  97,  65]], device='cuda:0') tensor([ 36,  36,  36,  36,  36], device='cuda:0')
+tensor([[ 61,  87,   9,  37,  66],
+        [ 46,  12,  40,  10,  16],
+        [ 15,  36,   1,  71,   6],
+        [ 60,  97,  59,  55,  11],
+        [ 59,  97,  60,  49,  83]], device='cuda:0') tensor([ 36,  36,  36,  36,  36], device='cuda:0')
+tensor([[ 59,  55,   3,  53,  51],
+        [ 55,  60,  97,  51,  16],
+        [ 15,  94,  36,   1,  61],
+        [ 60,  97,  55,  94,  59],
+        [ 59,  36,  55,  79,  83]], device='cuda:0') tensor([ 36,  36,  36,  36,  36], device='cuda:0')
+tensor([[ 49,  65,  75,  71,  59],
+        [ 30,  17,  47,  15,  91],
+        [ 71,  44,  94,  36,  65],
+        [ 94,  80,  71,  31,   0],
+        [ 15,  30,  17,  47,  12]], device='cuda:0') tensor([ 36,  36,  36,  36,  36], device='cuda:0')
+tensor([[ 99,  86,  75,  27,  63],
+        [ 61,  37,  41,  87,  66],
+        [ 16,  55,  99,  86,  50],
+        [ 55,  41,  48,  60,  50],
+        [  1,  36,  15,  54,  31]], device='cuda:0') tensor([ 36,  36,  36,  36,  36], device='cuda:0')
+tensor([[ 61,  37,  62,  66,  73],
+        [ 59,  60,  97,  55,  22],
+        [ 59,  60,  49,  51,  53],
+        [ 41,  61,  99,  30,   3],
+        [ 87,  98,  10,  39,  72]], device='cuda:0') tensor([ 37,  37,  37,  37,  37], device='cuda:0')
+tensor([[ 57,   5,   0,  77,  95],
+        [ 87,  41,  40,  30,  37],
+        [ 55,   3,  30,  37,  47],
+        [ 87,  98,  72,  40,  12],
+        [  5,  54,   9,  87,  61]], device='cuda:0') tensor([ 37,  37,  37,  37,  37], device='cuda:0')
+tensor([[ 82,  78,  60,  64,  80],
+        [ 30,  55,  17,  99,  61],
+        [ 30,  90,  12,  17,  43],
+        [ 55,  99,  46,  30,  48],
+        [ 55,  99,   3,  46,  16]], device='cuda:0') tensor([ 37,  37,  37,  37,  37], device='cuda:0')
+tensor([[ 57,  95,   5,  77,  75],
+        [ 61,  37,   3,  30,  15],
+        [ 55,  16,  99,  83,  48],
+        [ 87,  12,   9,  37,  30],
+        [ 47,   3,  61,  41,  91]], device='cuda:0') tensor([ 37,  37,  37,  37,  37], device='cuda:0')
+tensor([[ 30,  37,  61,  87,  12],
+        [ 72,  61,  41,  66,  37],
+        [ 12,  40,  30,  87,   9],
+        [ 55,  60,   3,  97,  59],
+        [ 14,  82,  64,  80,  94]], device='cuda:0') tensor([ 37,  37,  37,  37,  37], device='cuda:0')
+tensor([[ 60,  59,  61,  41,   3],
+        [ 77,  57,  69,  58,   6],
+        [ 59,  60,  61,   3,  94],
+        [ 55,  30,   3,  37,  83],
+        [ 16,  55,  99,  30,  65]], device='cuda:0') tensor([ 37,  37,  37,  37,  37], device='cuda:0')
+tensor([[ 55,  99,  30,  16,  17],
+        [ 15,   1,  36,   9,   5],
+        [ 72,  78,  82,  91,  41],
+        [ 46,  48,  99,  16,  41],
+        [ 48,  46,  16,  43,  99]], device='cuda:0') tensor([ 38,  38,  38,  38,  38], device='cuda:0')
+tensor([[ 47,  90,  37,  64,  55],
+        [ 88,  20,  44,  68,  71],
+        [ 46,  48,  72,  93,  17],
+        [ 80,  78,  94,  82,  76],
+        [ 60,  59,  51,  97,  55]], device='cuda:0') tensor([ 38,  38,  38,  38,  38], device='cuda:0')
+tensor([[ 59,  61,   3,  53,   1],
+        [ 30,  17,  15,  47,  40],
+        [ 57,  77,  58,  95,  75],
+        [ 30,  98,  87,   9,  10],
+        [ 17,  46,  61,  99,  48]], device='cuda:0') tensor([ 38,  38,  38,  38,  38], device='cuda:0')
+tensor([[ 80,  94,  82,  78,  25],
+        [ 11,  50,  86,  60,  45],
+        [ 99,  16,  40,  46,  86],
+        [  5,  57,  77,   0,  75],
+        [ 60,  11,  59,  50,  62]], device='cuda:0') tensor([ 38,  38,  38,  38,  38], device='cuda:0')
+tensor([[ 41,  40,  46,  87,  72],
+        [ 94,  71,  31,  54,  80],
+        [ 49,  91,  56,  41,  57],
+        [ 47,  17,  30,  90,  12],
+        [ 30,  17,  15,   9,  40]], device='cuda:0') tensor([ 38,  38,  38,  38,  38], device='cuda:0')
+tensor([[ 55,  16,  99,  49,  41],
+        [ 55,  64,  47,   3,  93],
+        [ 11,  60,  78,  82,  72],
+        [ 11,  60,  72,  56,  78],
+        [ 71,  94,  80,  31,  54]], device='cuda:0') tensor([ 38,  38,  38,  38,  38], device='cuda:0')
+tensor([[ 87,  12,  98,  39,  10],
+        [ 87,  98,  39,  72,  10],
+        [ 98,  72,  19,  39,  87],
+        [ 87,  98,  10,  12,  92],
+        [ 72,  39,  98,  82,  78]], device='cuda:0') tensor([ 39,  39,  39,  39,  39], device='cuda:0')
+tensor([[ 10,  12,  40,  90,  98],
+        [ 98,  39,  87,  10,  12],
+        [ 39,  98,  13,  10,  19],
+        [ 88,  26,  74,  89,  68],
+        [ 39,  98,  82,  19,  78]], device='cuda:0') tensor([ 39,  39,  39,  39,  39], device='cuda:0')
+tensor([[ 12,  10,  90,  43,  40],
+        [ 91,  98,  39,  78,  72],
+        [ 87,  98,  10,  40,  92],
+        [ 72,  66,  39,  87,  78],
+        [ 88,  92,  10,  39,  67]], device='cuda:0') tensor([ 39,  39,  39,  39,  39], device='cuda:0')
+tensor([[ 98,  87,  40,  39,   9],
+        [ 98,  39,  78,  72,  82],
+        [ 98,  39,  87,  10,  40],
+        [ 98,  39,  72,  82,  78],
+        [  2,  28,  20,  19,  88]], device='cuda:0') tensor([ 39,  39,  39,  39,  39], device='cuda:0')
+tensor([[ 87,  19,  92,  10,  98],
+        [ 39,  98,  10,  72,  12],
+        [ 98,  39,  87,  10,  40],
+        [ 98,  87,  39,  10,  40],
+        [ 21,  20,   2,  67,  88]], device='cuda:0') tensor([ 39,  39,  39,  39,  39], device='cuda:0')
+tensor([[ 98,  39,  19,   6,  88],
+        [ 98,  39,  87,  10,  19],
+        [ 87,  98,  72,  39,  92],
+        [ 98,  30,  40,  87,   9],
+        [ 72,  82,  68,  78,  92]], device='cuda:0') tensor([ 39,  39,  39,  39,  39], device='cuda:0')
+tensor([[ 99,  46,  48,  41,  17],
+        [ 55,  16,  99,  97,  51],
+        [ 98,  39,  10,  87,  40],
+        [ 82,  44,  68,  76,  78],
+        [ 19,  88,  98,  10,  92]], device='cuda:0') tensor([ 40,  40,  40,  40,  40], device='cuda:0')
+tensor([[ 72,  17,  66,  84,  12],
+        [ 82,  78,  44,  68,  19],
+        [ 98,  40,  10,  39,  12],
+        [  9,  87,  91,  15,  30],
+        [ 88,  21,  20,  10,  19]], device='cuda:0') tensor([ 40,  40,  40,  40,  40], device='cuda:0')
+tensor([[ 12,  17,  90,  43,  46],
+        [ 40,  46,  12,  90,  43],
+        [ 55,  97,  90,  60,  64],
+        [ 40,  87,  98,  35,   9],
+        [ 41,  61,  86,  46,  72]], device='cuda:0') tensor([ 40,  40,  40,  40,  40], device='cuda:0')
+tensor([[ 98,  39,  10,  87,  40],
+        [ 67,  20,  21,   2,  28],
+        [  6,  87,  21,   9,  69],
+        [ 72,  78,  91,  82,  39],
+        [ 99,  46,  16,  40,  48]], device='cuda:0') tensor([ 40,  40,  40,  40,  40], device='cuda:0')
+tensor([[ 41,  99,  22,  40,  49],
+        [ 90,  47,  43,  12,  10],
+        [ 61,  37,  43,  90,  48],
+        [ 55,  51,  97,  59,  83],
+        [ 86,  71,  19,  84,  52]], device='cuda:0') tensor([ 40,  40,  40,  40,  40], device='cuda:0')
+tensor([[ 16,  46,  41,  40,  22],
+        [ 55,  97,  60,  48,  59],
+        [ 72,  90,  12,  10,  30],
+        [ 98,  10,  39,  12,  40],
+        [ 30,  91,  47,  17,  66]], device='cuda:0') tensor([ 40,  40,  40,  40,  40], device='cuda:0')
+tensor([[ 16,  55,  83,  99,  48],
+        [ 48,  46,  43,  11,  50],
+        [ 17,  47,  30,  46,  90],
+        [ 49,  59,  60,  33,  65],
+        [ 40,  46,  17,  41,  87]], device='cuda:0') tensor([ 41,  41,  41,  41,  41], device='cuda:0')
+tensor([[ 60,  59,  51,  97,  55],
+        [ 40,  30,  17,  99,  41],
+        [ 48,  46,  50,  11,  41],
+        [ 49,  94,  80,  71,  99],
+        [ 49,  59,  96,  60,  53]], device='cuda:0') tensor([ 41,  41,  41,  41,  41], device='cuda:0')
+tensor([[ 41,  99,  47,  91,  40],
+        [ 16,  55,  99,  46,  48],
+        [ 55,  99,   3,  41,  30],
+        [ 16,  48,  46,  99,  86],
+        [ 49,  60,  59,  56,  32]], device='cuda:0') tensor([ 41,  41,  41,  41,  41], device='cuda:0')
+tensor([[ 47,  91,  41,   3,  17],
+        [ 94,  80,  78,  64,  82],
+        [  9,  41,  87,  40,  23],
+        [ 46,  17,  99,  30,  48],
+        [ 41,   4,  49,  52,  22]], device='cuda:0') tensor([ 41,  41,  41,  41,  41], device='cuda:0')
+tensor([[ 46,  99,  48,  16,  55],
+        [  0,  81,  64,  42,  80],
+        [ 57,  25,  47,  80,  76],
+        [ 46,  48,  41,  90,  40],
+        [ 60,  59,  41,  55,  97]], device='cuda:0') tensor([ 41,  41,  41,  41,  41], device='cuda:0')
+tensor([[ 16,  55,  48,  99,  46],
+        [ 60,  59,  78,   3,  82],
+        [ 16,  49,  55,  83,  99],
+        [ 46,  48,  50,  86,  43],
+        [ 61,  37,  41,  66,   3]], device='cuda:0') tensor([ 41,  41,  41,  41,  41], device='cuda:0')
+tensor([[ 82,  80,  64,  78,  14],
+        [  0,  81,  64,  74,  20],
+        [  0,  81,  42,  80,  25],
+        [ 81,   0,  42,  74,  64],
+        [ 88,  68,  92,  89,  44]], device='cuda:0') tensor([ 42,  42,  42,  42,  42], device='cuda:0')
+tensor([[ 98,  87,  10,  39,  72],
+        [ 60,  86,  50,  45,  11],
+        [ 11,  60,  72,  50,  68],
+        [ 94,  80,  81,  71,  14],
+        [  0,  80,  76,  42,  25]], device='cuda:0') tensor([ 42,  42,  42,  42,  42], device='cuda:0')
+tensor([[ 80,  64,  82,  94,  14],
+        [ 94,  15,  47,   0,  80],
+        [ 80,  94,  82,   0,  42],
+        [ 80,  82,  94,  64,  14],
+        [ 42,  80,  74,  81,   0]], device='cuda:0') tensor([ 42,  42,  42,  42,  42], device='cuda:0')
+tensor([[ 80,  94,  82,  78,  76],
+        [ 80,   0,  94,  82,  42],
+        [  6,  19,  78,  76,  82],
+        [ 88,  74,  20,  67,  19],
+        [  0,  81,  64,  47,  68]], device='cuda:0') tensor([ 42,  42,  42,  42,  42], device='cuda:0')
+tensor([[  0,  42,  80,  81,  94],
+        [ 59,  62,  60,  22,  41],
+        [ 44,  80,  94,  14,  82],
+        [ 94,  81,  64,  80,   0],
+        [ 81,  80,   0,  74,  42]], device='cuda:0') tensor([ 42,  42,  42,  42,  42], device='cuda:0')
+tensor([[ 42,  74,   0,  81,  26],
+        [ 80,  74,  14,  71,  94],
+        [ 14,  80,  94,  64,  81],
+        [ 80,  81,   0,  42,  82],
+        [ 81,  74,  42,  26,  14]], device='cuda:0') tensor([ 42,  42,  42,  42,  42], device='cuda:0')
+tensor([[ 98,  10,  40,  39,  12],
+        [ 68,  82,  72,  44,  78],
+        [ 12,  90,  40,  17,  43],
+        [ 48,  11,  50,  16,  46],
+        [ 21,  10,  28,  20,  67]], device='cuda:0') tensor([ 43,  43,  43,  43,  43], device='cuda:0')
+tensor([[ 90,  12,  17,  30,  47],
+        [ 90,  43,  12,  47,  37],
+        [ 92,  72,  12,  10,  87],
+        [ 72,  66,  68,  61,  37],
+        [ 90,  43,  12,  17,  47]], device='cuda:0') tensor([ 43,  43,  43,  43,  43], device='cuda:0')
+tensor([[ 90,  12,  43,  47,  10],
+        [ 46,  48,  16,  17,  30],
+        [ 90,  47,  12,  43,  17],
+        [ 40,  46,  99,  41,   8],
+        [ 72,  78,  24,  66,  82]], device='cuda:0') tensor([ 43,  43,  43,  43,  43], device='cuda:0')
+tensor([[ 43,  37,  11,  61,  62],
+        [ 90,  43,  12,  30,  40],
+        [ 48,  46,  72,  43,  11],
+        [ 67,  72,  11,  43,  62],
+        [ 16,  48,  46,  55,  83]], device='cuda:0') tensor([ 43,  43,  43,  43,  43], device='cuda:0')
+tensor([[ 72,  66,  92,  37,  41],
+        [ 72,  68,  78,  84,  82],
+        [ 72,  67,  62,  43,   2],
+        [ 60,  11,  97,  59,  62],
+        [ 87,  72,   9,  41,  98]], device='cuda:0') tensor([ 43,  43,  43,  43,  43], device='cuda:0')
+tensor([[ 46,  40,  43,  48,  72],
+        [ 12,  10,  90,  43,  98],
+        [ 90,  17,  47,  30,  46],
+        [ 50,  11,  86,  62,  48],
+        [ 20,   2,  43,  44,  28]], device='cuda:0') tensor([ 43,  43,  43,  43,  43], device='cuda:0')
+tensor([[ 82,  78,  80,  76,  94],
+        [ 82,  80,  14,  94,  64],
+        [ 88,  68,  92,  44,  89],
+        [ 44,  14,  64,  60,  68],
+        [ 82,  44,  78,  64,  94]], device='cuda:0') tensor([ 44,  44,  44,  44,  44], device='cuda:0')
+tensor([[ 82,  44,  80,  76,  42],
+        [ 47,  12,  17,  68,   0],
+        [ 14,  88,  68,  67,  44],
+        [ 99,  46,  41,  48,  86],
+        [ 22,  71,  99,  49,  75]], device='cuda:0') tensor([ 44,  44,  44,  44,  44], device='cuda:0')
+tensor([[ 80,  82,  94,  78,  76],
+        [ 69,  71,  31,  54,   6],
+        [ 44,  94,  82,  76,  80],
+        [ 81,  68,  74,  88,  44],
+        [ 74,  44,  42,  26,  14]], device='cuda:0') tensor([ 44,  44,  44,  44,  44], device='cuda:0')
+tensor([[ 98,  39,  10,  87,  19],
+        [ 72,  68,  67,  12,  92],
+        [ 88,  71,  68,  44,  89],
+        [ 55,  99,  46,  47,  90],
+        [ 82,  68,  78,  44,  72]], device='cuda:0') tensor([ 44,  44,  44,  44,  44], device='cuda:0')
+tensor([[ 19,   6,  78,  44,  76],
+        [ 88,  20,  74,  67,  26],
+        [  6,  19,  76,  78,  82],
+        [ 82,  88,  68,  44,  92],
+        [ 19,  88,  76,  74,  44]], device='cuda:0') tensor([ 44,  44,  44,  44,  44], device='cuda:0')
+tensor([[ 82,  80,  94,  64,  78],
+        [ 82,  80,  94,  78,  44],
+        [ 16,  55,  48,  46,  99],
+        [ 81,  80,  44,   0,  64],
+        [ 14,  64,  44,  94,  81]], device='cuda:0') tensor([ 44,  44,  44,  44,  44], device='cuda:0')
+tensor([[  6,  69,  15,  54,  77],
+        [ 86,  50,  45,  46,  11],
+        [ 67,  45,  62,  92,  43],
+        [ 90,  43,  55,  47,  46],
+        [  6,  78,  71,  44,  13]], device='cuda:0') tensor([ 45,  45,  45,  45,  45], device='cuda:0')
+tensor([[ 11,  50,  62,  60,  73],
+        [ 11,  60,  50,  86,  45],
+        [ 16,  55,  48,  83,  50],
+        [ 72,  41,  78,  92,  86],
+        [ 61,  37,  90,  11,  62]], device='cuda:0') tensor([ 45,  45,  45,  45,  45], device='cuda:0')
+tensor([[  5,  19,  44,  89,  42],
+        [ 46,  48,   8,  16,  99],
+        [ 19,  71,  78,  86,  88],
+        [ 41,  72,  61,  46,  92],
+        [ 11,  71,  56,  85,  68]], device='cuda:0') tensor([ 45,  45,  45,  45,  45], device='cuda:0')
+tensor([[ 60,  94,  56,  80,  65],
+        [ 42,  26,  74,  68,  88],
+        [ 72,  86,  50,  45,  11],
+        [ 19,  88,  89,  44,  92],
+        [ 46,  48,  99,  16,   8]], device='cuda:0') tensor([ 45,  45,  45,  45,  45], device='cuda:0')
+tensor([[ 16,  48,  46,   8,  86],
+        [ 94,  60,  80,  71,  65],
+        [ 88,  74,  19,  44,  68],
+        [ 44,  89,  88,  26,  82],
+        [ 92,  87,  44,  19,  88]], device='cuda:0') tensor([ 45,  45,  45,  45,  45], device='cuda:0')
+tensor([[ 16,  48,  86,  46,  99],
+        [ 98,  12,  10,  39,  40],
+        [ 19,  77,  69,  95,   6],
+        [ 46,  48,  41,  72,   8],
+        [ 87,  98,  10,  40,  19]], device='cuda:0') tensor([ 45,  45,  45,  45,  45], device='cuda:0')
+tensor([[ 16,  48,  99,  46,  50],
+        [ 87,  98,  10,  39,  40],
+        [ 47,  17,  55,  30,   3],
+        [ 12,  10,  43,  88,  90],
+        [ 78,  80,   6,  94,  71]], device='cuda:0') tensor([ 46,  46,  46,  46,  46], device='cuda:0')
+tensor([[ 46,  16,  48,  99,  55],
+        [ 55,  97,  16,  51,  60],
+        [ 61,  37,  59,  60,   3],
+        [ 99,  46,  55,  41,  48],
+        [  5,   2,  87,  28,  12]], device='cuda:0') tensor([ 46,  46,  46,  46,  46], device='cuda:0')
+tensor([[ 60,  55,  59,  51,  97],
+        [ 55,  16,  51,  97,  83],
+        [  9,  17,  61,  30,  87],
+        [ 82,  72,  78,  91,  68],
+        [ 40,  12,  87,  46,   9]], device='cuda:0') tensor([ 46,  46,  46,  46,  46], device='cuda:0')
+tensor([[ 48,  46,  43,  55,  90],
+        [ 55,  16,  48,  46,   8],
+        [ 37,  61,  55,  59,   3],
+        [ 72,  66,  91,  17,  41],
+        [ 60,  59,  73,  11,  61]], device='cuda:0') tensor([ 46,  46,  46,  46,  46], device='cuda:0')
+tensor([[ 55,  48,  46,  97,  16],
+        [ 55,  99,  16,  46,  48],
+        [ 55,  16,  99,  48,  50],
+        [ 86,  40,  63,  87,  35],
+        [ 41,  87,  72,   9,  40]], device='cuda:0') tensor([ 46,  46,  46,  46,  46], device='cuda:0')
+tensor([[ 14,  81,  82,  64,  74],
+        [ 48,  46,  16,  50,  55],
+        [ 48,  16,  46,  99,   8],
+        [ 99,  46,  40,  16,  48],
+        [ 48,  11,  46,  16,  50]], device='cuda:0') tensor([ 46,  46,  46,  46,  46], device='cuda:0')
+tensor([[ 47,  90,   0,  64,  81],
+        [ 60,  80,  94,  97,  59],
+        [ 47,   0,  39,  98,  82],
+        [ 90,  47,  12,  17,  30],
+        [ 47,  90,  12,   0,  17]], device='cuda:0') tensor([ 47,  47,  47,  47,  47], device='cuda:0')
+tensor([[ 13,  15,  87,  47,  98],
+        [  9,  35,  40,  87,  75],
+        [ 46,  48,  99,  40,  16],
+        [ 94,   0,  80,  81,  64],
+        [ 90,  12,  43,  30,  47]], device='cuda:0') tensor([ 47,  47,  47,  47,  47], device='cuda:0')
+tensor([[ 47,  90,  99,  17,  30],
+        [ 60,  64,  80,  14,  94],
+        [ 91,  61,  66,  56,   3],
+        [ 78,  72,  91,  82,  56],
+        [ 47,   0,  64,  81,  94]], device='cuda:0') tensor([ 47,  47,  47,  47,  47], device='cuda:0')
+tensor([[ 47,  64,  17,   3,  93],
+        [  0,  47,  57,  25,  76],
+        [ 47,  12,  30,  17,  10],
+        [ 47,  90,  17,  12,  30],
+        [ 47,  90,  12,  46,  43]], device='cuda:0') tensor([ 47,  47,  47,  47,  47], device='cuda:0')
+tensor([[ 47,  84,  72,  66,  61],
+        [ 55,  97,  99,  60,  59],
+        [ 81,  47,   0,  74,  42],
+        [ 47,  76,  80,  44,  94],
+        [ 77,   5,  19,  95,  87]], device='cuda:0') tensor([ 47,  47,  47,  47,  47], device='cuda:0')
+tensor([[ 91,  47,  87,  41,   3],
+        [ 47,   0,  64,  90,  81],
+        [ 47,  30,  90,  17,  12],
+        [ 47,   0,  94,  64,  80],
+        [ 90,  12,  47,  17,  30]], device='cuda:0') tensor([ 47,  47,  47,  47,  47], device='cuda:0')
+tensor([[ 46,  48,  16,  99,   8],
+        [ 65,  60,  55,  99,  49],
+        [ 95,  57,  67,   4,  75],
+        [ 55,  16,  99,  46,  48],
+        [ 90,  40,  12,  46,  99]], device='cuda:0') tensor([ 48,  48,  48,  48,  48], device='cuda:0')
+tensor([[ 16,  86,  48,  50,  83],
+        [ 80,  94,  64,  82,   0],
+        [ 55,  16,  48,  83,  46],
+        [ 82,  78,  80,  76,  25],
+        [ 43,  12,  10,  90,  67]], device='cuda:0') tensor([ 48,  48,  48,  48,  48], device='cuda:0')
+tensor([[ 46,  48,  16,  99,  30],
+        [ 46,  48,  99,  41,  50],
+        [ 60,  80,  94,  82,  64],
+        [ 16,  55,  48,  86,  99],
+        [ 90,  43,  12,  47,  10]], device='cuda:0') tensor([ 48,  48,  48,  48,  48], device='cuda:0')
+tensor([[ 61,  41,  37,  30,   3],
+        [ 90,  47,  43,  12,  46],
+        [ 43,  48,  46,  67,  62],
+        [ 55,  99,  46,  48,  16],
+        [ 14,  44,  68,  82,  88]], device='cuda:0') tensor([ 48,  48,  48,  48,  48], device='cuda:0')
+tensor([[ 90,  46,  43,  48,  12],
+        [ 46,  48,  50,  41,   8],
+        [ 19,  77,  95,  58,  35],
+        [ 86,  50,  48,  46,  16],
+        [ 16,  55,  51,  97,  48]], device='cuda:0') tensor([ 48,  48,  48,  48,  48], device='cuda:0')
+tensor([[ 16,  83,  48,  55,  86],
+        [ 46,  90,  48,  43,  17],
+        [ 46,  99,  48,  16,  34],
+        [ 90,  46,  43,  48,  12],
+        [ 55,  16,  49,  50,  97]], device='cuda:0') tensor([ 48,  48,  48,  48,  48], device='cuda:0')
+tensor([[ 80,  94,  78,  95,  76],
+        [ 49,  99,  53,  29,  23],
+        [ 55,  59,  60,  51,  97],
+        [ 83,  16,  51,  55,  97],
+        [ 55,  99,  97,  16,  53]], device='cuda:0') tensor([ 49,  49,  49,  49,  49], device='cuda:0')
+tensor([[ 49,  99,  23,  56,  91],
+        [ 99,  16,  55,  83,  30],
+        [ 49,  60,  59,  32,  53],
+        [ 15,   9,  87,  30,   1],
+        [ 99,  17,  47,  30,  55]], device='cuda:0') tensor([ 49,  49,  49,  49,  49], device='cuda:0')
+tensor([[ 49,  99,  53,  55,  51],
+        [ 55,  51,  59,  97,  16],
+        [ 78,   6,  94,  80,  69],
+        [ 49,  60,  59,  32,  65],
+        [ 49,  56,  91,  59,  32]], device='cuda:0') tensor([ 49,  49,  49,  49,  49], device='cuda:0')
+tensor([[ 54,  69,  31,   1,  49],
+        [ 49,  60,  94,  65,  71],
+        [ 80,  94,  49,  78,  82],
+        [ 60,  59,  49,  33,  55],
+        [ 47,   0,  15,   1,  57]], device='cuda:0') tensor([ 49,  49,  49,  49,  49], device='cuda:0')
+tensor([[ 99,   3,  49,  47,  30],
+        [ 49,  60,  53,  56,  94],
+        [ 49,  60,  32,  65,  80],
+        [ 49,  53,  59,  79,  83],
+        [ 49,  56,  78,  91,  85]], device='cuda:0') tensor([ 49,  49,  49,  49,  49], device='cuda:0')
+tensor([[ 49,  97,  60,  59,  55],
+        [ 49,  99,  55,  53,  97],
+        [ 60,  49,  11,  32,  86],
+        [ 49,  53,  99,  94,  60],
+        [ 49,  75,  79,   1,  65]], device='cuda:0') tensor([ 49,  49,  49,  49,  49], device='cuda:0')
+tensor([[ 67,  40,  92,  46,  45],
+        [ 60,  14,  82,  64,  44],
+        [ 11,  97,  93,  50,  48],
+        [ 50,  46,  48,  86,  84],
+        [ 49,  16,  51,  83,  99]], device='cuda:0') tensor([ 50,  50,  50,  50,  50], device='cuda:0')
+tensor([[ 59,  11,  60,  97,  55],
+        [ 86,  50,  16,  60,  51],
+        [  0,  80,  94,  64,  81],
+        [ 15,   9,  87,   1,  77],
+        [ 71,  59,  49,  54,  50]], device='cuda:0') tensor([ 50,  50,  50,  50,  50], device='cuda:0')
+tensor([[ 46,  48,  16,  99,  55],
+        [ 87,  98,   9,  10,  40],
+        [ 55,  16,  97,  83,  60],
+        [ 60,  11,  59,  61,  50],
+        [ 80,  42,  76,  94,  81]], device='cuda:0') tensor([ 50,  50,  50,  50,  50], device='cuda:0')
+tensor([[ 16,  55,  99,  97,  48],
+        [ 55,  48,  99,  46,  97],
+        [ 11,  60,  50,  71,  59],
+        [ 72,  41,  78,  24,   4],
+        [ 15,  36,   1,  54,  69]], device='cuda:0') tensor([ 50,  50,  50,  50,  50], device='cuda:0')
+tensor([[  6,  94,  71,  44,  80],
+        [ 19,  95,   5,  77,   6],
+        [ 86,  35,  75,  99,  16],
+        [ 60,  59,  61,   3,  11],
+        [ 48,  11,  46,  43,  50]], device='cuda:0') tensor([ 50,  50,  50,  50,  50], device='cuda:0')
+tensor([[ 82,  78,  80,   6,  76],
+        [ 50,  48,  16,  46,  86],
+        [ 40,  17,  61,  48,  46],
+        [ 60,  59,  97,  11,  49],
+        [ 55,  97,  60,  59,   3]], device='cuda:0') tensor([ 50,  50,  50,  50,  50], device='cuda:0')
+tensor([[ 51,  59,  55,  60,  97],
+        [ 55,  16,  99,  51,  83],
+        [ 51,  55,  59,  97,  60],
+        [ 51,  49,  53,  99,  59],
+        [ 51,  59,  97,  60,  55]], device='cuda:0') tensor([ 51,  51,  51,  51,  51], device='cuda:0')
+tensor([[ 51,  53,  59,  55,  99],
+        [ 60,  59,  49,  94,  51],
+        [ 49,  59,  94,  53,  51],
+        [ 55,  16,  51,  83,  97],
+        [ 51,  16,  55,  97,  83]], device='cuda:0') tensor([ 51,  51,  51,  51,  51], device='cuda:0')
+tensor([[ 51,  55,  59,  97,  60],
+        [ 60,  59,  51,  97,  55],
+        [ 51,  55,  59,  97,  53],
+        [ 51,  60,  55,  97,  59],
+        [ 51,  55,  59,  60,  97]], device='cuda:0') tensor([ 51,  51,  51,  51,  51], device='cuda:0')
+tensor([[ 77,  57,  95,   5,  75],
+        [ 19,  87,  35,  86,  40],
+        [ 51,  97,  60,  59,  55],
+        [ 55,  16,  99,  83,  41],
+        [ 22,  49,  41,  18,   3]], device='cuda:0') tensor([ 51,  51,  51,  51,  51], device='cuda:0')
+tensor([[ 60,  51,  59,  97,  55],
+        [ 60,  59,  97,  51,  55],
+        [ 16,  55,  97,  51,  60],
+        [ 51,  97,  59,  55,  83],
+        [ 60,  51,  59,  97,  55]], device='cuda:0') tensor([ 51,  51,  51,  51,  51], device='cuda:0')
+tensor([[ 60,  59,  51,  55,  97],
+        [ 60,  97,  59,  55,  51],
+        [ 60,  51,  55,  59,  97],
+        [ 80,  78,  94,  71,  82],
+        [ 55,  51,  97,  59,  60]], device='cuda:0') tensor([ 51,  51,  51,  51,  51], device='cuda:0')
+tensor([[ 30,   9,  17,  40,  87],
+        [  9,  87,  40,  30,  12],
+        [  6,  69,  78,  71,  94],
+        [ 86,  99,  16,  46,  35],
+        [ 55,  97,  16,  60,  51]], device='cuda:0') tensor([ 52,  52,  52,  52,  52], device='cuda:0')
+tensor([[ 11,  60,  59,  97,  22],
+        [ 17,  12,  46,  30,  90],
+        [ 64,  14,  80,  82,   0],
+        [ 46,  41,  48,  99,  55],
+        [ 36,  83,  79,  70,  16]], device='cuda:0') tensor([ 52,  52,  52,  52,  52], device='cuda:0')
+tensor([[ 72,  41,  40,  92,  87],
+        [ 99,  49,  41,  52,  53],
+        [ 16,  55,  99,  48,  46],
+        [ 61,   9,  79,  37,  59],
+        [ 55,  97,  99,  60,   3]], device='cuda:0') tensor([ 52,  52,  52,  52,  52], device='cuda:0')
+tensor([[ 60,  59,  97,  55,  51],
+        [ 19,  95,  67,   0,   5],
+        [ 87,  40,   9,  30,  12],
+        [ 30,  17,  47,  12,  90],
+        [ 60,  59,  97,  11,  55]], device='cuda:0') tensor([ 52,  52,  52,  52,  52], device='cuda:0')
+tensor([[ 72,  41,  87,  61,   9],
+        [ 71,  94,  59,   0,  55],
+        [ 99,  46,  40,  12,  17],
+        [ 47,  98,  10,  40,  90],
+        [ 55,  99,  16,  41,  46]], device='cuda:0') tensor([ 52,  52,  52,  52,  52], device='cuda:0')
+tensor([[ 61,   3,  65,  99,  18],
+        [ 61,  37,  11,  59,   3],
+        [  9,  15,  78,  91,  57],
+        [ 59,  60,  97,  51,  49],
+        [ 60,  59,  51,  97,  55]], device='cuda:0') tensor([ 52,  52,  52,  52,  52], device='cuda:0')
+tensor([[ 95,  67,   2,  57,  45],
+        [ 72,  78,  82,  98,  91],
+        [ 49,   3,  53,  59,  65],
+        [ 11,  64,  93,  61,   3],
+        [ 17,  30,  47,   3,  99]], device='cuda:0') tensor([ 53,  53,  53,  53,  53], device='cuda:0')
+tensor([[ 16,  55,  48,  83,  51],
+        [ 12,  40,  47,  10,  30],
+        [ 51,  55,  59,  60,  53],
+        [ 59,   5,  51,  95,  60],
+        [ 60,  59,  97,  55,  51]], device='cuda:0') tensor([ 53,  53,  53,  53,  53], device='cuda:0')
+tensor([[ 55,  16,  99,  97,  83],
+        [ 37,  41,  61,  22,  30],
+        [ 91,  78,  56,  66,  85],
+        [ 57,  15,   1,  78,  91],
+        [ 91,  15,   9,  30,  47]], device='cuda:0') tensor([ 53,  53,  53,  53,  53], device='cuda:0')
+tensor([[ 11,  60,  97,  93,  55],
+        [ 59,  60,  55,   3,  51],
+        [ 55,  59,  60,  97,  83],
+        [ 17,  66,  61,  47,  30],
+        [ 60,  51,  59,  97,  55]], device='cuda:0') tensor([ 53,  53,  53,  53,  53], device='cuda:0')
+tensor([[ 61,  41,   3,  91,  56],
+        [ 60,  59,  97,  55,  51],
+        [ 91,  78,  82,  56,  72],
+        [ 15,  91,   3,   1,  61],
+        [ 87,   9,  98,  72,  66]], device='cuda:0') tensor([ 53,  53,  53,  53,  53], device='cuda:0')
+tensor([[ 51,  59,  97,  60,  55],
+        [ 55,  60,  97,  59,  51],
+        [ 59,  71,  65,  83,  50],
+        [ 87,   9,  98,  40,  10],
+        [ 72,  11,  61,  50,  66]], device='cuda:0') tensor([ 53,  53,  53,  53,  53], device='cuda:0')
+tensor([[  6,  69,  78,  54,  77],
+        [ 76,  47,  80,  13,  82],
+        [ 69,  15,  77,   9,   1],
+        [ 49,  60,  99,  65,  55],
+        [ 78,  80,   6,  57,  76]], device='cuda:0') tensor([ 54,  54,  54,  54,  54], device='cuda:0')
+tensor([[ 19,  54,   5,  69,   6],
+        [ 94,  71,  80,  44,  76],
+        [ 69,  77,   6,  54,  78],
+        [ 77,  19,  58,  69,  95],
+        [ 80,  94,  60,  49,  59]], device='cuda:0') tensor([ 54,  54,  54,  54,  54], device='cuda:0')
+tensor([[ 87,  41,   9,  40,  98],
+        [ 75,  99,  86,  52,  63],
+        [ 71,  94,  44,  54,  42],
+        [ 55,  16,  99,  97,  51],
+        [ 91,   9,  15,  47,  56]], device='cuda:0') tensor([ 54,  54,  54,  54,  54], device='cuda:0')
+tensor([[ 99,  17,  30,  16,  55],
+        [ 19,  71,  69,  54,   5],
+        [ 51,  49,  99,  60,  59],
+        [ 94,  80,  71,  64,   0],
+        [  9,  61,  15,  91,  87]], device='cuda:0') tensor([ 54,  54,  54,  54,  54], device='cuda:0')
+tensor([[ 47,  17,  30,  12,  90],
+        [ 77,  95,  57,  58,  75],
+        [ 94,  80,  15,  78,  31],
+        [ 47,  80,  91,  25,  94],
+        [ 77,  69,  78,   6,  57]], device='cuda:0') tensor([ 54,  54,  54,  54,  54], device='cuda:0')
+tensor([[ 69,   6,  78,  15,  54],
+        [  5,  57,   0,  19,  42],
+        [ 20,  88,  81,  68,  74],
+        [ 55,  16,  51,  83,  97],
+        [ 94,  80,  31,   0,  15]], device='cuda:0') tensor([ 54,  54,  54,  54,  54], device='cuda:0')
+tensor([[ 55,  99,  16,  33,  49],
+        [ 51,  55,  97,  60,  16],
+        [ 61,  60,  72,  62,  41],
+        [ 49,  86,  50,  71,  65],
+        [ 55,  60,  97,  33,  49]], device='cuda:0') tensor([ 55,  55,  55,  55,  55], device='cuda:0')
+tensor([[ 30,  17,  41,  40,  47],
+        [  5,  87,  44,  19,   2],
+        [ 99,  46,  48,  16,   8],
+        [ 60,  97,  59,  51,  55],
+        [ 41,  86,  63,  46,  35]], device='cuda:0') tensor([ 55,  55,  55,  55,  55], device='cuda:0')
+tensor([[ 55,  16,  99,  51,  83],
+        [ 55,  16,  99,  46,  48],
+        [ 55,  97,  51,  60,  99],
+        [ 55,  97,  60,  59,  33],
+        [ 55,  16,  99,  51,  97]], device='cuda:0') tensor([ 55,  55,  55,  55,  55], device='cuda:0')
+tensor([[ 46,  48,  41,  99,  16],
+        [ 16,  55,  83,  50,  48],
+        [ 47,  72,  66,  17,  30],
+        [ 55,  59,  99,  49,  41],
+        [ 55,  59,  60,  97,  51]], device='cuda:0') tensor([ 55,  55,  55,  55,  55], device='cuda:0')
+tensor([[ 49,  59,  55,  99,  53],
+        [ 44,  89,  71,  60,  68],
+        [ 99,  49,   3,  55,  53],
+        [ 55,  99,  16,   3,  83],
+        [ 60,  82,  78,  59,  80]], device='cuda:0') tensor([ 55,  55,  55,  55,  55], device='cuda:0')
+tensor([[ 59,  60,  97,  55,  83],
+        [ 99,  16,  46,  48,  55],
+        [ 16,  48,  46,  99,  55],
+        [ 82,  78,  60,  80,  32],
+        [ 55,  49,  16,  60,  99]], device='cuda:0') tensor([ 55,  55,  55,  55,  55], device='cuda:0')
+tensor([[ 91,  56,   3,  47,  78],
+        [ 82,  80,  78,  19,  76],
+        [ 41,  72,  61,  37,  48],
+        [ 94,  80,  71,  44,  64],
+        [ 15,  30,  47,   9,  17]], device='cuda:0') tensor([ 56,  56,  56,  56,  56], device='cuda:0')
+tensor([[ 47,  17,  91,   3,  84],
+        [ 55,  16,  83,  99,  53],
+        [ 80,  94,  82,  60,  78],
+        [ 46,  48,  99,  16,  90],
+        [ 86,  99,  50,  46,  48]], device='cuda:0') tensor([ 56,  56,  56,  56,  56], device='cuda:0')
+tensor([[ 44,  66,  82,  61,  89],
+        [ 30,  17,  47,  15,  91],
+        [ 69,   6,  71,  54,  19],
+        [ 61,  72,  37,  66,  91],
+        [ 60,  72,  41,  11,  59]], device='cuda:0') tensor([ 56,  56,  56,  56,  56], device='cuda:0')
+tensor([[ 78,  80,   5,  61,   3],
+        [  1,  79,  15,  23,  49],
+        [ 87,  72,  12,  98,  66],
+        [ 80,  82,  94,  25,  64],
+        [ 78,  91,  72,  82,  56]], device='cuda:0') tensor([ 56,  56,  56,  56,  56], device='cuda:0')
+tensor([[ 78,   6,  80,  57,  82],
+        [ 98,  39,  40,  87,  19],
+        [ 15,  69,   1,  79,  54],
+        [ 11,  61,  37,  93,  38],
+        [ 47,  64,  80,   0,  91]], device='cuda:0') tensor([ 56,  56,  56,  56,  56], device='cuda:0')
+tensor([[  3,  37,  61,  91,  11],
+        [ 41,  46,  48,  50,  86],
+        [ 55,  97,  60,  59,  49],
+        [ 55,  97,  16,  51,  60],
+        [ 11,  60,  68,  56,  50]], device='cuda:0') tensor([ 56,  56,  56,  56,  56], device='cuda:0')
+tensor([[ 78,  80,  82,  19,  76],
+        [ 77,  57,  69,  58,  75],
+        [ 47,  17,  30,  99,  12],
+        [ 67,   0,  81,   2,  20],
+        [ 77,  57,  58,  95,  69]], device='cuda:0') tensor([ 57,  57,  57,  57,  57], device='cuda:0')
+tensor([[ 19,  98,  92,  68,  89],
+        [ 39,  98,  10,  19,   6],
+        [ 77,  95,   5,  57,  96],
+        [ 16,  86,  48,  46,  99],
+        [ 77,  57,  58,  95,  75]], device='cuda:0') tensor([ 57,  57,  57,  57,  57], device='cuda:0')
+tensor([[ 41,  61,  72,   4,  59],
+        [ 57,  75,  29,  77,  58],
+        [ 19,  69,  78,   6,  71],
+        [ 15,  30,   1,   9,  79],
+        [ 49,  60,  59,  53,  51]], device='cuda:0') tensor([ 57,  57,  57,  57,  57], device='cuda:0')
+tensor([[ 57,   0,  77,  75,  95],
+        [ 77,  57,   5,  58,  95],
+        [ 68,  72,  82,  44,  78],
+        [ 77,  57,  58,  95,  69],
+        [ 80,  94,  78,  82,  76]], device='cuda:0') tensor([ 57,  57,  57,  57,  57], device='cuda:0')
+tensor([[ 60,  64,  59,  14,  78],
+        [ 61,  91,  66,  37,  17],
+        [ 19,  78,  82,  76,   6],
+        [ 59,  60,  97,  55,  51],
+        [  6,  15,  78,  69,  57]], device='cuda:0') tensor([ 57,  57,  57,  57,  57], device='cuda:0')
+tensor([[ 77,  57,  58,  95,  69],
+        [ 19,   5,  44,  89,  87],
+        [ 78,  82,  80,  76,  19],
+        [ 19,  77,   5,  57,  95],
+        [ 57,  77,   1,  54,   5]], device='cuda:0') tensor([ 57,  57,  57,  57,  57], device='cuda:0')
+tensor([[ 69,  54,  49,  78,  15],
+        [ 35,  58,  19,  77,  40],
+        [ 59,  60,  97,  61,  55],
+        [ 49,  75,  29,  59,  27],
+        [  5,  77,   4,  87,  96]], device='cuda:0') tensor([ 58,  58,  58,  58,  58], device='cuda:0')
+tensor([[ 77,  57,   5,  69,  95],
+        [ 19,   6,  76,  78,  84],
+        [ 77,  58,  57,  95,  19],
+        [ 19,  77,  95,  58,   5],
+        [ 19,  98,  39,  87,   5]], device='cuda:0') tensor([ 58,  58,  58,  58,  58], device='cuda:0')
+tensor([[ 77,  57,  58,  75,  69],
+        [ 77,  57,  69,  58,   5],
+        [ 75,  40,  35,   4,  29],
+        [ 19,  77,  95,  58,  57],
+        [ 15,   1,   9,  79,  36]], device='cuda:0') tensor([ 58,  58,  58,  58,  58], device='cuda:0')
+tensor([[ 78,  60,  49,  80,  59],
+        [ 19,  95,  77,  69,  58],
+        [ 15,   1,   9,   6,   5],
+        [ 19,  98,  58,  39,  77],
+        [ 19,  57,  95,  77,  58]], device='cuda:0') tensor([ 58,  58,  58,  58,  58], device='cuda:0')
+tensor([[ 41,  49,  72,   4,  35],
+        [ 48,  16,  67,  83,  35],
+        [ 77,   5,  57,  95,  69],
+        [  5,  95,  57,  75,  77],
+        [ 15,  53,  99,  59,  54]], device='cuda:0') tensor([ 58,  58,  58,  58,  58], device='cuda:0')
+tensor([[ 19,  77,  69,   6,   5],
+        [ 19,   6,  77,  69,  95],
+        [ 87,  98,  78,   9,  39],
+        [ 57,  77,  75,  58,  95],
+        [ 19,  77,  69,  78,   6]], device='cuda:0') tensor([ 58,  58,  58,  58,  58], device='cuda:0')
+tensor([[ 59,  60,  97,  51,  32],
+        [ 51,  59,  60,  55,  97],
+        [ 59,  94,   3,   1,  61],
+        [ 15,   9,   1,  79,  30],
+        [ 99,  30,  17,  15,   3]], device='cuda:0') tensor([ 59,  59,  59,  59,  59], device='cuda:0')
+tensor([[ 30,  17,   3,  99,  18],
+        [ 59,  49,  65,  60,  53],
+        [ 80,  94,  78,  71,   6],
+        [  5,  19,  87,  54,  36],
+        [ 61,  37,  59,   3,  38]], device='cuda:0') tensor([ 59,  59,  59,  59,  59], device='cuda:0')
+tensor([[ 60,  59,  46,  38,  48],
+        [ 51,  55,  59,  97,  60],
+        [ 59,  97,  60,  55,  51],
+        [ 55,  30,  99,  16,  41],
+        [  3,  59,  61,  47,  64]], device='cuda:0') tensor([ 59,  59,  59,  59,  59], device='cuda:0')
+tensor([[ 17,  72,  30,  66,  61],
+        [ 59,  49,  60,  33,  53],
+        [ 90,  12,  43,  68,  17],
+        [ 77,  57,  75,   9,  35],
+        [ 51,  59,  55,  60,  97]], device='cuda:0') tensor([ 59,  59,  59,  59,  59], device='cuda:0')
+tensor([[  9,  87,  15,  61,  41],
+        [ 61,  37,  41,  59,  22],
+        [ 59,  49,  53,   1,  36],
+        [ 87,   9,  41,  57,  72],
+        [ 60,  14,  64,  97,  59]], device='cuda:0') tensor([ 59,  59,  59,  59,  59], device='cuda:0')
+tensor([[ 96,   5,  87,   4,  52],
+        [ 60,  59,  49,  97,  65],
+        [ 60,  59,  51,  55,  97],
+        [ 55,  99,  41,  48,  46],
+        [ 99,  16,  30,  17,  46]], device='cuda:0') tensor([ 59,  59,  59,  59,  59], device='cuda:0')
+tensor([[ 60,  97,  59,  55,  51],
+        [ 82,  78,  80,  94,  64],
+        [ 60,  11,  68,  44,  62],
+        [ 88,  68,  72,  44,  67],
+        [ 60,  59,  97,  55,  65]], device='cuda:0') tensor([ 60,  60,  60,  60,  60], device='cuda:0')
+tensor([[ 60,  59,  97,  55,  82],
+        [ 55,  51,  97,  60,  16],
+        [ 60,  59,  94,  80,  78],
+        [ 14,  82,  64,  60,  78],
+        [ 60,  97,  55,  59,  11]], device='cuda:0') tensor([ 60,  60,  60,  60,  60], device='cuda:0')
+tensor([[ 60,  97,  55,  59,  51],
+        [ 60,  97,  55,  59,  11],
+        [ 55,  97,  59,  60,  51],
+        [ 94,  80,  14,  64,  82],
+        [ 60,  97,  59,  55,  51]], device='cuda:0') tensor([ 60,  60,  60,  60,  60], device='cuda:0')
+tensor([[ 80,  82,  64,  14,  60],
+        [ 55,  59,  97,  60,  51],
+        [ 59,  60,  97,  55,  51],
+        [ 60,  97,  59,  14,  64],
+        [ 94,  64,  97,  59,  60]], device='cuda:0') tensor([ 60,  60,  60,  60,  60], device='cuda:0')
+tensor([[ 60,  50,  11,  86,  97],
+        [ 59,  60,  97,  51,  55],
+        [ 41,  72,  91,  49,  61],
+        [ 55,  16,  99,  97,  48],
+        [ 41,   4,  92,  72,  86]], device='cuda:0') tensor([ 60,  60,  60,  60,  60], device='cuda:0')
+tensor([[ 60,  55,  97,  71,  65],
+        [ 60,  97,  59,  55,  51],
+        [ 30,  12,  90,  17,  40],
+        [ 55,  16,  97,  33,  99],
+        [ 55,  99,  97,   3,  16]], device='cuda:0') tensor([ 60,  60,  60,  60,  60], device='cuda:0')
+tensor([[ 60,  44,  82,  68,  14],
+        [ 14,  26,  74,  88,  81],
+        [ 60,  55,  97,  11,  93],
+        [ 68,  11,  64,  44,  93],
+        [ 46,  48,   9,  40,  43]], device='cuda:0') tensor([ 61,  61,  61,  61,  61], device='cuda:0')
+tensor([[ 61,  22,  36,  71,  11],
+        [ 72,  61,  37,  41,  66],
+        [ 59,  71,  49,  60,  65],
+        [  9,  87,  15,   1,  61],
+        [ 59,  61,   3,  53,  91]], device='cuda:0') tensor([ 61,  61,  61,  61,  61], device='cuda:0')
+tensor([[ 61,  37,  72,  11,  60],
+        [ 55,  60,  59,  97,  51],
+        [ 47,  17,  30,  90,  12],
+        [ 16,  55,  99,  46,  48],
+        [ 61,  41,  55,  37,  59]], device='cuda:0') tensor([ 61,  61,  61,  61,  61], device='cuda:0')
+tensor([[ 16,  48,  41,  83,  55],
+        [ 61,  59,  60,  37,  11],
+        [ 49,  53,  59,  99,   3],
+        [ 82,  80,  78,  56,  68],
+        [ 87,   9,  98,  40,  10]], device='cuda:0') tensor([ 61,  61,  61,  61,  61], device='cuda:0')
+tensor([[ 95,  19,  77,  69,   5],
+        [  6,  69,  15,  54,  71],
+        [ 11,  61,  59,  60,  56],
+        [ 46,  48,  16,   8,  50],
+        [ 43,  12,  10,  90,  17]], device='cuda:0') tensor([ 61,  61,  61,  61,  61], device='cuda:0')
+tensor([[ 12,  40,  37,  61,  10],
+        [ 12,  40,  30,  43,  46],
+        [ 72,  61,  66,  62,  87],
+        [ 55,  97,  16,  60,  48],
+        [ 61,  37,  88,  67,  62]], device='cuda:0') tensor([ 61,  61,  61,  61,  61], device='cuda:0')
+tensor([[ 78,  57,  80,  25,  76],
+        [ 42,  19,  74,  68,  95],
+        [ 68,  72,  44,  66,  82],
+        [ 48,  46,  16,  55,   8],
+        [ 67,  21,  20,   2,  28]], device='cuda:0') tensor([ 62,  62,  62,  62,  62], device='cuda:0')
+tensor([[ 55,  48,  97,  46,  16],
+        [ 50,  86,  16,  60,  11],
+        [ 60,  51,  59,  55,  97],
+        [ 72,  68,  78,  92,  66],
+        [ 87,  72,  92,  62,   9]], device='cuda:0') tensor([ 62,  62,  62,  62,  62], device='cuda:0')
+tensor([[ 72,  41,  87,  92,  62],
+        [ 48,  11,  50,  55,  46],
+        [ 60,  97,  59,  55,  51],
+        [ 19,  57,  77,   5,  95],
+        [ 67,   2,  62,  73,  57]], device='cuda:0') tensor([ 62,  62,  62,  62,  62], device='cuda:0')
+tensor([[ 19,  88,   6,  10,  39],
+        [ 95,  19,  80,  78,  42],
+        [ 19,  92,  67,  62,  72],
+        [ 60,  82,  80,  78,  94],
+        [ 95,  77,  57,  58,  67]], device='cuda:0') tensor([ 62,  62,  62,  62,  62], device='cuda:0')
+tensor([[ 41,  22,  99,  61,  55],
+        [ 95,  19,  57,  75,  58],
+        [ 59,  60,  94,  97,  71],
+        [ 19,   6,  69,  78,  71],
+        [ 46,  48,  55,  99,  47]], device='cuda:0') tensor([ 62,  62,  62,  62,  62], device='cuda:0')
+tensor([[ 20,  59,  74,  81,  21],
+        [ 78,  19,   6,  80,  82],
+        [  9,  87,  41,  96,  35],
+        [ 94,  80,  14,  82,  64],
+        [ 16,  48,  55,  50,  46]], device='cuda:0') tensor([ 62,  62,  62,  62,  62], device='cuda:0')
+tensor([[ 40,  75,  57,  19,  99],
+        [ 19,   6,  78,  57,  76],
+        [ 60,  41,  82,  55,   3],
+        [ 60,  49,  97,  59,  32],
+        [ 60,  64,  82,  14,  78]], device='cuda:0') tensor([ 63,  63,  63,  63,  63], device='cuda:0')
+tensor([[ 16,  83,  55,  86,  50],
+        [ 72,  41,  87,  66,  91],
+        [ 60,  59,  11,  80,  32],
+        [ 30,  99,  17,  15,  47],
+        [ 17,  30,  41,   3,  61]], device='cuda:0') tensor([ 63,  63,  63,  63,  63], device='cuda:0')
+tensor([[ 61,  37,  66,  72,   3],
+        [ 30,  17,  12,  40,  99],
+        [ 15,   1,   9,   0,  47],
+        [ 16,  99,  86,  49,  63],
+        [ 78,  15,   6,  69,  31]], device='cuda:0') tensor([ 63,  63,  63,  63,  63], device='cuda:0')
+tensor([[ 55,  16,  99,  46,  48],
+        [ 51,  55,  97,  59,  60],
+        [  6,  15,  69,  78,   9],
+        [ 47,  94,   0,  80,  25],
+        [ 55,  97,  60,  33,  59]], device='cuda:0') tensor([ 63,  63,  63,  63,  63], device='cuda:0')
+tensor([[ 99,  16,  46,  48,  55],
+        [ 69,  15,  77,   1,  79],
+        [ 77,  69,  57,  54,  78],
+        [ 55,  99,  97,  48,  46],
+        [ 80,  94,  60,  82,  64]], device='cuda:0') tensor([ 63,  63,  63,  63,  63], device='cuda:0')
+tensor([[ 51,  55,  97,  59,  60],
+        [ 20,   7,  43,  11,  68],
+        [ 61,  37,   3,  55,  59],
+        [ 99,  30,   3,  15,  53],
+        [ 51,  55,  16,  97,  60]], device='cuda:0') tensor([ 63,  63,  63,  63,  63], device='cuda:0')
+tensor([[ 60,  78,  59,  82,  11],
+        [  0,  81,  64,  47,  42],
+        [ 47,  80,  78,  15,   6],
+        [ 80,  94,  82,  76,  25],
+        [ 14,  64,  81,  80,   0]], device='cuda:0') tensor([ 64,  64,  64,  64,  64], device='cuda:0')
+tensor([[ 80,  81,  94,   0,  64],
+        [ 80,  82,  94,  64,  14],
+        [ 80,  94,  82,  76,  42],
+        [ 57,   0,  95,  64,  81],
+        [ 64,  14,  60,  80,  94]], device='cuda:0') tensor([ 64,  64,  64,  64,  64], device='cuda:0')
+tensor([[ 80,  82,  64,  94,  14],
+        [ 46,  48,  99,   8,  43],
+        [ 82,  78,  80,  94,  60],
+        [ 39,  98,  47,  82,  76],
+        [ 80,  82,  94,  64,  78]], device='cuda:0') tensor([ 64,  64,  64,  64,  64], device='cuda:0')
+tensor([[ 80,  14,  94,  81,  64],
+        [ 80,  94,  82,  78,  25],
+        [ 47,  17,  90,  12,  64],
+        [ 11,  60,  93,  62,  50],
+        [ 60,  59,  97,  51,  55]], device='cuda:0') tensor([ 64,  64,  64,  64,  64], device='cuda:0')
+tensor([[ 80,  94,  82,  64,  14],
+        [ 60,  82,  78,  80,  64],
+        [ 60,  55,  97,  59,  51],
+        [ 77,  95,  57,  58,  75],
+        [ 44,  68,  47,  88,  64]], device='cuda:0') tensor([ 64,  64,  64,  64,  64], device='cuda:0')
+tensor([[ 80,  25,  82,  76,  78],
+        [ 14,  81,  64,  80,  82],
+        [ 60,  80,  94,  97,  82],
+        [  0,  81,  64,  25,  42],
+        [ 90,  14,  64,  26,  55]], device='cuda:0') tensor([ 64,  64,  64,  64,  64], device='cuda:0')
+tensor([[ 99,  46,  41,  48,  55],
+        [ 47,  17,  91,  30,  12],
+        [ 86,  45,  68,  84,  50],
+        [ 19,   6,  78,  69,  77],
+        [ 99,  17,  30,  46,  55]], device='cuda:0') tensor([ 65,  65,  65,  65,  65], device='cuda:0')
+tensor([[ 49,  75,  65,  54,  79],
+        [ 51,  59,  49,  60,  53],
+        [ 59,  60,  55,  97,  49],
+        [ 60,  86,  71,  80,  49],
+        [ 60,  97,  51,  55,  59]], device='cuda:0') tensor([ 65,  65,  65,  65,  65], device='cuda:0')
+tensor([[ 15,   0,  40,  96,  81],
+        [ 59,  79,  97,  83,  55],
+        [ 49,  71,  60,  78,  80],
+        [ 16,  55,  46,  99,  48],
+        [ 17,  47,  93,  68,   3]], device='cuda:0') tensor([ 65,  65,  65,  65,  65], device='cuda:0')
+tensor([[ 57,  77,   5,   1,  15],
+        [ 99,  49,  55,  16,  22],
+        [ 86,  99,  50,  63,  46],
+        [ 46,  90,  12,  17,  48],
+        [ 59,  60,  97,  49,  55]], device='cuda:0') tensor([ 65,  65,  65,  65,  65], device='cuda:0')
+tensor([[ 61,  67,  21,   5,   2],
+        [  6,  77,   5,  19,  69],
+        [ 60,  94,  80,  71,  97],
+        [ 49,  57,  61,  75,  59],
+        [ 71,  54,  80,  94,  31]], device='cuda:0') tensor([ 65,  65,  65,  65,  65], device='cuda:0')
+tensor([[ 55,  16,  11,  48,  97],
+        [ 72,  41,  61,  11,  38],
+        [ 60,  97,  59,  94,  49],
+        [ 72,  91,  47,  56,  66],
+        [ 41,  35,  75,  40,  86]], device='cuda:0') tensor([ 65,  65,  65,  65,  65], device='cuda:0')
+tensor([[ 68,  64,  82,  60,  14],
+        [ 48,  46,  41,  30,  37],
+        [ 72,  87,  66,  41,   9],
+        [ 42,   0,  19,  74,  80],
+        [ 43,  72,  37,  62,  61]], device='cuda:0') tensor([ 66,  66,  66,  66,  66], device='cuda:0')
+tensor([[ 48,  41,  46,  55,  22],
+        [ 99,  15,   3,  22,  47],
+        [ 98,  87,  39,  10,  72],
+        [ 72,  11,  67,  50,  62],
+        [ 87,  12,  66,  61,   2]], device='cuda:0') tensor([ 66,  66,  66,  66,  66], device='cuda:0')
+tensor([[ 72,  37,  66,  61,  41],
+        [ 12,  40,  46,  10,  30],
+        [ 47,  46,  99,  40,  55],
+        [ 48,  46,  43,   8,  67],
+        [ 47,  17,  30,  90,  12]], device='cuda:0') tensor([ 66,  66,  66,  66,  66], device='cuda:0')
+tensor([[ 99,  40,  46,  41,  52],
+        [ 19,   6,  78,  69,  87],
+        [ 72,  41,  87,  66,  24],
+        [ 48,  46,  41,  16,  55],
+        [ 47,   0,  64,  94,  90]], device='cuda:0') tensor([ 66,  66,  66,  66,  66], device='cuda:0')
+tensor([[ 82,  39,  98,  72,  92],
+        [ 19,  69,  95,   6,  77],
+        [ 15,   1,  36,  61,  59],
+        [ 87,   9,  98,  72,  30],
+        [ 91,  78,  56,   9,  15]], device='cuda:0') tensor([ 66,  66,  66,  66,  66], device='cuda:0')
+tensor([[  6,  13,  15,  78,  87],
+        [ 61,  40,  22,  38,  37],
+        [ 90,  17,  47,  12,  30],
+        [ 41,  72,  61,  66,  46],
+        [ 15,  87,  98,  10,  13]], device='cuda:0') tensor([ 66,  66,  66,  66,  66], device='cuda:0')
+tensor([[ 82,  14,  80,  64,  78],
+        [ 72,  87,  12,  66,  40],
+        [ 67,  20,  21,  88,  28],
+        [ 95,  77,  57,  19,   5],
+        [ 19,   6,  78,  71,  69]], device='cuda:0') tensor([ 67,  67,  67,  67,  67], device='cuda:0')
+tensor([[ 67,  20,  88,  74,   2],
+        [ 14,  68,  88,  26,  74],
+        [ 67,  21,  20,  88,  28],
+        [ 67,  21,  20,   2,  88],
+        [ 87,  28,  10,  67,  98]], device='cuda:0') tensor([ 67,  67,  67,  67,  67], device='cuda:0')
+tensor([[ 77,  57,  95,  58,  69],
+        [ 67,  20,   2,  14,  64],
+        [ 87,  72,  98,  66,  39],
+        [ 87,   9,  61,  13,  37],
+        [ 19,  89,  95,  88,  69]], device='cuda:0') tensor([ 67,  67,  67,  67,  67], device='cuda:0')
+tensor([[ 74,  88,  20,  26,  28],
+        [ 72,  92,  66,  61,  68],
+        [ 10,  12,  88,  28,  87],
+        [ 61,  78,  37,  82,  72],
+        [ 19,  88,  68,  42,  44]], device='cuda:0') tensor([ 67,  67,  67,  67,  67], device='cuda:0')
+tensor([[ 89,  92,  50,  86,  67],
+        [ 21,  67,  20,  28,  88],
+        [ 72,  92,  41,  78,  66],
+        [ 95,  69,  57,  19,   5],
+        [ 77,  95,  19,  58,  57]], device='cuda:0') tensor([ 67,  67,  67,  67,  67], device='cuda:0')
+tensor([[ 21,  20,  67,   2,  28],
+        [ 67,  20,   2,  21,  28],
+        [ 67,  28,  21,  20,   2],
+        [ 68,  64,  67,  84,   0],
+        [ 12,  10,  43,  40,  90]], device='cuda:0') tensor([ 67,  67,  67,  67,  67], device='cuda:0')
+tensor([[ 67,   2,  20,  28,  21],
+        [ 46,  48,  16,  55,  99],
+        [ 47,   0,  68,  64,  94],
+        [ 67,  62,  40,  43,  10],
+        [ 59,  51,  55,  61,  37]], device='cuda:0') tensor([ 68,  68,  68,  68,  68], device='cuda:0')
+tensor([[ 12,  88,  10,  43,  44],
+        [ 68,  95,  89,  44,  67],
+        [ 90,  12,  47,  17,  43],
+        [  0,  81,  42,  64,  47],
+        [ 40,  87,  86,  46,  92]], device='cuda:0') tensor([ 68,  68,  68,  68,  68], device='cuda:0')
+tensor([[ 48,  50,  86,  46,  16],
+        [ 68,  44,  82,  88,  78],
+        [ 67,   2,  20,  21,  28],
+        [ 78,  82,  68,  44,  80],
+        [ 80,  94,  82,  44,  76]], device='cuda:0') tensor([ 68,  68,  68,  68,  68], device='cuda:0')
+tensor([[ 72,  41,  93,  61,  66],
+        [ 60,  62,  78,  72,  73],
+        [ 88,  68,  67,  44,  74],
+        [ 80,  94,  82,  44,  78],
+        [ 47,  17,  12,  30,  90]], device='cuda:0') tensor([ 68,  68,  68,  68,  68], device='cuda:0')
+tensor([[ 60,  97,  49,  59,  51],
+        [ 14,  82,  80,  64,  94],
+        [  0,  64,  80,  60,  42],
+        [ 17,  47,  12,  90,  30],
+        [ 44,  42,  94,  71,  82]], device='cuda:0') tensor([ 68,  68,  68,  68,  68], device='cuda:0')
+tensor([[ 72,  92,  68,  67,  66],
+        [ 15,  71,   6,   1,  78],
+        [ 12,  10,  43,  40,  90],
+        [ 68,  44,  11,  45,  50],
+        [ 80,  94,  78,  82,  47]], device='cuda:0') tensor([ 68,  68,  68,  68,  68], device='cuda:0')
+tensor([[  9,  15,  87,   5,  61],
+        [  6,  69,  71,  19,  88],
+        [ 77,  69,  95,  19,  58],
+        [ 80,  94,  42,  19,  81],
+        [ 81,  76,   6,  80,  44]], device='cuda:0') tensor([ 69,  69,  69,  69,  69], device='cuda:0')
+tensor([[ 69,   6,  71,  78,  19],
+        [ 49,  59,  53,  60,  33],
+        [ 19,  87,   5,  98,  77],
+        [ 81,  80,   0,  95,  57],
+        [ 19,  78,  98,   9,  84]], device='cuda:0') tensor([ 69,  69,  69,  69,  69], device='cuda:0')
+tensor([[ 69,   6,  78,  95,  57],
+        [ 77,  69,  57,  58,  95],
+        [ 94,  80,  71,  44,  68],
+        [ 94,  71,  80,   0,  31],
+        [ 87,  98,  19,   5,  39]], device='cuda:0') tensor([ 69,  69,  69,  69,  69], device='cuda:0')
+tensor([[ 95,  69,  77,  57,  19],
+        [ 87,  98,  10,  40,   9],
+        [ 69,  77,  57,  78,  54],
+        [ 84,  46,  86,  99,  41],
+        [ 15,   5,   9,  52,   1]], device='cuda:0') tensor([ 69,  69,  69,  69,  69], device='cuda:0')
+tensor([[ 98,  10,  39,  87,  40],
+        [ 77,  69,  75,  35,  29],
+        [ 19,  81,  74,  42,  88],
+        [ 81,  19,  74,  42,  80],
+        [ 69,   6,  19,  71,  78]], device='cuda:0') tensor([ 69,  69,  69,  69,  69], device='cuda:0')
+tensor([[ 19,   6,  69,  77,  78],
+        [ 69,   6,  78,  77,  54],
+        [ 77,  95,  57,   5,   0],
+        [ 69,  15,  29,  75,  54],
+        [ 55,  99,  17,   3,  47]], device='cuda:0') tensor([ 69,  69,  69,  69,  69], device='cuda:0')
+tensor([[ 77,  57,  58,  95,   5],
+        [ 15,   9,  99,  75,   1],
+        [ 16,  48,  55,  50,  83],
+        [ 83,  51,  59,  16,  97],
+        [ 60,  97,  59,  14,  11]], device='cuda:0') tensor([ 70,  70,  70,  70,  70], device='cuda:0')
+tensor([[ 71,  86,  80,  65,  52],
+        [ 11,  59,  60,  97,  94],
+        [ 55,  16,  48,  83,  41],
+        [ 48,  16,  46,  55,   8],
+        [ 51,  97,  59,  55,  60]], device='cuda:0') tensor([ 70,  70,  70,  70,  70], device='cuda:0')
+tensor([[ 49,  59,   3,  53,  22],
+        [  9,  15,  17,  30,  40],
+        [ 59,  64,  97,   0,  57],
+        [ 59,  97,  94,  60,  53],
+        [ 87,   9,  10,  98,   5]], device='cuda:0') tensor([ 70,  70,  70,  70,  70], device='cuda:0')
+tensor([[ 97,  59,  55,  51,  60],
+        [ 59,  97,  55,  36,  71],
+        [ 71,  59,  49,  54,  36],
+        [ 30,  99,  15,  47,  17],
+        [ 30,  17,  47,  99,  91]], device='cuda:0') tensor([ 70,  70,  70,  70,  70], device='cuda:0')
+tensor([[  9,  30,  17,  61,  87],
+        [ 16,  99,  55,  86,  51],
+        [ 49,  78,  56,  94,  80],
+        [ 59,  94,  79,  97,  36],
+        [ 16,  55,  83,  97,  48]], device='cuda:0') tensor([ 70,  70,  70,  70,  70], device='cuda:0')
+tensor([[ 41,   4,  49,  52,  99],
+        [ 59,   3,  53,  49,  60],
+        [ 71,  31,  94,  54,  69],
+        [ 74,   5,   2,  28,  12],
+        [ 86,  75,  99,   9,  63]], device='cuda:0') tensor([ 70,  70,  70,  70,  70], device='cuda:0')
+tensor([[ 80,  82,  42,  76,  26],
+        [ 14,  81,  74,  26,  82],
+        [ 78,  71,  80,  69,  31],
+        [ 79,   1,  55,  99,  36],
+        [ 99,  49,  55,   3,  53]], device='cuda:0') tensor([ 71,  71,  71,  71,  71], device='cuda:0')
+tensor([[ 55,  99,  16,  46,  48],
+        [ 94,  80,  64,  71,  14],
+        [  6,  19,  69,  78,  71],
+        [ 49,  51,  53,  59,  99],
+        [ 12,  61,  72,  62,  43]], device='cuda:0') tensor([ 71,  71,  71,  71,  71], device='cuda:0')
+tensor([[ 19,   5,  89,  42,  54],
+        [ 69,   6,  78,  71,  80],
+        [ 90,  47,  12,  43,  40],
+        [ 61,  84,  71,  66,  62],
+        [ 14,  88,  44,  81,  74]], device='cuda:0') tensor([ 71,  71,  71,  71,  71], device='cuda:0')
+tensor([[ 55,  16,  83,  33,  59],
+        [ 48,  46,  55,   8,  43],
+        [ 19,  78,  71,  80,  95],
+        [ 48,  46,   8,  43,  41],
+        [ 80,  94,  78,  82,  71]], device='cuda:0') tensor([ 71,  71,  71,  71,  71], device='cuda:0')
+tensor([[ 80,  94,  82,  78,  25],
+        [ 80,  78,  82,  94,  25],
+        [ 19,   6,  88,  71,  74],
+        [ 16,  48,  55,  46,  99],
+        [ 16,  55,  99,  83,  71]], device='cuda:0') tensor([ 71,  71,  71,  71,  71], device='cuda:0')
+tensor([[ 14,  64,  82,  80,  78],
+        [ 19,  42,  44,   5,  74],
+        [ 78,   6,  71,  69,  19],
+        [ 80,  82,  78,  13,  94],
+        [ 11,  61,  48,  41,  37]], device='cuda:0') tensor([ 71,  71,  71,  71,  71], device='cuda:0')
+tensor([[ 68,  44,  88,  82,  92],
+        [ 72,  41,  87,  66,  61],
+        [ 72,  78,  82,  68,  66],
+        [ 72,  46,  41,  48,  43],
+        [ 72,  98,  87,  39,  92]], device='cuda:0') tensor([ 72,  72,  72,  72,  72], device='cuda:0')
+tensor([[ 98,  39,  87,  10,  12],
+        [ 80,  94,  82,  64,  14],
+        [ 98,  39,  87,  10,  40],
+        [ 41,  87,  72,  40,   4],
+        [ 72,  91,  78,  66,  39]], device='cuda:0') tensor([ 72,  72,  72,  72,  72], device='cuda:0')
+tensor([[ 72,  41,  87,  40,  92],
+        [ 72,  87,   9,  43,  61],
+        [ 72,  39,  87,  98,  92],
+        [ 84,  71,  68,  86,  52],
+        [ 72,  41,  78,  82,  56]], device='cuda:0') tensor([ 72,  72,  72,  72,  72], device='cuda:0')
+tensor([[ 44,  19,   5,  89,  42],
+        [ 87,  98,  72,  39,  40],
+        [ 72,  39,  68,  82,  98],
+        [ 30,  87,   9,  12,  98],
+        [ 72,  87,  41,  66,  61]], device='cuda:0') tensor([ 72,  72,  72,  72,  72], device='cuda:0')
+tensor([[ 72,  41,  87,  24,   4],
+        [ 15,  91,  87,  13,   9],
+        [ 72,  61,  66,  37,  41],
+        [ 19,  74,  44,  42,  26],
+        [ 39,  10,  98,  47,  72]], device='cuda:0') tensor([ 72,  72,  72,  72,  72], device='cuda:0')
+tensor([[ 19,  78,  69,  77,  57],
+        [ 47,  17,  30,  90,  12],
+        [ 19,  78,  57,  87,  35],
+        [ 82,  72,  68,  47,  78],
+        [ 90,  12,  43,  17,  10]], device='cuda:0') tensor([ 72,  72,  72,  72,  72], device='cuda:0')
+tensor([[ 59,  11,  22,  61,  50],
+        [ 60,  55,  61,  41,  59],
+        [ 78,  91,  56,  80,  49],
+        [ 71,  95,  88,   6,  69],
+        [ 60,  59,  97,  82,  14]], device='cuda:0') tensor([ 73,  73,  73,  73,  73], device='cuda:0')
+tensor([[ 60,  11,  78,  59,  82],
+        [ 72,  66,  92,  68,  84],
+        [ 94,  56,  80,  31,  71],
+        [ 41,  99,  84,  40,  66],
+        [ 59,  61,  49,   3,  37]], device='cuda:0') tensor([ 73,  73,  73,  73,  73], device='cuda:0')
+tensor([[ 61,  37,  22,   3,  18],
+        [ 90,  12,  30,  17,  40],
+        [ 87,  40,  98,  12,  10],
+        [ 72,  11,  41,  56,  78],
+        [ 60,  50,  97,  11,  59]], device='cuda:0') tensor([ 73,  73,  73,  73,  73], device='cuda:0')
+tensor([[ 61,  37,  72,  41,  59],
+        [ 59,  61,   3,  55,  60],
+        [ 59,  60,  51,  55,  49],
+        [ 60,  97,  64,  59,  14],
+        [ 65,  44,  60,  61,   5]], device='cuda:0') tensor([ 73,  73,  73,  73,  73], device='cuda:0')
+tensor([[ 80,   5,  57,  76,  78],
+        [ 59,  51,  49,  60,  53],
+        [ 57,  72,  24,  78,  68],
+        [ 72,  61,  37,  66,  41],
+        [ 61,  59,  87,  22,   5]], device='cuda:0') tensor([ 73,  73,  73,  73,  73], device='cuda:0')
+tensor([[ 71,  59,  60,  22,  44],
+        [ 61,  59,   3,  37,   5],
+        [ 59,  49,  60,  32,  53],
+        [ 41,  48,  61,  46,  72],
+        [ 11,  61,  59,  62,  22]], device='cuda:0') tensor([ 73,  73,  73,  73,  73], device='cuda:0')
+tensor([[ 14,  88,  68,  67,  44],
+        [ 80,  94,  82,  42,  76],
+        [ 94,  80,  76,  47,  42],
+        [ 80,  94,  44,  68,  14],
+        [ 74,  81,  88,  20,  64]], device='cuda:0') tensor([ 74,  74,  74,  74,  74], device='cuda:0')
+tensor([[ 80,  94,  14,  82,  64],
+        [ 14,  44,  88,  26,  81],
+        [ 80,  94,  82,  64,  14],
+        [ 74,  88,  81,  26,  20],
+        [ 44,  68,  88,  26,  94]], device='cuda:0') tensor([ 74,  74,  74,  74,  74], device='cuda:0')
+tensor([[ 74,  88,  20,  81,  10],
+        [ 74,  81,  26,  88,  14],
+        [ 81,  74,  14,  26,  80],
+        [ 74,  88,  20,  10,  28],
+        [ 88,  20,  21,  74,  67]], device='cuda:0') tensor([ 74,  74,  74,  74,  74], device='cuda:0')
+tensor([[ 60,  97,  94,  59,  11],
+        [ 81,  74,  42,   0,  80],
+        [ 12,  10,  98,  40,  30],
+        [ 74,  88,  26,  81,  14],
+        [ 15,  47,  13,   1,   9]], device='cuda:0') tensor([ 74,  74,  74,  74,  74], device='cuda:0')
+tensor([[ 74,  81,  26,  42,  80],
+        [ 74,  14,  81,  80,  82],
+        [ 12,  10,  92,  43,  67],
+        [ 44,  88,  68,  74,  14],
+        [ 72,  68,  93,  64,  11]], device='cuda:0') tensor([ 74,  74,  74,  74,  74], device='cuda:0')
+tensor([[ 44,  68,  82,  78,  88],
+        [ 14,  82,  80,  64,  94],
+        [ 12,  47,  40,  10,  15],
+        [ 81,  80,  74,  42,  94],
+        [ 88,  44,  68,  74,  26]], device='cuda:0') tensor([ 74,  74,  74,  74,  74], device='cuda:0')
+tensor([[ 55,  16,  51,  97,  60],
+        [ 47,  15,  57,  30,  91],
+        [ 69,  19,   9,  15,  77],
+        [ 58,  77,  57,  35,  95],
+        [ 69,  95,  77,  57,  19]], device='cuda:0') tensor([ 75,  75,  75,  75,  75], device='cuda:0')
+tensor([[ 49,  23,  79,  91,  56],
+        [ 60,  55,  97,  59,  65],
+        [ 98,  40,  15,  10,  87],
+        [ 77,   5,  57,  69,  95],
+        [ 81,   0,  64,  14,  80]], device='cuda:0') tensor([ 75,  75,  75,  75,  75], device='cuda:0')
+tensor([[ 40,  98,  87,   9,  10],
+        [ 94,  80,  71,  78,  31],
+        [ 16,  99,  48,  46,  55],
+        [ 57,  19,  78,  95,  75],
+        [ 81,  74,  80,  42,   0]], device='cuda:0') tensor([ 75,  75,  75,  75,  75], device='cuda:0')
+tensor([[ 86,  60,  50,  59,  71],
+        [ 57,  75,  29,  23,  84],
+        [ 30,  47,  17,  91,  15],
+        [ 19,  77,  58,  95,  69],
+        [ 55,  97,  16,  48,  99]], device='cuda:0') tensor([ 75,  75,  75,  75,  75], device='cuda:0')
+tensor([[ 55,  16,  83,  48,  99],
+        [  0,  57,   5,   1,  75],
+        [ 99,  40,  46,  84,  48],
+        [ 19,  44,  74,  42,  71],
+        [  6,  78,  19,  71,  69]], device='cuda:0') tensor([ 75,  75,  75,  75,  75], device='cuda:0')
+tensor([[ 77,  57,  58,  69,  75],
+        [ 54,  75,  29,  49,  69],
+        [ 12,  10,  17,  87,  43],
+        [ 99,  17,  46,  47,  12],
+        [ 57,  95,   0,  64,  77]], device='cuda:0') tensor([ 75,  75,  75,  75,  75], device='cuda:0')
+tensor([[  0,  80,  81,  42,  94],
+        [ 19,   6,  76,  42,  39],
+        [ 11,  60,  93,  68,  64],
+        [ 77,  95,  58,  57,  69],
+        [ 35,  75,  86,  29,  57]], device='cuda:0') tensor([ 76,  76,  76,  76,  76], device='cuda:0')
+tensor([[ 87,  72,  98,  41,  19],
+        [ 44,  94,  88,  81,  14],
+        [ 19,   6,  89,  69,  71],
+        [ 64,  60,  14,  68,  11],
+        [ 78,   6,  80,  94,  19]], device='cuda:0') tensor([ 76,  76,  76,  76,  76], device='cuda:0')
+tensor([[ 77,  58,  57,  95,  69],
+        [ 77,  57,  58,  95,   5],
+        [ 77,  57,  95,  58,  19],
+        [ 19,   6,  78,  69,   5],
+        [  6,  76,  80,   0,  42]], device='cuda:0') tensor([ 76,  76,  76,  76,  76], device='cuda:0')
+tensor([[ 19,  77,  87,  57,  98],
+        [ 78,  72,  41,  24,  56],
+        [ 98,  19,  40,  10,  92],
+        [ 19,  74,  44,  42,   5],
+        [ 19,  82,  80,  78,  76]], device='cuda:0') tensor([ 76,  76,  76,  76,  76], device='cuda:0')
+tensor([[ 68,  44,  64,  47,  72],
+        [ 47,  90,  12,  17,  30],
+        [  5,  57,   0,  77,   1],
+        [ 72,  68,   2,  47,  84],
+        [ 90,  12,  47,  43,  10]], device='cuda:0') tensor([ 76,  76,  76,  76,  76], device='cuda:0')
+tensor([[ 80,  95,  57,  68,  25],
+        [ 98,  72,  87,  82,  78],
+        [ 19,   5,  95,   6,  74],
+        [  6,  69,  15,  19,  54],
+        [  0,  47,  84,  25,  68]], device='cuda:0') tensor([ 76,  76,  76,  76,  76], device='cuda:0')
+tensor([[ 19,  77,  69,  58,  95],
+        [ 19,  77,  95,   5,  57],
+        [ 77,  15,  69,   1,  57],
+        [ 77,   5,  57,  95,  69],
+        [ 77,  19,  69,   6,  58]], device='cuda:0') tensor([ 77,  77,  77,  77,  77], device='cuda:0')
+tensor([[ 77,  69,  57,   5,  58],
+        [ 77,  58,  95,  69,  19],
+        [ 57,  25,  76,  95,  78],
+        [ 77,  57,  58,  69,  75],
+        [ 77,  15,  69,  57,   5]], device='cuda:0') tensor([ 77,  77,  77,  77,  77], device='cuda:0')
+tensor([[ 59,  83,  49,  60,  97],
+        [  6,  69,  19,  77,  95],
+        [ 77,  58,  69,  95,  57],
+        [ 77,  95,  57,  58,  75],
+        [ 77,   5,  19,  57,  95]], device='cuda:0') tensor([ 77,  77,  77,  77,  77], device='cuda:0')
+tensor([[  0,  71,  59,  74,  94],
+        [ 40,  10,  98,   9,  15],
+        [ 77,  58,  69,  95,  19],
+        [ 77,  69,  75,  57,   5],
+        [ 77,   5,  69,  57,  75]], device='cuda:0') tensor([ 77,  77,  77,  77,  77], device='cuda:0')
+tensor([[ 49,  75,  57,  54,  78],
+        [ 77,  69,  58,  57,  95],
+        [ 77,  75,  49,  35,   9],
+        [ 98,  10,  39,  40,  87],
+        [ 57,  78,   5,  77,  75]], device='cuda:0') tensor([ 77,  77,  77,  77,  77], device='cuda:0')
+tensor([[  5,  77,  78,  57,  95],
+        [ 77,  15,   5,  57,  69],
+        [ 77,  57,  69,  58,  75],
+        [  6,  19,  69,  77,  78],
+        [ 77,  57,   5,  95,   4]], device='cuda:0') tensor([ 77,  77,  77,  77,  77], device='cuda:0')
+tensor([[ 49,  60,  80,  94,  32],
+        [ 82,  80,  78,  94,  71],
+        [ 11,  60,  44,  50,  72],
+        [ 91,  98,  39,  30,  78],
+        [ 82,  78,  76,  98,  80]], device='cuda:0') tensor([ 78,  78,  78,  78,  78], device='cuda:0')
+tensor([[ 19,  69,  78,   6,  77],
+        [  0,   5,  15,  76,   6],
+        [ 78,  82,  68,  44,  80],
+        [ 82,  80,  94,  78,  64],
+        [ 12,  68,  84,  17,  44]], device='cuda:0') tensor([ 78,  78,  78,  78,  78], device='cuda:0')
+tensor([[ 69,   6,  78,  71,  77],
+        [ 78,  23,  15,  49,  56],
+        [ 82,  78,  80,  94,  76],
+        [ 78,   6,  19,  82,  80],
+        [  6,  69,  78,  19,  77]], device='cuda:0') tensor([ 78,  78,  78,  78,  78], device='cuda:0')
+tensor([[ 42,  19,  44,  74,  89],
+        [ 87,  72,  40,   9,  41],
+        [ 47,  90,  12,  17,  43],
+        [ 78,  82,  80,  85,  56],
+        [  2,  67,  44,  20,  28]], device='cuda:0') tensor([ 78,  78,  78,  78,  78], device='cuda:0')
+tensor([[ 72,  62,  66,  87,  92],
+        [ 15,   1,  49,  94,  31],
+        [ 44,  68,  82,  47,  84],
+        [ 60,  78,  82,  59,  64],
+        [ 19,   6,  69,  78,  77]], device='cuda:0') tensor([ 78,  78,  78,  78,  78], device='cuda:0')
+tensor([[ 78,  94,   6,  15,  69],
+        [ 80,  78,  94,  82,   6],
+        [ 78,  82,  60,  80,  76],
+        [ 68,  89,  92,  67,  44],
+        [ 82,  78,  80,  60,  76]], device='cuda:0') tensor([ 78,  78,  78,  78,  78], device='cuda:0')
+tensor([[ 69,   6,  78,  54,  15],
+        [ 99,  55,  16,  53,   3],
+        [ 82,  60,  78,  80,  64],
+        [ 59,  60,  49,  32,  65],
+        [ 15,   1,  79,   9,  36]], device='cuda:0') tensor([ 79,  79,  79,  79,  79], device='cuda:0')
+tensor([[ 15,   1,  36,  79,   9],
+        [ 59,  60,  49,  97,  53],
+        [ 99,  46,  48,  55,  16],
+        [ 61,  13,  47,  87,  15],
+        [ 11,  16,  55,  97,  48]], device='cuda:0') tensor([ 79,  79,  79,  79,  79], device='cuda:0')
+tensor([[ 55,  51,  16,  97,  60],
+        [ 15,   1,  49,   9,  36],
+        [ 15,   1,  54,  79,   9],
+        [ 15,   1,  54,   9,  69],
+        [ 57,   0,  64,  25,   5]], device='cuda:0') tensor([ 79,  79,  79,  79,  79], device='cuda:0')
+tensor([[ 61,  37,  59,  13,  87],
+        [ 35,  27,  77,  75,  83],
+        [ 61,  72,  37,  41,  66],
+        [ 15,   1,  79,   9,  36],
+        [ 15,   1,   9,  79,  36]], device='cuda:0') tensor([ 79,  79,  79,  79,  79], device='cuda:0')
+tensor([[ 59,  49,  61,  83,   3],
+        [ 75,  59,   0,  27,  71],
+        [ 15,   1,   9,  75,  54],
+        [ 15,   9,  30,  87,   1],
+        [  1,  79,  49,  53,   3]], device='cuda:0') tensor([ 79,  79,  79,  79,  79], device='cuda:0')
+tensor([[ 15,   1,  36,   9,  79],
+        [ 15,   1,  54,  77,   5],
+        [ 15,   1,  79,  23,   9],
+        [ 72,  61,  41,  37,  66],
+        [  1,  15,  49,  79,  53]], device='cuda:0') tensor([ 79,  79,  79,  79,  79], device='cuda:0')
+tensor([[ 88,  74,  20,  44,  68],
+        [ 90,  43,  12,  40,  46],
+        [ 80,  94,  82,  42,   0],
+        [ 55,  16,  97,  60,  99],
+        [ 14,  80,  82,  81,  94]], device='cuda:0') tensor([ 80,  80,  80,  80,  80], device='cuda:0')
+tensor([[ 94,  80,  81,  76,  71],
+        [ 80,  82,  94,  14,  64],
+        [ 80,  82,  78,  76,  25],
+        [ 64,  80,   0,  47,  94],
+        [ 80,  82,  14,  94,  64]], device='cuda:0') tensor([ 80,  80,  80,  80,  80], device='cuda:0')
+tensor([[ 49,  59,  60,  53,  51],
+        [ 80,  82,  94,  14,  64],
+        [  9,  87,  77,  15,  40],
+        [ 94,  64,   0,  81,  14],
+        [ 16,  46,  48,  50,  99]], device='cuda:0') tensor([ 80,  80,  80,  80,  80], device='cuda:0')
+tensor([[ 80,  82,  14,  94,  64],
+        [ 81,  14,  80,  64,  74],
+        [ 80,  78,  94,   6,  76],
+        [ 82,  80,  78,  94,  64],
+        [ 61,  37,  17,  12,  30]], device='cuda:0') tensor([ 80,  80,  80,  80,  80], device='cuda:0')
+tensor([[ 82,  78,  80,  72,  76],
+        [ 42,  74,   0,  81,  26],
+        [ 80,  94,  82,  25,  76],
+        [ 90,  43,  12,  40,  10],
+        [ 19,  98,  44,  86,  39]], device='cuda:0') tensor([ 80,  80,  80,  80,  80], device='cuda:0')
+tensor([[ 16,  55,  97,  48,  83],
+        [ 82,  78,  80,  64,  14],
+        [ 82,  14,  80,  44,  64],
+        [ 82,  78,  80,  44,  94],
+        [ 49,  59,  60,  53,  32]], device='cuda:0') tensor([ 80,  80,  80,  80,  80], device='cuda:0')
+tensor([[ 80,  94,  82,  25,  76],
+        [ 14,  80,  81,  64,  82],
+        [  0,  47,  90,  12,  68],
+        [ 40,  30,  17,  12,  47],
+        [ 58,  77,  35,  19,  87]], device='cuda:0') tensor([ 81,  81,  81,  81,  81], device='cuda:0')
+tensor([[ 14,  94,  64,  81,  80],
+        [ 80,  94,  82,  78,  64],
+        [ 19,  95,  57,  77,   6],
+        [ 74,  88,  20,  21,  26],
+        [  0,  47,  81,  64,  42]], device='cuda:0') tensor([ 81,  81,  81,  81,  81], device='cuda:0')
+tensor([[ 80,  14,  94,  82,  64],
+        [ 90,  12,  47,  43,  17],
+        [ 81,  42,  74,   0,  80],
+        [ 81,  74,  42,  76,   0],
+        [ 14,  81,  74,  80,  82]], device='cuda:0') tensor([ 81,  81,  81,  81,  81], device='cuda:0')
+tensor([[ 14,  80,  82,  94,  81],
+        [ 68,  47,  44,  64,   0],
+        [ 81,  74,  76,  80,   0],
+        [ 80,  82,  94,  64,  78],
+        [ 74,  81,  42,  80,  26]], device='cuda:0') tensor([ 81,  81,  81,  81,  81], device='cuda:0')
+tensor([[ 17,  47,  90,  12,  30],
+        [ 81,  74,  42,   0,  26],
+        [ 14,  80,  94,  64,  81],
+        [ 14,  64,  60,  11,  44],
+        [ 81,  74,  42,   0,  26]], device='cuda:0') tensor([ 81,  81,  81,  81,  81], device='cuda:0')
+tensor([[ 82,  14,  78,  64,  80],
+        [ 14,  81,  80,  74,  26],
+        [ 74,  42,  81,  88,  26],
+        [ 80,   0,  81,  94,  64],
+        [ 80,  94,  81,  76,   0]], device='cuda:0') tensor([ 81,  81,  81,  81,  81], device='cuda:0')
+tensor([[  0,  42,  81,  25,  80],
+        [ 80,  78,  82,  94,  71],
+        [ 78,  82,  80,  76,  71],
+        [ 30,  17,  66,  47,  12],
+        [ 80,  82,  78,  94,  76]], device='cuda:0') tensor([ 82,  82,  82,  82,  82], device='cuda:0')
+tensor([[ 80,  82,  94,  14,  64],
+        [ 72,  61,  62,  92,  37],
+        [ 80,  82,  78,  94,  76],
+        [ 14,  60,  44,  67,  89],
+        [ 80,  94,  82,  14,  64]], device='cuda:0') tensor([ 82,  82,  82,  82,  82], device='cuda:0')
+tensor([[ 60,  59,  97,  55,  65],
+        [ 82,  78,  72,  19,  80],
+        [ 82,  19,  76,  78,  80],
+        [  6,  19,  69,  78,  76],
+        [ 78,   6,  69,  57,  54]], device='cuda:0') tensor([ 82,  82,  82,  82,  82], device='cuda:0')
+tensor([[  0,  81,  42,  26,  47],
+        [ 47,  30,  15,  98,  39],
+        [ 94,  80,  64,   0,  31],
+        [ 60,  41,  45,  86,  50],
+        [ 80,  94,  76,  25,  82]], device='cuda:0') tensor([ 82,  82,  82,  82,  82], device='cuda:0')
+tensor([[ 82,  80,  14,  94,  64],
+        [ 19,  82,  78,  92,  72],
+        [ 80,  94,   0,  82,  42],
+        [ 14,  82,  64,  44,  78],
+        [ 80,   0,  94,  81,  42]], device='cuda:0') tensor([ 82,  82,  82,  82,  82], device='cuda:0')
+tensor([[ 82,  14,  80,  64,  78],
+        [ 77,  95,  57,  58,   5],
+        [ 82,  80,  78,  71,  14],
+        [ 72,  98,  87,  39,  13],
+        [ 82,  80,  78,  94,  76]], device='cuda:0') tensor([ 82,  82,  82,  82,  82], device='cuda:0')
+tensor([[ 60,  55,  59,  97,  51],
+        [ 87,   9,  61,  15,  40],
+        [ 60,  59,  97,  71,  94],
+        [ 55,  99,  16,  53,  51],
+        [ 51,  55,  97,  59,  60]], device='cuda:0') tensor([ 83,  83,  83,  83,  83], device='cuda:0')
+tensor([[ 15,  47,   1,  13,  30],
+        [ 15,   1,  79,   9,  36],
+        [ 41,  46,  86,  99,  48],
+        [ 55,  16,  51,  99,  83],
+        [ 16,  55,  97,  48,  60]], device='cuda:0') tensor([ 83,  83,  83,  83,  83], device='cuda:0')
+tensor([[ 36,   1,  79,  59,  31],
+        [ 59,  51,  60,  97,  55],
+        [ 97,  51,  55,  59,  83],
+        [ 59,  97,  60,  51,  55],
+        [ 61,  17,  43,  12,  37]], device='cuda:0') tensor([ 83,  83,  83,  83,  83], device='cuda:0')
+tensor([[ 16,  55,  99,  48,  83],
+        [ 55,  16,  51,  83,  97],
+        [ 44,  68,  84,  88,  12],
+        [ 55,  48,  46,  16,  99],
+        [ 60,  50,  97,  55,  86]], device='cuda:0') tensor([ 83,  83,  83,  83,  83], device='cuda:0')
+tensor([[ 59,  51,  97,  55,  60],
+        [ 60,  97,  94,  80,  64],
+        [ 47,  94,   0,  15,  64],
+        [ 59,  51,  49,  83,  97],
+        [ 17,  12,  47,  30,  66]], device='cuda:0') tensor([ 83,  83,  83,  83,  83], device='cuda:0')
+tensor([[ 49,  99,  18,   3,  91],
+        [ 16,  83,  55,  49,  99],
+        [ 60,  59,  51,  55,  97],
+        [  0,  25,  47,  64,  57],
+        [ 15,   1,  71,  31,  54]], device='cuda:0') tensor([ 83,  83,  83,  83,  83], device='cuda:0')
+tensor([[ 98,  10,  87,  39,  12],
+        [ 35,  19,  87,  92,  41],
+        [ 90,  12,  17,  47,  30],
+        [ 46,  90,  48,  55,  17],
+        [ 11,  60,  97,  64,  93]], device='cuda:0') tensor([ 84,  84,  84,  84,  84], device='cuda:0')
+tensor([[ 78,  82,  80,  71,  60],
+        [ 98,  39,  19,  10,  72],
+        [ 78,  80,  94,   6,  82],
+        [  0,  80,  81,  42,  94],
+        [ 60,  97,  11,  59,  55]], device='cuda:0') tensor([ 84,  84,  84,  84,  84], device='cuda:0')
+tensor([[ 67,  20,  88,   2,  68],
+        [ 10,  98,  12,  40,  87],
+        [ 59,  55,  53,  49,  83],
+        [ 94,  80,   6,  19,  71],
+        [ 80,  44,  71,  76,  78]], device='cuda:0') tensor([ 84,  84,  84,  84,  84], device='cuda:0')
+tensor([[ 80,  78,  94,  82,   6],
+        [ 47,  30,  12,  40,  17],
+        [ 91,  78,  82,  72,  56],
+        [ 81,  42,  80,  44,  82],
+        [ 16,  86,  50,  71,  83]], device='cuda:0') tensor([ 84,  84,  84,  84,  84], device='cuda:0')
+tensor([[ 90,  47,  12,  43,  30],
+        [ 59,  61,  60,  22,  37],
+        [ 12,  10,  43,  90,  40],
+        [ 67,  20,  21,  28,   2],
+        [ 64,  68,  44,  47,  90]], device='cuda:0') tensor([ 84,  84,  84,  84,  84], device='cuda:0')
+tensor([[ 80,  74,  76,  81,  42],
+        [ 98,  39,  87,  10,  40],
+        [ 87,  98,  72,  39,  30],
+        [ 78,  80,  82,  94,  71],
+        [ 61,  66,  72,  68,  37]], device='cuda:0') tensor([ 84,  84,  84,  84,  84], device='cuda:0')
+tensor([[ 19,  71,   6,  78,  44],
+        [ 41,  35,  19,  87,  57],
+        [ 68,  44,  64,  14,  88],
+        [ 80,  82,  94,  78,  44],
+        [ 72,  78,  66,  85,  91]], device='cuda:0') tensor([ 85,  85,  85,  85,  85], device='cuda:0')
+tensor([[ 60,  11,  97,  59,  64],
+        [ 12,  90,  43,  30,  17],
+        [ 91,  66,  72,  85,  56],
+        [ 41,  87,   9,  40,  57],
+        [ 94,  36,  71,  59,  31]], device='cuda:0') tensor([ 85,  85,  85,  85,  85], device='cuda:0')
+tensor([[  6,  78,  80,  85,  91],
+        [ 85,  84,  91,  78,  68],
+        [ 60,  59,  51,  97,  55],
+        [ 16,  55,  99,  83,  61],
+        [ 72,  66,  11,  24,  61]], device='cuda:0') tensor([ 85,  85,  85,  85,  85], device='cuda:0')
+tensor([[ 76,   0,  80,  57,  42],
+        [ 46,  48,  16,  99,  50],
+        [ 15,   9,   1,  87,  36],
+        [ 47,  12,  30,  90,  17],
+        [ 12,  47,  66,  30,  10]], device='cuda:0') tensor([ 85,  85,  85,  85,  85], device='cuda:0')
+tensor([[ 55,  46,  47,  99,   3],
+        [ 61,  72,  37,   3,  47],
+        [ 97,  59,  55,  83,  71],
+        [ 94,   6,  71,  69,  80],
+        [ 56,  91,  61,  22,  85]], device='cuda:0') tensor([ 85,  85,  85,  85,  85], device='cuda:0')
+tensor([[ 60,  97,  59,  51,  55],
+        [ 11,  50,  60,  62,  97],
+        [ 77,  95,  58,  57,   5],
+        [ 78,  15,  80,  57,   6],
+        [  6,  19,  69,  78,  71]], device='cuda:0') tensor([ 85,  85,  85,  85,  85], device='cuda:0')
+tensor([[ 86,  49,  59,  65,  63],
+        [ 68,  44,  88,  89,  82],
+        [ 50,  48,  86,  11,  46],
+        [ 48,  46,  43,   8,  34],
+        [ 46,  40,  84,  92,  12]], device='cuda:0') tensor([ 86,  86,  86,  86,  86], device='cuda:0')
+tensor([[ 46,  48,  16,  99,  86],
+        [ 19,  95,  69,  77,  58],
+        [ 86,  60,  49,  50,  65],
+        [ 86,  71,  78,  80,  19],
+        [ 19,  69,   6,  77,  78]], device='cuda:0') tensor([ 86,  86,  86,  86,  86], device='cuda:0')
+tensor([[ 61,  37,  72,  66,  41],
+        [ 55,  16,  97,  48,  60],
+        [ 72,  87,  41,  61,  66],
+        [ 60,  11,  50,  97,  49],
+        [ 61,  41,  17,  47,   3]], device='cuda:0') tensor([ 86,  86,  86,  86,  86], device='cuda:0')
+tensor([[ 99,  16,  46,  55,  48],
+        [ 99,  86,  46,  50,  48],
+        [ 46,  48,  16,  99,  43],
+        [ 55,  41,  99,  16,  49],
+        [ 50,  48,  46,  11,  60]], device='cuda:0') tensor([ 86,  86,  86,  86,  86], device='cuda:0')
+tensor([[ 19,  69,  95,  77,   5],
+        [ 19,  69,  54,   6,  71],
+        [ 46,  16,  99,  48,   8],
+        [ 57,   4,  72,  41,  92],
+        [ 99,  46,  16,  48,  55]], device='cuda:0') tensor([ 86,  86,  86,  86,  86], device='cuda:0')
+tensor([[ 99,  46,  48,  41,  55],
+        [ 46,  99,  48,  41,  86],
+        [ 16,  99,  46,  48,  55],
+        [ 51,  55,  16,  97,  60],
+        [ 11,  59,  60,  93,  38]], device='cuda:0') tensor([ 86,  86,  86,  86,  86], device='cuda:0')
+tensor([[ 41,  87,  72,  61,  37],
+        [ 59,  60,  49,  22,  41],
+        [ 72,  61,  87,  66,  37],
+        [ 72,  87,  12,  41,  40],
+        [ 87,  98,  72,  62,  92]], device='cuda:0') tensor([ 87,  87,  87,  87,  87], device='cuda:0')
+tensor([[ 98,  39,  10,  87,  13],
+        [ 72,  87,  66,  98,  39],
+        [ 15,   9,   1,  79,  36],
+        [ 98,  39,  10,  87,  28],
+        [ 40,   9,  46,  87,  41]], device='cuda:0') tensor([ 87,  87,  87,  87,  87], device='cuda:0')
+tensor([[ 87,  13,  72,   9,  91],
+        [ 47,  13,  87,  30,  98],
+        [ 87,  98,   9,  72,  39],
+        [ 87,  61,  41,  37,  66],
+        [ 87,   9,  40,  30,  12]], device='cuda:0') tensor([ 87,  87,  87,  87,  87], device='cuda:0')
+tensor([[ 87,  13,   5,  39,  72],
+        [ 61,  37,  13,  66,  47],
+        [ 87,  13,  98,  15,  39],
+        [ 98,  87,  39,  10,  13],
+        [  9,  15,  87,  36,  22]], device='cuda:0') tensor([ 87,  87,  87,  87,  87], device='cuda:0')
+tensor([[ 87,  98,  39,   9,  10],
+        [ 87,  98,  72,  39,   9],
+        [ 48,  16,  46,  55,  99],
+        [ 57,   5,  75,   9,   4],
+        [ 46,  17,  43,  48,  40]], device='cuda:0') tensor([ 87,  87,  87,  87,  87], device='cuda:0')
+tensor([[ 15,  87,   9,  13,   1],
+        [ 87,  72,  41,  66,  61],
+        [ 87,  77,   9,  58,  69],
+        [ 87,   9,  72,  40,  41],
+        [ 15,   1,   9,  36,  79]], device='cuda:0') tensor([ 87,  87,  87,  87,  87], device='cuda:0')
+tensor([[ 88,  20,  67,  21,  74],
+        [ 88,  20,  67,  21,  28],
+        [ 88,  10,  12,  28,  43],
+        [ 88,  68,  44,  67,  20],
+        [ 12,  10,  88,  28,  92]], device='cuda:0') tensor([ 88,  88,  88,  88,  88], device='cuda:0')
+tensor([[ 44,  89,  42,  19,  68],
+        [ 19,  67,  95,  28,   2],
+        [ 82,  78,  68,  72,  84],
+        [ 88,  89,  62,  67,  71],
+        [ 20,  67,  88,  21,  28]], device='cuda:0') tensor([ 88,  88,  88,  88,  88], device='cuda:0')
+tensor([[ 88,  74,  26,  20,  14],
+        [ 88,  21,  20,  74,  28],
+        [ 88,  74,  20,  44,  89],
+        [ 82,  80,  44,  88,  76],
+        [ 88,  92,  82,  19,  68]], device='cuda:0') tensor([ 88,  88,  88,  88,  88], device='cuda:0')
+tensor([[ 88,  74,  26,  89,  68],
+        [ 87,  98,  72,  39,  91],
+        [ 82,  78,  60,  80,  72],
+        [ 87,   9,  40,  98,  41],
+        [ 44,  88,  68,  92,  89]], device='cuda:0') tensor([ 88,  88,  88,  88,  88], device='cuda:0')
+tensor([[ 60,  59,  11,  45,  97],
+        [ 10,  98,  87,  39,   9],
+        [ 88,  74,  44,  12,  68],
+        [ 87,  77,  72,  98,   9],
+        [ 88,  82,  44,  74,  68]], device='cuda:0') tensor([ 88,  88,  88,  88,  88], device='cuda:0')
+tensor([[ 47,   0,  42,  98,  68],
+        [ 47,  17,  12,  68,  90],
+        [ 44,  74,  88,  42,  26],
+        [ 19,  67,  95,  28,  77],
+        [ 47,   0,  64,  81,  42]], device='cuda:0') tensor([ 88,  88,  88,  88,  88], device='cuda:0')
+tensor([[ 19,  88,  95,  69,   6],
+        [ 82,  80,  94,  14,  76],
+        [ 88,  67,  28,  10,  68],
+        [ 44,  68,  60,  89,  71],
+        [ 72,  84,  68,  92,  78]], device='cuda:0') tensor([ 89,  89,  89,  89,  89], device='cuda:0')
+tensor([[ 82,  78,  44,  91,  68],
+        [ 16,  48,  50,  11,  46],
+        [ 88,  74,  20,  71,  14],
+        [ 88,  74,  19,  81,  20],
+        [ 74,  81,  26,  88,  47]], device='cuda:0') tensor([ 89,  89,  89,  89,  89], device='cuda:0')
+tensor([[ 74,  88,  19,  26,  81],
+        [ 46,  67,  48,  72,  92],
+        [ 16,  55,  83,  48,  97],
+        [ 82,  14,  80,  64,  78],
+        [ 15,   9,   1,  30,  36]], device='cuda:0') tensor([ 89,  89,  89,  89,  89], device='cuda:0')
+tensor([[ 61,  37,  72,  66,  62],
+        [ 80,  82,  60,  78,  94],
+        [ 88,  67,  92,  28,  10],
+        [ 88,  44,  92,  10,  12],
+        [ 74,  94,  80,  26,  76]], device='cuda:0') tensor([ 89,  89,  89,  89,  89], device='cuda:0')
+tensor([[ 68,  64,  47,   0,  44],
+        [ 74,  44,  88,  42,  76],
+        [ 88,  92,  10,  28,  67],
+        [ 90,  61,  37,  47,  30],
+        [ 44,  84,  12,  71,  47]], device='cuda:0') tensor([ 89,  89,  89,  89,  89], device='cuda:0')
+tensor([[ 88,  72,  13,  66,  44],
+        [ 88,  20,  21,  28,  67],
+        [  6,  19,  10,  87,  88],
+        [ 71,  94,  26,  80,  42],
+        [ 80,  82,  94,  14,  64]], device='cuda:0') tensor([ 89,  89,  89,  89,  89], device='cuda:0')
+tensor([[ 12,  90,  10,  40,  43],
+        [ 10,  12,  98,  90,  30],
+        [ 11,  59,  60,  97,  61],
+        [ 12,  10,  90,  40,  43],
+        [ 30,  12,  17,  90,  47]], device='cuda:0') tensor([ 90,  90,  90,  90,  90], device='cuda:0')
+tensor([[ 90,  47,  12,  26,  43],
+        [ 15,   6,   9,  10,  71],
+        [ 68,  12,  47,  44,  64],
+        [ 10,  88,  12,  67,  43],
+        [ 43,  12,  10,  90,  46]], device='cuda:0') tensor([ 90,  90,  90,  90,  90], device='cuda:0')
+tensor([[ 90,  12,  10,  47,  40],
+        [ 90,  12,  43,  46,  40],
+        [ 47,  94,  81,  64,  13],
+        [ 46,  90,  48,  47,  17],
+        [ 87,  98,  40,  72,  10]], device='cuda:0') tensor([ 90,  90,  90,  90,  90], device='cuda:0')
+tensor([[ 12,  30,  90,  17,  47],
+        [ 90,  12,  47,  43,  40],
+        [ 46,  48,  43,  90,  12],
+        [ 12,  90,  40,  43,  10],
+        [ 12,  90,  17,  10,  43]], device='cuda:0') tensor([ 90,  90,  90,  90,  90], device='cuda:0')
+tensor([[ 55,  48,  16,  46,  97],
+        [ 72,  91,  78,  66,  56],
+        [ 90,  43,  12,  40,  10],
+        [ 87,   9,  98,  10,  72],
+        [ 55,  16,  46,  48,  99]], device='cuda:0') tensor([ 90,  90,  90,  90,  90], device='cuda:0')
+tensor([[ 10,  98,  12,  39,  90],
+        [ 98,  87,  40,  72,  41],
+        [ 46,  16,  55,   8,  40],
+        [ 68,  44,  12,  72,  84],
+        [ 68,  92,  72,  26,  67]], device='cuda:0') tensor([ 90,  90,  90,  90,  90], device='cuda:0')
+tensor([[ 47,  12,  30,  17,  66],
+        [ 91,  72,  87,  39,  66],
+        [ 91,  61,  66,  87,  72],
+        [ 72,  91,  87,  41,  66],
+        [ 57,  91,   1,  15,  47]], device='cuda:0') tensor([ 91,  91,  91,  91,  91], device='cuda:0')
+tensor([[ 46,  48,  99,  55,  16],
+        [ 59,  53,  55,   3,  51],
+        [ 72,  91,  82,  78,  66],
+        [ 91,  87,  41,  66,  72],
+        [ 72,  41,  66,  91,  34]], device='cuda:0') tensor([ 91,  91,  91,  91,  91], device='cuda:0')
+tensor([[ 41,  91,  40,  72,  47],
+        [ 87,  72,  91,   9,  66],
+        [ 41,  72,  61,  22,  24],
+        [ 69,  77,   6,  78,   5],
+        [  9,  77,  15,  69,   5]], device='cuda:0') tensor([ 91,  91,  91,  91,  91], device='cuda:0')
+tensor([[ 60,  97,  11,  49,  32],
+        [ 77,  57,   5,  87,   9],
+        [ 55,  99,  97,   3,  16],
+        [ 49,  59,  53,   3,  22],
+        [ 87,  91,  61,  66,  37]], device='cuda:0') tensor([ 91,  91,  91,  91,  91], device='cuda:0')
+tensor([[ 72,  91,  41,  66,  87],
+        [ 72,  91,  41,  66,  87],
+        [ 91,  87,  66,  72,  78],
+        [ 91,  72,  87,  66,  41],
+        [ 71,  15,  31,   1,  94]], device='cuda:0') tensor([ 91,  91,  91,  91,  91], device='cuda:0')
+tensor([[ 72,  87,  39,  98,  66],
+        [ 99,  47,  15,  91,  23],
+        [ 94,  80,  76,  13,   5],
+        [ 44,  94,  68,  64,  80],
+        [ 30,  47,  17,  12,  15]], device='cuda:0') tensor([ 91,  91,  91,  91,  91], device='cuda:0')
+tensor([[ 19,   6,  69,  71,  78],
+        [ 80,  82,  94,  78,  64],
+        [ 98,  87,  39,  10,  28],
+        [ 77,  69,  57,  35,  58],
+        [ 12,  43,  17,  10,  90]], device='cuda:0') tensor([ 92,  92,  92,  92,  92], device='cuda:0')
+tensor([[ 10,  98,  40,  12,  39],
+        [ 80,  82,  94,  42,   0],
+        [ 67,  28,  20,  88,  21],
+        [ 41,  40,  87,  46,  72],
+        [ 19,  69,   6,  78,  71]], device='cuda:0') tensor([ 92,  92,  92,  92,  92], device='cuda:0')
+tensor([[ 46,  48,  43,   8,  99],
+        [ 82,  44,  68,  80,  64],
+        [ 80,  82,  94,  78,  76],
+        [ 19,  42,  95,  76,  80],
+        [ 98,  19,  87,  39,  10]], device='cuda:0') tensor([ 92,  92,  92,  92,  92], device='cuda:0')
+tensor([[ 61,  37,  90,  47,  38],
+        [ 87,  19,   5,  86,  41],
+        [ 60,  11,  68,  89,  45],
+        [ 98,  39,  10,  13,  87],
+        [ 72,  41,  66,  87,  24]], device='cuda:0') tensor([ 92,  92,  92,  92,  92], device='cuda:0')
+tensor([[ 46,  72,  48,  43,  41],
+        [ 95,  19,  77,  58,  69],
+        [ 88,  92,  68,  39,  19],
+        [ 67,  48,  40,  34,  46],
+        [ 98,  87,  39,  72,  40]], device='cuda:0') tensor([ 92,  92,  92,  92,  92], device='cuda:0')
+tensor([[ 69,   6,  78,  19,  77],
+        [ 87,  41,  72,   4,  35],
+        [ 67,  68,   2,  88,  44],
+        [ 64,  68,  44,  14,  78],
+        [ 82,  60,  78,  64,  44]], device='cuda:0') tensor([ 92,  92,  92,  92,  92], device='cuda:0')
+tensor([[ 57,  95,  77,  75,  58],
+        [ 60,  78,  82,  14,  45],
+        [ 49,  83,  16,  22,  55],
+        [ 87,  40,  98,   9,  10],
+        [ 46,  55,  93,  48,  64]], device='cuda:0') tensor([ 93,  93,  93,  93,  93], device='cuda:0')
+tensor([[ 60,  82,  64,  78,  14],
+        [ 61,  37,  36,  17,  11],
+        [ 15,   1,  36,  54,  79],
+        [ 11,  72,  60,  93,  56],
+        [ 47,   0,  80,  64,  25]], device='cuda:0') tensor([ 93,  93,  93,  93,  93], device='cuda:0')
+tensor([[ 94,  71,  80,  31,  60],
+        [ 72,  41,  87,  66,  61],
+        [ 72,  78,  87,  57,  91],
+        [ 55,  60,  97,  59,  51],
+        [ 71,  49,  54,  86,  59]], device='cuda:0') tensor([ 93,  93,  93,  93,  93], device='cuda:0')
+tensor([[ 72,  66,  61,  68,  87],
+        [ 77,  57,   5,  58,  95],
+        [ 55,  99,  61,  46,   3],
+        [ 72,  11,  24,  62,  92],
+        [ 46,  48,  55,  90,  43]], device='cuda:0') tensor([ 93,  93,  93,  93,  93], device='cuda:0')
+tensor([[ 72,  41,  78,  82,  11],
+        [ 72,  41,  87,  66,  61],
+        [ 72,  92,  66,  67,  11],
+        [ 61,  37,  59,  91,  36],
+        [ 15,   1,  47,  94,  36]], device='cuda:0') tensor([ 93,  93,  93,  93,  93], device='cuda:0')
+tensor([[ 49,  36,  53,   1,  59],
+        [ 41,  72,  56,  78,  49],
+        [ 72,  41,  87,  24,   4],
+        [ 55,  97,  60,  51,  83],
+        [ 72,  87,  41,  92,  66]], device='cuda:0') tensor([ 93,  93,  93,  93,  93], device='cuda:0')
+tensor([[ 80,  94,  82,  78,  25],
+        [ 15,  13,  47,   1,   9],
+        [ 80,  94,  71,  78,  82],
+        [ 80,  94,  82,  14,  64],
+        [ 80,  94,  82,  76,  71]], device='cuda:0') tensor([ 94,  94,  94,  94,  94], device='cuda:0')
+tensor([[ 94,  80,  71,  31,  25],
+        [ 94,  80,  76,   0,  42],
+        [ 82,  68,  44,  78,  92],
+        [ 74,  81,  14,  26,  42],
+        [ 16,  55,  99,  46,  48]], device='cuda:0') tensor([ 94,  94,  94,  94,  94], device='cuda:0')
+tensor([[ 80,  94,  82,  42,  76],
+        [ 46,  99,  40,  17,  48],
+        [ 80,  94,  82,  14,  64],
+        [ 80,  82,  94,  81,  64],
+        [ 69,   6,  71,  78,  94]], device='cuda:0') tensor([ 94,  94,  94,  94,  94], device='cuda:0')
+tensor([[ 44,  80,  68,  82,  94],
+        [ 80,  82,  94,  76,  44],
+        [ 80,  82,  14,  94,  64],
+        [ 47,  90,  12,  17,  64],
+        [ 94,  80,  81,  76,   0]], device='cuda:0') tensor([ 94,  94,  94,  94,  94], device='cuda:0')
+tensor([[ 47,  94,  64,   0,  81],
+        [ 80,  94,  82,  14,  64],
+        [ 80,  82,  94,  78,  25],
+        [ 80,  94,  82,  64,  76],
+        [ 80,  94,  82,  78,  14]], device='cuda:0') tensor([ 94,  94,  94,  94,  94], device='cuda:0')
+tensor([[ 80,  94,  81,  14,  76],
+        [ 81,  14,  74,  80,   0],
+        [ 94,  80,   0,  25,  64],
+        [ 94,  80,  64,  25,  82],
+        [ 80,  94,  82,  64,  14]], device='cuda:0') tensor([ 94,  94,  94,  94,  94], device='cuda:0')
+tensor([[ 77,  58,  69,  95,  57],
+        [ 57,  77,   0,  80,  95],
+        [ 87,  61,   2,  36,  12],
+        [ 80,  94,  82,  78,  71],
+        [ 57,  95,  77,   5,  64]], device='cuda:0') tensor([ 95,  95,  95,  95,  95], device='cuda:0')
+tensor([[ 90,  47,  37,  12,  43],
+        [ 57,  80,  95,  64,  25],
+        [ 64,  82,  80,  14,  60],
+        [ 95,  57,  77,   5,  80],
+        [ 77,  69,  95,   6,  19]], device='cuda:0') tensor([ 95,  95,  95,  95,  95], device='cuda:0')
+tensor([[ 57,  77,  19,  95,  58],
+        [ 77,   5,  69,   6,  57],
+        [ 19,  95,   6,  69,   5],
+        [ 77,   5,  69,  57,  95],
+        [ 80,  57,  95,   0,  25]], device='cuda:0') tensor([ 95,  95,  95,  95,  95], device='cuda:0')
+tensor([[ 47,   0,  25,  64,  40],
+        [ 14,  44,  88,  82,  68],
+        [  5,  19,   2,  36,  28],
+        [ 67,  20,   2,  74,  88],
+        [ 19,  95,   0,  81,  76]], device='cuda:0') tensor([ 95,  95,  95,  95,  95], device='cuda:0')
+tensor([[ 78,  80,  82,  76,  64],
+        [ 42,  80,   0,  76,  94],
+        [ 77,  95,  58,  69,  57],
+        [ 57,   0,  25,  64,  80],
+        [ 57,  77,   5,  69,  78]], device='cuda:0') tensor([ 95,  95,  95,  95,  95], device='cuda:0')
+tensor([[ 80,  94,  64,  81,  25],
+        [ 57,  77,   5,  95,  69],
+        [ 77,  57,  95,   5,  58],
+        [ 95,  19,  77,  57,  58],
+        [ 77,  58,  95,  19,  69]], device='cuda:0') tensor([ 95,  95,  95,  95,  95], device='cuda:0')
+tensor([[ 60,  59,  51,  86,  52],
+        [ 87,  19,  98,  92,  72],
+        [ 12,  98,  10,  30,  40],
+        [ 98,  39,  87,  19,  72],
+        [ 81,  20,  64,   0,  94]], device='cuda:0') tensor([ 96,  96,  96,  96,  96], device='cuda:0')
+tensor([[ 82,  14,  80,  64,  94],
+        [ 78,  19,  85,  82,  29],
+        [ 60,  59,  49,  32,  53],
+        [ 60,  49,  59,  32,  65],
+        [ 41,  40,  52,  87,  99]], device='cuda:0') tensor([ 96,  96,  96,  96,  96], device='cuda:0')
+tensor([[ 72,  87,  24,  41,   4],
+        [ 87,  39,  28,  10,  77],
+        [ 82,  80,  14,  44,  68],
+        [ 80,  94,  82,  76,  42],
+        [ 78,  57,  80,  76,   6]], device='cuda:0') tensor([ 96,  96,  96,  96,  96], device='cuda:0')
+tensor([[ 99,   9,  16,  75,  49],
+        [ 15,  77,   9,  69,   1],
+        [ 99,  17,  30,  46,  40],
+        [ 40,  99,  41,  46,  52],
+        [ 78,  82,  80,  19,  57]], device='cuda:0') tensor([ 96,  96,  96,  96,  96], device='cuda:0')
+tensor([[ 46,  48,  16,  50,  99],
+        [ 19,  96,  87,  41,  78],
+        [ 98,  39,  10,  40,  87],
+        [ 78,  87,   9,  72,   4],
+        [ 72,  87,  41,  92,  66]], device='cuda:0') tensor([ 96,  96,  96,  96,  96], device='cuda:0')
+tensor([[ 87,  98,  72,  39,  41],
+        [ 61,  37,  87,  72,  66],
+        [ 19,  78,  71,  84,  86],
+        [ 49,  60,  80,  32,  65],
+        [ 98,  87,  40,  39,  10]], device='cuda:0') tensor([ 96,  96,  96,  96,  96], device='cuda:0')
+tensor([[ 60,  55,  97,  59,  11],
+        [ 60,  97,  59,  55,  11],
+        [ 94,  59,  71,  60,  80],
+        [ 60,  97,  59,  55,  51],
+        [ 55,  51,  16,  97,  33]], device='cuda:0') tensor([ 97,  97,  97,  97,  97], device='cuda:0')
+tensor([[ 59,  49,  83,  36,  60],
+        [  9,  87,  61,  41,  59],
+        [ 60,  80,  94,  97,  56],
+        [ 30,  17,  46,  99,  48],
+        [ 40,   9,  30,  41,  87]], device='cuda:0') tensor([ 97,  97,  97,  97,  97], device='cuda:0')
+tensor([[ 97,  60,  55,  51,  59],
+        [ 60,  97,  59,  55,  51],
+        [ 44,  68,  88,  67,  89],
+        [ 55,  16,  59,  97,  51],
+        [ 55,  51,  16,  97,  83]], device='cuda:0') tensor([ 97,  97,  97,  97,  97], device='cuda:0')
+tensor([[ 11,  61,  59,  60,  50],
+        [ 97,  59,  55,  60,  51],
+        [ 80,  82,  94,  78,  64],
+        [ 46,  48,   8,  43,  55],
+        [ 59,  97,  51,  55,  60]], device='cuda:0') tensor([ 97,  97,  97,  97,  97], device='cuda:0')
+tensor([[ 55,  97,  60,  51,  59],
+        [ 97,  59,  83,  60,  55],
+        [ 60,  97,  59,  49,  55],
+        [ 55,  97,  60,  59,  51],
+        [ 15,   9,  99,  61,  30]], device='cuda:0')
