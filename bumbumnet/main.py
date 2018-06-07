@@ -45,7 +45,7 @@ global_video_tensor_cache = {}
 
 
 class VideoDataLoader:
-    def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=10, num_files=50, num_file_offset=0,
+    def __init__(self, keywords, num_keywords=-1, batch_size=5, num_frames=5, num_files=50, num_file_offset=0,
                  is_training=False, is_test=False, test_file_name="", total_epoch=10,
                  is_multithread=False):
         self.current_epoch = 0
@@ -337,10 +337,11 @@ class Bottleneck(nn.Module):
         self.downsample = downsample
         self.stride = stride
 
-    def forward(self, x):
+    def forward(self, x, temporal_stream):
         residual = x
 
-        out = self.conv1(x)
+        z = x * F.relu(temporal_stream)
+        out = self.conv1(z)
         out = self.bn1(out)
         out = self.relu(out)
 
@@ -455,15 +456,15 @@ class TwoStreamNetwork(nn.Module):
         self.batch_size = batch_size
         self.num_frames = num_frames
         self.hidden_size = hidden_lstm
-        self.resnet_output = 512 # resnet18, 34 : 512, resnet50 : 2048
+        self.resnet_output = 2048# resnet18, 34 : 512, resnet50 : 2048
 
         # Use the custom resnet34 that gets the input from the motion stream.
-        self.pretrained_resnet = two_stream_resnet34(pretrained=True).cuda()
+        self.pretrained_resnet = two_stream_resnet50(pretrained=True).cuda()
         self.spatial = nn.Sequential(*list(self.pretrained_resnet.children())[:-1]).cuda()
         for param in self.spatial.parameters():
             param.required_grad = False
 
-        self.plain_resnet = models.resnet34(pretrained=True).cuda()
+        self.plain_resnet = models.resnet50(pretrained=True).cuda()
         self.temporal = nn.Sequential(*list(self.plain_resnet.children())[:-1]).cuda()
 
         self.lstm = nn.LSTM(input_size=self.resnet_output, hidden_size=hidden_lstm, batch_first=True).cuda()
